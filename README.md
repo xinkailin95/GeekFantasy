@@ -8,7 +8,7 @@
   
     The background storyline is as follows. The player works as a program development engineer working in a large company. Daily programming sometimes makes him bored and stressed. After staying up late for two days and submitting all his works, he dozed off in his office but woke up finding himself in the hostel he used to stay in when he was in university. The layout seems familiar, yet somehow different. His favourite laptop during his student years was there too. At this moment his old housemate came in and urge him to hurry up for class. When they enter the class, he was told to get his laptop ready, and the adventure starts….
 
-**MVP**: For the minimum product, the game includes several maps, and the player will follow the story guideline to go through different maps. There exist monsters in every map and the role can attack the enemies and the enemies also can attack the role. There is HP system to justify the death of the role. The final goal is to defeat the BOSS. 
+**MVP**: For the minimum viable product, the game includes several maps, and the player will follow the story guideline to go through different maps. There exist monsters in every map and the role can attack the enemies and the enemies also can attack the role. There is HP system to justify the death of the role. The final goal is to defeat the BOSS. 
 
 **Add-on features**:
     We’ve included some features in this game. To add more fun to the game, we will include three interesting system, such as NPC system, Equipment System and Level System.
