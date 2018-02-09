@@ -11,7 +11,7 @@
 **MVP**: For the minimum viable product, the game includes several maps, and the player will follow the story guideline to go through different maps. There exist monsters in every map and the role can attack the enemies and the enemies also can attack the role. There is HP system to justify the death of the role. The final goal is to defeat the BOSS. 
 
 **Add-on features**:
-&nbsp;&nbsp;&nbsp;&nbsp;We’ve included some features in this game. To add more fun to the game, we will include three interesting system, such as NPC system, Equipment System and Level System.
+We’ve included some features in this game. To add more fun to the game, we will include three interesting system, such as NPC system, Equipment System and Level System.
 
 &nbsp;&nbsp;&nbsp;&nbsp;***NPC system**: We will be adding professors and TA(non-player character) dispersedly throughout the map. When player interact with them, they would be randomly given better weapons. Meanwhile, some enemies will serve as  the obstacle of our protagonist. We plan do make the enemies look like a programming bug, for example: Mr. PageFault.
 
