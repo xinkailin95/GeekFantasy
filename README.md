@@ -4,20 +4,20 @@
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/PlayerTeam/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ## Project Desription
-   Our game is based on the life of a Geek, which represents all of us majoring in computer science. Inevitably, we face bugs every time when we build a program. It’s frustrating but we can’t avoid it. Based on this condition, our team decided to build a game and interact it with our real life at UB. We decide to use Unity to build a 2D RPG game, with a simple storyline to guide the players on an adventure. The adventure map is based on the layout of our campus. The players would level up by entering into a fight with the enemies, and gain high-level equipment. The ultimate victory would be when the final boss is defeated. 
+    Our game is based on the life of a Geek, which represents all of us majoring in computer science. Inevitably, we face bugs every time when we build a program. It’s frustrating but we can’t avoid it. Based on this condition, our team decided to build a game and interact it with our real life at UB. We decide to use Unity to build a 2D RPG game, with a simple storyline to guide the players on an adventure. The adventure map is based on the layout of our campus. The players would level up by entering into a fight with the enemies, and gain high-level equipment. The ultimate victory would be when the final boss is defeated. 
   
-   The background storyline is as follows. The player works as a program development engineer working in a large company. Daily programming sometimes makes him bored and stressed. After staying up late for two days and submitting all his works, he dozed off in his office but woke up finding himself in the hostel he used to stay in when he was in university. The layout seems familiar, yet somehow different. His favourite laptop during his student years was there too. At this moment his old housemate came in and urge him to hurry up for class. When they enter the class, he was told to get his laptop ready, and the adventure starts….
+    The background storyline is as follows. The player works as a program development engineer working in a large company. Daily programming sometimes makes him bored and stressed. After staying up late for two days and submitting all his works, he dozed off in his office but woke up finding himself in the hostel he used to stay in when he was in university. The layout seems familiar, yet somehow different. His favourite laptop during his student years was there too. At this moment his old housemate came in and urge him to hurry up for class. When they enter the class, he was told to get his laptop ready, and the adventure starts….
 
 **MVP**: For the minimum product, the game includes several maps, and the player will follow the story guideline to go through different maps. There exist monsters in every map and the role can attack the enemies and the enemies also can attack the role. There is HP system to justify the death of the role. The final goal is to defeat the BOSS. 
 
 **Add-on features**:
     We’ve included some features in this game. To add more fun to the game, we will include three interesting system, such as NPC system, Equipment System and Level System.
 
-**NPC system**: We will be adding professors and TA(non-player character) dispersedly throughout the map. When player interact with them, they would be randomly given better weapons. Meanwhile, some enemies will serve as  the obstacle of our protagonist. We plan do make the enemies look like a programming bug, for example: Mr. PageFault.
+***NPC system**: We will be adding professors and TA(non-player character) dispersedly throughout the map. When player interact with them, they would be randomly given better weapons. Meanwhile, some enemies will serve as  the obstacle of our protagonist. We plan do make the enemies look like a programming bug, for example: Mr. PageFault.
 
-**Equipment system**: The role can use weapon, armor and some items. We’ve also include some hidden weapons for attack and defence for player to change. Items would be hidden throughout the map to increase or decrease the players experience points and energy level.
+***Equipment system**: The role can use weapon, armor and some items. We’ve also include some hidden weapons for attack and defence for player to change. Items would be hidden throughout the map to increase or decrease the players experience points and energy level.
 
-**Level system**: Beginning as a “Freshman”，the players can also accumulate experience points and advance in levels, to complete basic subjects and start advance subjects. The players would in turn defeat the final boss and graduate.
+***Level system**: Beginning as a “Freshman”，the players can also accumulate experience points and advance in levels, to complete basic subjects and start advance subjects. The players would in turn defeat the final boss and graduate.
 
 ## User Story 
 As a player, I can experience campus life in another perspective. This game have several scenes of maps which are based on our university campus where the role is a student in. 
