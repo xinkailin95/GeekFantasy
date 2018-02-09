@@ -13,11 +13,11 @@
 **Add-on features**:
 &nbsp;&nbsp;&nbsp;&nbsp;We’ve included some features in this game. To add more fun to the game, we will include three interesting system, such as NPC system, Equipment System and Level System.
 
-&nbsp;&nbsp;&nbsp;&nbsp;**NPC system**: We will be adding professors and TA(non-player character) dispersedly throughout the map. When player interact with them, they would be randomly given better weapons. Meanwhile, some enemies will serve as  the obstacle of our protagonist. We plan do make the enemies look like a programming bug, for example: Mr. PageFault.
+&nbsp;&nbsp;&nbsp;&nbsp;***NPC system**: We will be adding professors and TA(non-player character) dispersedly throughout the map. When player interact with them, they would be randomly given better weapons. Meanwhile, some enemies will serve as  the obstacle of our protagonist. We plan do make the enemies look like a programming bug, for example: Mr. PageFault.
 
-&nbsp;&nbsp;&nbsp;&nbsp;**Equipment system**: The role can use weapon, armor and some items. We’ve also include some hidden weapons for attack and defence for player to change. Items would be hidden throughout the map to increase or decrease the players experience points and energy level.
+&nbsp;&nbsp;&nbsp;&nbsp;***Equipment system**: The role can use weapon, armor and some items. We’ve also include some hidden weapons for attack and defence for player to change. Items would be hidden throughout the map to increase or decrease the players experience points and energy level.
 
-&nbsp;&nbsp;&nbsp;&nbsp;**Level system**: Beginning as a “Freshman”，the players can also accumulate experience points and advance in levels, to complete basic subjects and start advance subjects. The players would in turn defeat the final boss and graduate.
+&nbsp;&nbsp;&nbsp;&nbsp;***Level system**: Beginning as a “Freshman”，the players can also accumulate experience points and advance in levels, to complete basic subjects and start advance subjects. The players would in turn defeat the final boss and graduate.
 
 ## User Story 
 As a player, I can experience campus life in another perspective. This game have several scenes of maps which are based on our university campus where the role is a student in. 
