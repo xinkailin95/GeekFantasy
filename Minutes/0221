@@ -1,0 +1,27 @@
+Meeting date:2/21/2018 6-7pm
+Meeting attendance: 
+Xingtong Lin
+Hui Gao
+Heyi Sun
+Shuo Qiang
+Xinkai Lin
+
+Discussion:
+shared our idea
+how to merge our code together
+decide the style and color tone of our map
+
+
+Last week achieved:
+  Xingtong Li: character design(front and back), knox and cooke hall, main map
+  Shuo Qiang: capen hall, davis hall, student union, one indoor classroom
+  Gao Hui: UI and script of start and end scene
+  Xinkai Lin: enemy AI(enemy will follow character within certain area and return the original position when character get out of the range)
+  Heyi Sun: character movement script
+  
+Next week goal:
+  Xingtong Li: fix and detail outdoor map 
+  Shuo Qiang: indoor classroom map development, draw more indoor classroom and fix current classroom
+  Gao Hui: colliders of map and control instruction
+  Xinkai Lin: scene switch(from outdoor map to indoor room), fix enemy animation performance
+  Heyi Sun: enemy attack interaction(between character and enemy), system health
