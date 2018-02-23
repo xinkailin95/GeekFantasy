@@ -31,3 +31,12 @@ I am also able to get surprise equipments from NPC and treasure chest to update 
 
 I will experience an interesting daily life of a geek in a campus setting, and this game fulfils the element of fantasy which can be a fun twist to our boring everyday life.	
 
+# Prototype
+## Instruction
+&nbsp;&nbsp;&nbsp;&nbsp;1. Open the download link: https://drive.google.com/drive/u/0/folders/1ZiA1gOf7HBvfNZJ_owBfVGaIM8Sf90DH
+
+&nbsp;&nbsp;&nbsp;&nbsp;2. Downoad the file, exctract it if is a zip file.
+
+&nbsp;&nbsp;&nbsp;&nbsp;3. Click on the app to run (.exe for Window, .app for mac)
+
+&nbsp;&nbsp;&nbsp;&nbsp;4. Choose an resolution, Fullscreen or Window.

@@ -37,8 +37,8 @@ public class EnemyMovement : MonoBehaviour
 
 		//newPosition = Vector3.zero;
 		distance = Vector3.Distance (hero.position, transform.position);
-		if (distance < 2) {
-			if (distance < .25) {
+		if (distance < 15) {
+			if (distance < 2) {
 				// Attack player
 
 			} else {
