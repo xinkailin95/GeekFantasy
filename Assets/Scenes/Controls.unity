@@ -629,7 +629,7 @@ GameObject:
   - component: {fileID: 1841958620}
   - component: {fileID: 1841958619}
   m_Layer: 5
-  m_Name: Text
+  m_Name: text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -697,7 +697,12 @@ MonoBehaviour:
     D: Move right
 
 
-    J: Attack (coming sonn)'
+    J: Attack (coming soon)
+
+
+    Switc scene between building will coming on next release
+
+'
 --- !u!222 &1841958620
 CanvasRenderer:
   m_ObjectHideFlags: 0

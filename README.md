@@ -40,3 +40,12 @@ I will experience an interesting daily life of a geek in a campus setting, and t
 &nbsp;&nbsp;&nbsp;&nbsp;3. Click on the app to run (.exe for Window, .app for mac)
 
 &nbsp;&nbsp;&nbsp;&nbsp;4. Choose an resolution, Fullscreen or Window.
+
+&nbsp;&nbsp;&nbsp;&nbsp;5. Click starting to start the game, click Introduction to see the background of the game
+
+&nbsp;&nbsp;&nbsp;&nbsp;6. Click Help button to see control instruction.
+
+&nbsp;&nbsp;&nbsp;&nbsp;7. Click Back to Starting to Return to the main menu.
+
+## Youtube Link
+https://youtu.be/9VW4yJrVLIM
