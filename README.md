@@ -47,5 +47,7 @@ I will experience an interesting daily life of a geek in a campus setting, and t
 
 &nbsp;&nbsp;&nbsp;&nbsp;7. Click Back to Starting to Return to the main menu.
 
+PS: For Mac user who has identified developers issues, go to System Preferences and go to Security & Privacy, in General click open anyway to open the app.
+
 ## Youtube Link
 https://youtu.be/9VW4yJrVLIM
