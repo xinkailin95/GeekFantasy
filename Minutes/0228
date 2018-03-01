@@ -1,0 +1,28 @@
+Meeting date:2/28/2018 5-6pm
+Meeting attendance: 
+Xinkai Lin
+Xingtong Li
+Hui Gao
+Heyi Sun
+Shuo Qiang
+
+
+
+
+Discussion:
+we discussed what we should accomplish before alpha version and settled background music and function of our game.
+
+
+Last week achieved:
+  Xingtong Li: fix and detail outdoor map 
+  Shuo Qiang: indoor classroom map development, draw more indoor classroom
+  Gao Hui: colliders of map, control instruction and optimize UI
+  Xinkai Lin: after chasing character for a fixed distance, enemy will return to its original position. 
+  Heyi Sun: system health
+
+Next week goal:
+  Xingtong Li: charcter attack, npc, enemy attack
+  Shuo Qiang: settle music for attack, change scene and bgm for whole game
+  Gao Hui: save and pause game
+  Xinkai Lin: finish enemy AI
+  Heyi Sun: enemy remote attack
