@@ -1,0 +1,29 @@
+Meeting date:3/7/2018 6-7pm
+Meeting attendance: 
+Xinkai Lin
+Xingtong Li
+Hui Gao
+Heyi Sun
+Shuo Qiang
+
+
+
+
+Discussion:
+we discussed what we should accomplish before alpha version. We discovered some of the tasks are way too heavy loaded. 
+Then, we re-arranged some tasks and changed some task's assignment.
+
+
+Last week achieved:
+  Xingtong Li: complete the charcter attack design and enemy design
+  Shuo Qiang: settled music for attack, change scene and bgm, waiting for final project to add it on
+  Gao Hui: add exit function and pause game
+  Xinkai Lin: still working on enemy AI
+  Heyi Sun: add health system and remote attack
+
+Next week goal:
+  Xingtong Li: make indoor map with shuo qiang
+  Shuo Qiang: draw more indoor map, fix current indoor map, draw NPC
+  Gao Hui: enemy attack and death, character attack and game over
+  Xinkai Lin: set up npc
+  Heyi Sun: change scene between indoor map and indoor map
