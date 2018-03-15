@@ -22,6 +22,7 @@ public class Figure_move : MonoBehaviour {
             if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
             {
                 dest = (Vector2)transform.position + Vector2.up;
+
             }
             if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
             {
@@ -41,14 +42,5 @@ public class Figure_move : MonoBehaviour {
             GetComponent<Animator>().SetFloat("f_y", dir.y);
         }
     }
-
-    /*  code for detecting if the figure is going to hit the collider*/
-    /*
-    private bool Valid(Vector2 dir)
-    {
-        Vector2 pos = transform.position;
-        RaycastHit2D hit = Physics2D.Linecast(pos + dir, pos);
-        return (hit.collider == GetComponent<Collider2D>());
-    }
-    */
+		
 }

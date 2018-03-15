@@ -64,4 +64,12 @@ public class GameManager : MonoBehaviour {
 	public void UVControl(){
 		UnViewControl ();
 	}
+
+	public void NewGame(){
+		SceneManager.LoadScene (1);
+	}
+
+	public void Quit(){
+		Application.Quit ();
+	}
 }

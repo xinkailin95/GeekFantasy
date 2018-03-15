@@ -10,7 +10,14 @@ public class PlayerMovement : MonoBehaviour
 	private Vector3 prevPosition;
 	private Vector3 newPosition;
 
+	private SpriteRenderer sr;
+	public Sprite[] playerSprite;// up right left down
+
+
 	// Use this for initialization
+	private void Awake(){
+		sr = GetComponent<SpriteRenderer> ();
+	}
 	void Start ()
 	{
 		anim = GetComponent<Animator> ();
@@ -23,8 +30,10 @@ public class PlayerMovement : MonoBehaviour
 
 		if (Input.GetKey (KeyCode.A))	// move left
 			newPosition.x = -1f;
+			sr.sprite = playerSprite [2];
 		if (Input.GetKey (KeyCode.D))	// move right
 			newPosition.x = 1f;	
+			sr.sprite = playerSprite [1];
 		if (Input.GetKey (KeyCode.W))	// move up
 			newPosition.y = 1f;
 		if (Input.GetKey (KeyCode.S))	// move down
