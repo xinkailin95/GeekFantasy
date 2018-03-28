@@ -8582,61 +8582,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!1001 &740269185
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4037541716353698, guid: 6cb9f691abca246ac99a4011af41feab, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -124.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4037541716353698, guid: 6cb9f691abca246ac99a4011af41feab, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 139.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4037541716353698, guid: 6cb9f691abca246ac99a4011af41feab, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4037541716353698, guid: 6cb9f691abca246ac99a4011af41feab, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4037541716353698, guid: 6cb9f691abca246ac99a4011af41feab, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4037541716353698, guid: 6cb9f691abca246ac99a4011af41feab, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4037541716353698, guid: 6cb9f691abca246ac99a4011af41feab, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4037541716353698, guid: 6cb9f691abca246ac99a4011af41feab, type: 2}
-      propertyPath: m_RootOrder
-      value: 28
-      objectReference: {fileID: 0}
-    - target: {fileID: 114254394575307428, guid: 6cb9f691abca246ac99a4011af41feab,
-        type: 2}
-      propertyPath: volume
-      value: 2.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1506280004030868, guid: 6cb9f691abca246ac99a4011af41feab, type: 2}
-      propertyPath: m_Name
-      value: Enemy16
-      objectReference: {fileID: 0}
-    - target: {fileID: 1506280004030868, guid: 6cb9f691abca246ac99a4011af41feab, type: 2}
-      propertyPath: m_TagString
-      value: Enemy16
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 6cb9f691abca246ac99a4011af41feab, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &744983151
 GameObject:
   m_ObjectHideFlags: 0
@@ -10241,11 +10186,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4920544591272528, guid: 7916d636c5f5f4704b475d02787cfea7, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.05
+      value: -1.57
       objectReference: {fileID: 0}
     - target: {fileID: 4920544591272528, guid: 7916d636c5f5f4704b475d02787cfea7, type: 2}
       propertyPath: m_LocalScale.y
-      value: 0.8881958
+      value: 0.9336618
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7916d636c5f5f4704b475d02787cfea7, type: 2}
