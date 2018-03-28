@@ -33,12 +33,13 @@ I will experience an interesting daily life of a geek in a campus setting, and t
 
 # Prototype
 ## Instruction
-&nbsp;&nbsp;&nbsp;&nbsp;1. Open the download link for Prototype: https://drive.google.com/drive/u/0/folders/1ZiA1gOf7HBvfNZJ_owBfVGaIM8Sf90DH
+&nbsp;&nbsp;&nbsp;&nbsp;1. Open the download link for Prototype:      
+https://drive.google.com/drive/u/0/folders/1ZiA1gOf7HBvfNZJ_owBfVGaIM8Sf90DH
 
-&nbsp;&nbsp;&nbsp;&nbsp;2. Open the download link for Alpha Release: 
+&nbsp;&nbsp;&nbsp;&nbsp;1. Open the download link for Alpha Release:
 https://drive.google.com/open?id=1utP1IsUDiT8LFu5GGB_2YcvqgZckl35c
 
-&nbsp;&nbsp;&nbsp;&nbsp;3. Downoad the file, exctract it if is a zip file.
+&nbsp;&nbsp;&nbsp;&nbsp;2. Downoad the file, exctract it if is a zip file.
 
 &nbsp;&nbsp;&nbsp;&nbsp;3. Click on the app to run (.exe for Window, .app for mac)
 
