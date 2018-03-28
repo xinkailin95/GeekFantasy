@@ -31,9 +31,13 @@ I am also able to get surprise equipments from NPC and treasure chest to update 
 
 I will experience an interesting daily life of a geek in a campus setting, and this game fulfils the element of fantasy which can be a fun twist to our boring everyday life.	
 
-# Prototype
+# Prototype && Alpha Release
 ## Instruction
-&nbsp;&nbsp;&nbsp;&nbsp;1. Open the download link: https://drive.google.com/drive/u/0/folders/1ZiA1gOf7HBvfNZJ_owBfVGaIM8Sf90DH
+&nbsp;&nbsp;&nbsp;&nbsp;1. Open the download link for Prototype:
+&nbsp;&nbsp;&nbsp;&nbsp;https://drive.google.com/drive/u/0/folders/1ZiA1gOf7HBvfNZJ_owBfVGaIM8Sf90DH
+
+&nbsp;&nbsp;&nbsp;&nbsp;1. Open the download link for Alpha Release: 
+https://drive.google.com/open?id=1utP1IsUDiT8LFu5GGB_2YcvqgZckl35c
 
 &nbsp;&nbsp;&nbsp;&nbsp;2. Downoad the file, exctract it if is a zip file.
 
@@ -50,4 +54,6 @@ I will experience an interesting daily life of a geek in a campus setting, and t
 PS: For Mac user who has identified developers issues, go to System Preferences and go to Security & Privacy, in General click open anyway to open the app.
 
 ## Youtube Link
-https://youtu.be/9VW4yJrVLIM
+Prototype: https://youtu.be/9VW4yJrVLIM
+
+Alpha Release: 
