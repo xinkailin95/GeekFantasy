@@ -56,4 +56,4 @@ PS: For Mac user who has identified developers issues, go to System Preferences 
 ## Youtube Link
 Prototype: https://youtu.be/9VW4yJrVLIM
 
-Alpha Release: 
+Alpha Release: https://youtu.be/emJ41wblpow
