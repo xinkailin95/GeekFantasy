@@ -31,7 +31,7 @@ I am also able to get surprise equipments from NPC and treasure chest to update 
 
 I will experience an interesting daily life of a geek in a campus setting, and this game fulfils the element of fantasy which can be a fun twist to our boring everyday life.	
 
-# Prototype
+# Prototype && Alpha Release
 ## Instruction
 &nbsp;&nbsp;&nbsp;&nbsp;1. Open the download link for Prototype:
 &nbsp;&nbsp;&nbsp;&nbsp;https://drive.google.com/drive/u/0/folders/1ZiA1gOf7HBvfNZJ_owBfVGaIM8Sf90DH
