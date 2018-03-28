@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour
 
 	public Text levelNum;
 	public Text attackPowerNum;
+	public Text scoreNum;
 
 
 	public int levelN;
@@ -34,20 +35,20 @@ public class UIManager : MonoBehaviour
 
 	private void AddLevel ()
 	{
-		if (scoreN < 1) {
+		if (scoreN < 4) {
 			levelN = 1;
 			attackPower = 1;
 			attackN = 1;
-		} else if (scoreN >= 1 && scoreN < 3) {
+		} else if (scoreN >= 4 && scoreN < 10) {
 			levelN = 2;
 			attackPower = 3;
 			attackN = 3;
-		} else if (scoreN >= 3 && scoreN < 5) {
+		} else if (scoreN >= 11 && scoreN < 19) {
 			levelN = 3;
 			attackPower = 5;
 			attackN = 5;
 
-		} else if (scoreN >= 5) {
+		} else if (scoreN >= 19) {
 			levelN = 4;
 			attackPower = 7;
 			attackN = 7;
@@ -67,6 +68,7 @@ public class UIManager : MonoBehaviour
 		AddLevel ();
 		attackPowerNum.text = attackN.ToString ();
 		levelNum.text = levelN.ToString ();
+		scoreNum.text = scoreN.ToString ();
 
 		//heyi
 		HealthSlider.maxValue = player.GetComponent<Player> ().maxplayerLife;
