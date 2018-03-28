@@ -33,7 +33,7 @@ I will experience an interesting daily life of a geek in a campus setting, and t
 
 # Prototype
 ## Instruction
-&nbsp;&nbsp;&nbsp;&nbsp;1. Open the download link for Prototype:      
+&nbsp;&nbsp;&nbsp;&nbsp;1. Open the download link for Prototype: 
 https://drive.google.com/drive/u/0/folders/1ZiA1gOf7HBvfNZJ_owBfVGaIM8Sf90DH
 
 &nbsp;&nbsp;&nbsp;&nbsp;1. Open the download link for Alpha Release:
