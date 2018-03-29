@@ -1,0 +1,27 @@
+Meeting date:3/28/2018 6-7pm
+Meeting attendance: 
+Xinkai Lin
+Xingtong Li
+Hui Gao
+Heyi Sun
+Shuo Qiang
+
+
+
+
+Discussion:
+We discussed what we will accomplish before next release.
+
+Last week achieved:
+  Xingtong Li: Finished the design of enemy and main map.
+  Shuo Qiang:  Finished the design of NPC, NPC dialogs and all scene. 
+  Gao Hui: finish npc script
+  Xinkai Lin: add collision on all scenes
+  Heyi Sun: add attack system on enemy
+
+Next week goal:
+  Xingtong Li: Add some new enemy types
+  Shuo Qiang: working on bgm 
+  Gao Hui: fix current bugs
+  Xinkai Lin: fix bug where enemy get stuck on the wall when chasing player
+  Heyi Sun: fix current buggs
