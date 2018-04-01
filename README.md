@@ -26,7 +26,7 @@ As a player, I can experience campus life in another perspective. This game have
 I can attack the enemies and up level through the adventures. The bugs, homeworks, assignments and project are designed into monsters that are the role’s enemies. By adding experience points, the role can become more stronger.
 
 
-I am also able to get surprise equipments from NPC and treasure chest to update his ability on the way to the final BOSS. 
+I am also able to get surprise from NPC to update his ability on the way to the final BOSS. 
 
 
 I will experience an interesting daily life of a geek in a campus setting, and this game fulfils the element of fantasy which can be a fun twist to our boring everyday life.	
