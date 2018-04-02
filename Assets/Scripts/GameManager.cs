@@ -67,6 +67,7 @@ public class GameManager : MonoBehaviour {
 
 	public void NewGame(){
 		SceneManager.LoadScene (1);
+		Time.timeScale = 1;
 	}
 
 	public void Quit(){

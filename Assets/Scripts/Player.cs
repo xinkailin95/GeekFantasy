@@ -76,7 +76,7 @@ public class Player : MonoBehaviour
 		RaycastHit2D hit = Physics2D.Linecast (dir + 1.5f * (dir - pos), pos);
 //		Debug.DrawRay (dir + dir - pos, (pos - dir) * 100, Color.blue);
 //		Debug.Log (hit.collider);
-		return (hit.collider == GetComponent<Collider2D> ()/*&& hit.collider != enemyArray[num].GetComponent<Collider2D>()*/);
+		return (hit.collider == GetComponent<CapsuleCollider2D> ()/*&& hit.collider != enemyArray[num].GetComponent<Collider2D>()*/);
 	}
 
 	public void FixedUpdate ()
