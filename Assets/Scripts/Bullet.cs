@@ -155,6 +155,9 @@ public class Bullet : MonoBehaviour
 			Destroy (collision.gameObject);
 			break;
 		default:
+                string hit_obj = collision.gameObject.GetComponentInParent<Transform>().name;
+            if (hit_obj == "room11" || hit_obj == "born" || hit_obj == "cafe" || hit_obj == "library" || hit_obj == "bossmap" || hit_obj == "double"|| hit_obj == "NSC")
+                Destroy (gameObject);
 			break;
 		}
 	}
