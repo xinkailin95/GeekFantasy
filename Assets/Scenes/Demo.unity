@@ -10098,16 +10098,6 @@ Prefab:
       propertyPath: initialPanel
       value: 
       objectReference: {fileID: 1229991509}
-    - target: {fileID: 212546830854516174, guid: 7916d636c5f5f4704b475d02787cfea7,
-        type: 2}
-      propertyPath: m_SortingLayerID
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 212546830854516174, guid: 7916d636c5f5f4704b475d02787cfea7,
-        type: 2}
-      propertyPath: m_SortingLayer
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7916d636c5f5f4704b475d02787cfea7, type: 2}
   m_IsPrefabParent: 0
