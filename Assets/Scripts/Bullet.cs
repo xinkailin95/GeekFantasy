@@ -34,6 +34,7 @@ public class Bullet : MonoBehaviour
 				Player._instance.Finish ();
 				UIManager._instance.AddScore ();
 			}
+            Destroy (gameObject);
 			break;
 		case"Enemy1":
 			Enemy._instance.enemyLife [1, 1] = Enemy._instance.enemyLife [1, 1] - UIManager._instance.attackPower;
@@ -41,6 +42,7 @@ public class Bullet : MonoBehaviour
 				collision.gameObject.transform.position = new Vector3 (436, -90);
 				UIManager._instance.AddScore ();
 			}
+            Destroy (gameObject);
 			break;
 		case"Enemy2":
 			Enemy._instance.enemyLife [2, 1] = Enemy._instance.enemyLife [2, 1] - UIManager._instance.attackPower;
@@ -48,6 +50,7 @@ public class Bullet : MonoBehaviour
 				collision.gameObject.transform.position = new Vector3 (436, -90);
 				UIManager._instance.AddScore ();
 			}
+            Destroy (gameObject);
 			break;
 		case"Enemy3":
 			Enemy._instance.enemyLife [3, 1] = Enemy._instance.enemyLife [3, 1] - UIManager._instance.attackPower;
@@ -55,6 +58,7 @@ public class Bullet : MonoBehaviour
 				collision.gameObject.transform.position = new Vector3 (436, -90);
 				UIManager._instance.AddScore ();
 			}
+            Destroy (gameObject);
 			break;
 		case"Enemy4":
 			Enemy._instance.enemyLife [4, 1] = Enemy._instance.enemyLife [4, 1] - UIManager._instance.attackPower;
@@ -62,6 +66,7 @@ public class Bullet : MonoBehaviour
 				collision.gameObject.transform.position = new Vector3 (436, -90);
 				UIManager._instance.AddScore ();
 			}
+            Destroy (gameObject);
 			break;
 		case"Enemy5":
 			Enemy._instance.enemyLife [5, 1] = Enemy._instance.enemyLife [5, 1] - UIManager._instance.attackPower;
@@ -69,6 +74,7 @@ public class Bullet : MonoBehaviour
 				collision.gameObject.transform.position = new Vector3 (436, -90);
 				UIManager._instance.AddScore ();
 			}
+            Destroy (gameObject);
 			break;
 		case"Enemy6":
 			Enemy._instance.enemyLife [6, 1] = Enemy._instance.enemyLife [6, 1] - UIManager._instance.attackPower;
@@ -76,6 +82,7 @@ public class Bullet : MonoBehaviour
 				collision.gameObject.transform.position = new Vector3 (436, -90);
 				UIManager._instance.AddScore ();
 			}
+            Destroy (gameObject);
 			break;
 		case"Enemy7":
 			Enemy._instance.enemyLife [7, 1] = Enemy._instance.enemyLife [7, 1] - UIManager._instance.attackPower;
@@ -84,6 +91,7 @@ public class Bullet : MonoBehaviour
 				collision.gameObject.transform.position = new Vector3 (436, -90);
 				UIManager._instance.AddScore ();
 			}
+            Destroy (gameObject);
 			break;
 		case"Enemy8":
 			Enemy._instance.enemyLife [8, 1] = Enemy._instance.enemyLife [8, 1] - UIManager._instance.attackPower;
@@ -91,6 +99,7 @@ public class Bullet : MonoBehaviour
 				collision.gameObject.transform.position = new Vector3 (436, -90);
 				UIManager._instance.AddScore ();
 			}
+            Destroy (gameObject);
 			break;
 		case"Enemy9":
 			Enemy._instance.enemyLife [9, 1] = Enemy._instance.enemyLife [9, 1] - UIManager._instance.attackPower;
@@ -98,6 +107,7 @@ public class Bullet : MonoBehaviour
 				collision.gameObject.transform.position = new Vector3 (436, -90);
 				UIManager._instance.AddScore ();
 			}
+            Destroy (gameObject);
 			break;
 		case"Enemy10":
 			Enemy._instance.enemyLife [10, 1] = Enemy._instance.enemyLife [10, 1] - UIManager._instance.attackPower;
@@ -105,6 +115,7 @@ public class Bullet : MonoBehaviour
 				collision.gameObject.transform.position = new Vector3 (436, -90);
 				UIManager._instance.AddScore ();
 			}
+            Destroy (gameObject);
 			break;
 		case"Enemy11":
 			Enemy._instance.enemyLife [11, 1] = Enemy._instance.enemyLife [11, 1] - UIManager._instance.attackPower;
@@ -112,6 +123,7 @@ public class Bullet : MonoBehaviour
 				collision.gameObject.transform.position = new Vector3 (436, -90);
 				UIManager._instance.AddScore ();
 			}
+            Destroy (gameObject);
 			break;
 		case"Enemy12":
 			Enemy._instance.enemyLife [12, 1] = Enemy._instance.enemyLife [12, 1] - UIManager._instance.attackPower;
@@ -119,6 +131,7 @@ public class Bullet : MonoBehaviour
 				collision.gameObject.transform.position = new Vector3 (436, -90);
 				UIManager._instance.AddScore ();
 			}
+            Destroy (gameObject);
 			break;
 		case"Enemy13":
 			Enemy._instance.enemyLife [13, 1] = Enemy._instance.enemyLife [13, 1] - UIManager._instance.attackPower;
@@ -126,6 +139,7 @@ public class Bullet : MonoBehaviour
 				collision.gameObject.transform.position = new Vector3 (436, -90);
 				UIManager._instance.AddScore ();
 			}
+            Destroy (gameObject);
 			break;
 		case"Enemy14":
 			Enemy._instance.enemyLife [14, 1] = Enemy._instance.enemyLife [14, 1] - UIManager._instance.attackPower;
@@ -133,6 +147,7 @@ public class Bullet : MonoBehaviour
 				collision.gameObject.transform.position = new Vector3 (436, -90);
 				UIManager._instance.AddScore ();
 			}
+            Destroy (gameObject);
 			break;
 		case"Enemy15":
 			Enemy._instance.enemyLife [15, 1] = Enemy._instance.enemyLife [15, 1] - UIManager._instance.attackPower;
@@ -140,6 +155,7 @@ public class Bullet : MonoBehaviour
 				collision.gameObject.transform.position = new Vector3 (436, -90);
 				UIManager._instance.AddScore ();
 			}
+            Destroy (gameObject);
 			break;
 		case"Enemy16":
 			Enemy._instance.enemyLife [16, 1] = Enemy._instance.enemyLife [16, 1] - UIManager._instance.attackPower;
@@ -147,6 +163,7 @@ public class Bullet : MonoBehaviour
 				collision.gameObject.transform.position = new Vector3 (436, -90);
 				UIManager._instance.AddScore ();
 			}
+            Destroy (gameObject);
 			break;
 		case"Building":
 			

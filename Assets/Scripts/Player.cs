@@ -28,10 +28,13 @@ public class Player : MonoBehaviour
 	public int num;
 	public int Array_size = 0;
 	private Vector2 dest = Vector2.zero;
-	// up right left down
+    private float targetTime=0;
 
 
-	private void Awake ()
+    // up right left down
+
+
+    private void Awake ()
 	{
 		anim = GetComponent<Animator> ();
 		// sr = GetComponent<SpriteRenderer> ();
@@ -146,7 +149,6 @@ public class Player : MonoBehaviour
 					num = i;
 					dest = (Vector2)transform.position + volume * ((Vector2)transform.position - (Vector2)enemyArray [num].transform.position);
 				}
-
 			}
 
 		}
@@ -155,7 +157,14 @@ public class Player : MonoBehaviour
 	private void Attack ()
 	{
 		if (Input.GetKeyDown (KeyCode.Space)) {
-			Instantiate (bulletPrefab, transform.position, Quaternion.Euler (transform.eulerAngles + bulletEulerAngles));
+
+            if (Time.time > targetTime)
+            {
+                Instantiate(bulletPrefab, transform.position, Quaternion.Euler(transform.eulerAngles + bulletEulerAngles));
+                targetTime = Time.time + 0.4f;
+            }
+
+
 
 		}
 	}
