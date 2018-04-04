@@ -79,6 +79,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 20
+  enemydied: {fileID: 0}
 --- !u!212 &212621717229461074
 SpriteRenderer:
   m_ObjectHideFlags: 1

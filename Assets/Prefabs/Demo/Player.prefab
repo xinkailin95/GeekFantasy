@@ -259,6 +259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialPanel: {fileID: 0}
+  attack: {fileID: 0}
   maxplayerLife: 0
   curplayerLife: 10
   attackPower: 1

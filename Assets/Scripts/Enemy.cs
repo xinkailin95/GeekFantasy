@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour
 	public float backUptime = 0.1f;
 	public int[,] enemyLife = new int[30, 2];
 	public int attackPower = 1;
+	public AudioSource enemydied;
 
 	public Transform hero;
 	private Vector3 initPosition;
@@ -22,7 +23,9 @@ public class Enemy : MonoBehaviour
 	private Vector3 currentDest;
 	private Vector2 destination;
 	private Animator anim;
+	private List<bool> enemyIsD = new List<bool>();
 	bool loop;
+
 	//public int enemyLife = 3;
 
 	void Awake ()
@@ -40,7 +43,9 @@ public class Enemy : MonoBehaviour
 		hero = player.transform;
 		for (int i = 1; i < 30; i++) {
 			enemyLife [i, 1] = 10;
+			enemyIsD.Add (false);
 		}
+
 		enemyLife [0, 1] = 84;
 		float x = Random.Range (-10, 10);
 		float y = Random.Range (-10, 10);
@@ -84,5 +89,11 @@ public class Enemy : MonoBehaviour
 		Vector3 sub = newPosition - transform.position;
 		anim.SetFloat ("input_x", (sub.x < 0 ? -1f : 1f));
 		anim.SetFloat ("input_y", (sub.y < 0 ? -1f : 1f));
+		for (int i = 1; i < 30; i++) {
+			if (enemyLife [i, 1]<0 && enemyIsD[i] == false) {
+				enemydied.Play ();
+				enemyIsD [i] = true;
+			}
+		}
 	}
 }
