@@ -1,0 +1,27 @@
+Meeting date:4/04/2018 6-7pm
+Meeting attendance: 
+Xinkai Lin
+Xingtong Li
+Hui Gao
+Heyi Sun
+Shuo Qiang
+
+
+
+
+Discussion:
+We discussed what we will accomplish before next release.
+
+Last week achieved:
+  Xingtong Li: finish adding new enemy types
+  Shuo Qiang:  Finished adding bgm and audio effect when character hurts, enemy died and character attack.
+  Gao Hui: fixed current bugs
+  Xinkai Lin: fixed current bugs
+  Heyi Sun: add driver mode and character get immuned and flashing after being attacked by enemy
+
+Next week goal:
+  Xingtong Li: fix current map and add more scene
+  Shuo Qiang: write story line and more npc conversation
+  Gao Hui: add save and reload 
+  Xinkai Lin: add fade in/out animation when character move in/out a room
+  Heyi Sun: add inventory 
