@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
 
 	public GameObject gameOver;
 	public GameObject finish;
-	public bool flag;
+	public bool flag;       //if true then the figure cannot move or attack
 	public bool isInitial;
 	public GameObject bulletPrefab;
 	public float moveSpeed = 9;
@@ -28,7 +28,8 @@ public class Player : MonoBehaviour
 	public int num;
 	public int Array_size = 0;
 	private Vector2 dest = Vector2.zero;
-    private float targetTime=0;
+    private float targetTime=0; //use for control the bullets' cooldown time
+    private float isimmune; //use for control the figure's immune time
 
 
     // up right left down
@@ -91,7 +92,8 @@ public class Player : MonoBehaviour
 
 		if (flag == true) {
 			Vector2 temp = Vector2.MoveTowards (transform.position, dest, 0.5f);
-			if (!hitself (temp, num)) {
+            //this.GetComponent<Renderer>().enabled = !this.GetComponent<Renderer>().enabled;
+            if (!hitself (temp, num)) {
 				//temp = transform.position;
 				flag = false;
 			}
@@ -136,17 +138,33 @@ public class Player : MonoBehaviour
 			}
 
 			for (int i = 0; i < Array_size; i++) {
+                //make sure enemyArray is not NULL
 				if (!enemyArray [i])
 					continue;
+
+                //calculate the distance between figure and enemy
 				float distance = Vector3.Distance (enemyArray [i].transform.position, transform.position);
 				if (i == 0)
 					volume = 3f;
 				else
 					volume = 2.2f;
+
 				if (distance < volume) {
+                    //disable the move and attack
 					flag = true;
-					curplayerLife = curplayerLife - 1;
+
+                    //set immune and the figure will flash
+                    if (Time.time>isimmune)
+                    {
+                        gameObject.SendMessage("Flash", this.gameObject, SendMessageOptions.DontRequireReceiver);
+                        curplayerLife = curplayerLife - 1;
+                        isimmune = isimmune=Time.time+1.2f;
+                    }
+
+                    //record the the # of attcking enemy
 					num = i;
+
+                    //calculate the destination of bouncing
 					dest = (Vector2)transform.position + volume * ((Vector2)transform.position - (Vector2)enemyArray [num].transform.position);
 				}
 			}
@@ -173,5 +191,21 @@ public class Player : MonoBehaviour
 	{
 		finish.SetActive (true);
 	}
+
+    public IEnumerator Flash(GameObject obj)
+    {
+        obj.GetComponent<Renderer>().enabled = false;
+        yield return new WaitForSeconds(0.2f);
+        obj.GetComponent<Renderer>().enabled = true;
+        yield return new WaitForSeconds(0.2f);
+        obj.GetComponent<Renderer>().enabled = false;
+        yield return new WaitForSeconds(0.2f);
+        obj.GetComponent<Renderer>().enabled = true;
+        yield return new WaitForSeconds(0.2f);
+        obj.GetComponent<Renderer>().enabled = false;
+        yield return new WaitForSeconds(0.2f);
+        obj.GetComponent<Renderer>().enabled = true;
+        yield return new WaitForSeconds(0.2f);
+    }
 
 }
