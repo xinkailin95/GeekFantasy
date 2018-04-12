@@ -158,7 +158,7 @@ public class Player : MonoBehaviour
                     {
                         gameObject.SendMessage("Flash", this.gameObject, SendMessageOptions.DontRequireReceiver);
                         curplayerLife = curplayerLife - 1;
-                        isimmune = isimmune=Time.time+1.2f;
+                        isimmune =Time.time+1.2f;
                     }
 
                     //record the the # of attcking enemy
