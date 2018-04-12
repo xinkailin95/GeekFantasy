@@ -20,6 +20,8 @@ public class Player : MonoBehaviour
 	public GameObject bulletPrefab;
 	public float moveSpeed = 9;
 	public Vector3 bulletEulerAngles;
+    public enum attackMode {basic_attack,multiple_attack };
+    attackMode mode; 
 
 	private Animator anim;
 	// private SpriteRenderer sr;
@@ -51,6 +53,8 @@ public class Player : MonoBehaviour
 		dest = transform.position;
 		flag = false;
 		isInitial = false;
+        mode = attackMode.basic_attack;
+
 		var objectsn = GameObject.FindObjectsOfType (typeof(GameObject));
 		for (int i = 0; i < objectsn.Length; i++) {
 			if (objectsn [i].name.Length == 7 && objectsn [i].name [0] == 'E' && objectsn [i].name [1] == 'n' && objectsn [i].name [2] == 'e' && objectsn [i].name [3] == 'm' && objectsn [i].name [4] == 'y') {
@@ -178,7 +182,15 @@ public class Player : MonoBehaviour
 
             if (Time.time > targetTime)
             {
-                Instantiate(bulletPrefab, transform.position, Quaternion.Euler(transform.eulerAngles + bulletEulerAngles));
+                if(mode==attackMode.basic_attack)
+                    Instantiate(bulletPrefab, transform.position, Quaternion.Euler( bulletEulerAngles));
+                if (mode == attackMode.multiple_attack)
+                {
+                    //Debug.Log(transform.eulerAngles);
+                    Instantiate(bulletPrefab, transform.position, Quaternion.Euler( bulletEulerAngles));
+                    Instantiate(bulletPrefab, transform.position, Quaternion.Euler( bulletEulerAngles+new Vector3(0,0,30)));
+                    Instantiate(bulletPrefab, transform.position, Quaternion.Euler( bulletEulerAngles + new Vector3(0, 0, -30)));
+                }
                 targetTime = Time.time + 0.4f;
             }
 
