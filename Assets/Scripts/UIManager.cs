@@ -11,6 +11,7 @@ public class UIManager : MonoBehaviour
 	public Text levelNum;
 	public Text attackPowerNum;
 	public Text scoreNum;
+	public Text messageText;
 
 
 	public int levelN;
@@ -59,9 +60,9 @@ public class UIManager : MonoBehaviour
 	{
 		player = GameObject.Find ("Player");
 		HealthSlider = GameObject.Find ("HealthBlock").GetComponent<Slider> ();
-		
+
 	}
-	
+
 	// Update is called once per frame
 	void Update ()
 	{
@@ -75,4 +76,10 @@ public class UIManager : MonoBehaviour
 		HealthSlider.value = player.GetComponent<Player> ().curplayerLife;
 
 	}
+	public void ShowMessage(string str)
+	{
+		messageText.text = str;
+	}
+
+
 }
