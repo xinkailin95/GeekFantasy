@@ -141,8 +141,9 @@ public class Player : MonoBehaviour
 				
 			} else {
 				transform.Translate (Vector3.right * h * moveSpeed * Time.deltaTime, Space.World);
-				transform.Translate (Vector3.up * v * moveSpeed * Time.deltaTime, Space.World);
+
 			}
+			transform.Translate (Vector3.up * v * moveSpeed * Time.deltaTime, Space.World);
 			if (movement_vector != Vector2.zero) {
 				anim.SetBool ("iswalking", true);
 				anim.SetFloat ("input_x", movement_vector.x);
