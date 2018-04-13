@@ -15,7 +15,7 @@ public class NPC : MonoBehaviour
 	public GameObject NPCtalkingB6;
 	private List<GameObject> q = new List<GameObject> ();
 	private List<GameObject> l = new List<GameObject> ();
-	private bool ifTalked;
+	public bool ifTalked;
 	private int i;
 
 	// Use this for initialization
