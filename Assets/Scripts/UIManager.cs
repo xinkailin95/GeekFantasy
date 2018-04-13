@@ -14,6 +14,7 @@ public class UIManager : MonoBehaviour
 	public Text messageText;
 
 
+
 	public int levelN;
 	public int scoreN;
 	public int attackN;
@@ -79,7 +80,10 @@ public class UIManager : MonoBehaviour
 	public void ShowMessage(string str)
 	{
 		messageText.text = str;
+		Invoke ("emptyStr", 0.5f);
 	}
-
+	public void emptyStr(){
+		messageText.text = "";
+	}
 
 }

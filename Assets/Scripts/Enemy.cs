@@ -87,7 +87,7 @@ public class Enemy : MonoBehaviour
 		anim.SetFloat ("input_x", (sub.x < 0 ? -1f : 1f));
 		anim.SetFloat ("input_y", (sub.y < 0 ? -1f : 1f));
 
-		if (timeVal >= 1f) {
+		if (timeVal >= 2f) {
 
 			EnemyAttack (distance);
 			timeVal = 0;

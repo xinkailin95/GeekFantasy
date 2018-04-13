@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
 	//heyi
 	public int maxplayerLife;
 	public int curplayerLife = 10;
+	private int nowPlayerLife;
 	public int attackPower = 1;
 	public float volume;
 
@@ -61,6 +62,7 @@ public class Player : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{	
+		nowPlayerLife = curplayerLife;
 		finish.SetActive (false);
 		initialPanel.SetActive (true);
 		maxplayerLife = curplayerLife;
@@ -93,6 +95,18 @@ public class Player : MonoBehaviour
 		if (isInitial == true) {
 			Attack ();
 		}
+		if (nowPlayerLife != curplayerLife) {
+			
+			if (Time.time > isimmune) {
+				//gameObject.SendMessage ("Flash", this.gameObject, SendMessageOptions.DontRequireReceiver);
+				isimmune = Time.time + 1.2f;
+				hurt.Play ();
+				gameObject.SendMessage ("Flash", this.gameObject, SendMessageOptions.DontRequireReceiver);
+			}
+
+
+		}
+		nowPlayerLife = curplayerLife;
 	}
 
 	public bool hitself (Vector2 dir, int num)
@@ -186,12 +200,8 @@ public class Player : MonoBehaviour
 					flag = true;
 
 					//set immune and the figure will flash
-					if (Time.time > isimmune) {
-						gameObject.SendMessage ("Flash", this.gameObject, SendMessageOptions.DontRequireReceiver);
-						curplayerLife = curplayerLife - 1;
-						isimmune = Time.time + 1.2f;
-						hurt.Play ();
-					}
+					curplayerLife = curplayerLife - 1;
+				
 
 					//record the the # of attcking enemy
 					num = i;

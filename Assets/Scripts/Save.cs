@@ -10,6 +10,10 @@ public class Save{
 	public List<int> enemyLife1 = new List<int>();
 	public int[] NPCtype = new int[5];
 	public int playerLife;
+	public int[] items = new int[5]; 
+	public int[] itemsNum = new int[10];
+
+
 
 
 	//public int scoreNum = 0;
