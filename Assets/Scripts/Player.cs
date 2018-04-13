@@ -7,6 +7,8 @@ public class Player : MonoBehaviour
 
 	public static Player _instance;
 	public GameObject initialPanel;
+	public AudioSource attack;
+	public AudioSource hurt;
 	//heyi
 	public int maxplayerLife;
 	public int curplayerLife = 10;
@@ -163,6 +165,7 @@ public class Player : MonoBehaviour
                         gameObject.SendMessage("Flash", this.gameObject, SendMessageOptions.DontRequireReceiver);
                         curplayerLife = curplayerLife - 1;
                         isimmune =Time.time+1.2f;
+						hurt.Play ();
                     }
 
                     //record the the # of attcking enemy
@@ -179,9 +182,9 @@ public class Player : MonoBehaviour
 	private void Attack ()
 	{
 		if (Input.GetKeyDown (KeyCode.Space)) {
-
+			attack.Play ();
             if (Time.time > targetTime)
-            {
+            { 
                 if(mode==attackMode.basic_attack)
                     Instantiate(bulletPrefab, transform.position, Quaternion.Euler( bulletEulerAngles));
                 if (mode == attackMode.multiple_attack)
