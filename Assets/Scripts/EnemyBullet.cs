@@ -5,12 +5,13 @@ using UnityEngine;
 public class EnemyBullet : MonoBehaviour
 {
 
-	public float moveSpeed = 0.01f;
+	public float moveSpeed;
 
 	private Rigidbody2D r2dE;
 	private Vector3 newPosition;
 	private Transform hero;
 	private GameObject player;
+	private float distance;
 
 	// Use this for initialization
 
@@ -22,10 +23,10 @@ public class EnemyBullet : MonoBehaviour
 
 	void Start ()
 	{
-		
+
 		player = GameObject.FindGameObjectWithTag ("Player");
 		hero = player.transform;
-
+		moveSpeed = 0.1f;
 	}
 
 	// Update is called once per frame
@@ -34,6 +35,20 @@ public class EnemyBullet : MonoBehaviour
 		newPosition = Vector3.MoveTowards (transform.position, hero.position, moveSpeed);
 		r2dE.MovePosition (newPosition);
 		//transform.Translate (transform.up * moveSpeed * Time.deltaTime, Space.World);
-		Destroy (gameObject, 4f);
+		Destroy (gameObject, 6f);
+	}
+
+	private void OnTriggerEnter2D (Collider2D collision)
+	{
+
+		switch (collision.tag) {
+		case"Player":
+			Player._instance.curplayerLife = Player._instance.curplayerLife - 1;
+
+			Destroy (gameObject);
+			break;
+		default:
+			break;
+		}
 	}
 }
