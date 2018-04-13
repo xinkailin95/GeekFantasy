@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour {
 	public GameObject[] targetGOs;
 
 
+
 	private void Pause(){
 		isPaused = true;
 		menuGo.SetActive (true);
@@ -90,7 +91,16 @@ public class GameManager : MonoBehaviour {
 				save.NPCtype [i] = 1; 
 			}
 		}
-
+		for (int i = 0; i < ItemManager._instance.items.Length; i++) {
+			if (ItemManager._instance.items [i] == false) {
+				save.items [i] = 0;
+			} else {
+				save.items [i] = 1;
+			}
+		}
+		for(int i=0; i< Inventory._instance.itemNum.Count; i++){
+			save.itemsNum [i] = Inventory._instance.itemNum [i];
+		}
 		save.playerLife = Player._instance.curplayerLife;
 		save.levelNum = UIManager._instance.levelN;
 		//save.scoreNum = UIManager._instance.scoreN;
@@ -112,7 +122,14 @@ public class GameManager : MonoBehaviour {
 				NPCManager._instance.NPCManagers [i].GetComponent<NPC>().ifTalked = false;
 			}
 		}
-
+		for (int i = 0; i < ItemManager._instance.items.Length; i++) {
+			if (save.items[i] == 0) {
+				Destroy (ItemManager._instance.items [i].gameObject);
+			}
+		}
+		for(int i=0; i< Inventory._instance.itemNum.Count; i++){
+			Inventory._instance.itemNum [i] = save.itemsNum [i];
+		}
 		Player._instance.curplayerLife = save.playerLife;
 		UIManager._instance.attackN = save.attackNum;
 		//UIManager._instance.scoreN = save.scoreNum;
@@ -128,6 +145,7 @@ public class GameManager : MonoBehaviour {
 		if (File.Exists(Application.dataPath + "/StreamingFile" + "/byBin.txt"))
 		{
 			UIManager._instance.ShowMessage("SAVED");
+
 		}
 	}
 

@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
+	public static Inventory _instance;
+
     public Sprite[] allItem = new Sprite[10];
     public string[] description;
     //public GameObject[] holdItem=new GameObject[3];
@@ -20,6 +22,9 @@ public class Inventory : MonoBehaviour
     private bool just_open_inventory;
 
     // Use this for initialization
+	private void Awake(){
+		_instance = this;
+	}
     void Start()
     {
         Player = GameObject.Find("Player");
@@ -93,7 +98,7 @@ public class Inventory : MonoBehaviour
                 }
                 else
                 {
-                    Player.GetComponent<Player>().curplayerLife = Player.GetComponent<Player>().maxplayerLife - 2;
+                    Player.GetComponent<Player>().curplayerLife = Player.GetComponent<Player>().maxplayerLife;
                 }
                 break;
             case 2:

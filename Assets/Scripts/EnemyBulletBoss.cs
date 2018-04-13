@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyBulletBoss : MonoBehaviour
 {
 
-	public float moveSpeed = 0.1f;
+	public float moveSpeed;
 
 	private Rigidbody2D r2dE;
 	private Vector3 newPosition;
@@ -25,6 +25,7 @@ public class EnemyBulletBoss : MonoBehaviour
 	{
 
 		player = GameObject.FindGameObjectWithTag ("Player");
+		moveSpeed = 0.1f;
 		hero = player.transform;
 
 	}
@@ -35,7 +36,7 @@ public class EnemyBulletBoss : MonoBehaviour
 		newPosition = Vector3.MoveTowards (transform.position, hero.position, moveSpeed);
 		r2dE.MovePosition (newPosition);
 		//transform.Translate (transform.up * moveSpeed * Time.deltaTime, Space.World);
-		Destroy (gameObject, 7f);
+		Destroy (gameObject, 6f);
 	}
 
 	private void OnTriggerEnter2D (Collider2D collision)
@@ -44,6 +45,9 @@ public class EnemyBulletBoss : MonoBehaviour
 		switch (collision.tag) {
 		case"Player":
 			Player._instance.curplayerLife = Player._instance.curplayerLife - 1;
+			Destroy (gameObject);
+			break;
+		case"Building":
 			Destroy (gameObject);
 			break;
 		default:

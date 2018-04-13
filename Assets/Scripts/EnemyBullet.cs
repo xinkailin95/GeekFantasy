@@ -47,6 +47,9 @@ public class EnemyBullet : MonoBehaviour
 
 			Destroy (gameObject);
 			break;
+		case"Building":
+			Destroy (gameObject);
+			break;
 		default:
 			break;
 		}
