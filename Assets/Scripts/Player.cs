@@ -22,8 +22,13 @@ public class Player : MonoBehaviour
 	//if true then the figure cannot move or attack
 	public bool isInitial;
 	public GameObject bulletPrefab;
+	public GameObject arrowBulletPrefab;
 	public float moveSpeed = 9;
 	public Vector3 bulletEulerAngles;
+	public bool canMultiple;
+
+	private float h;
+	private float v;
 
 	public enum attackMode
 	{
@@ -73,6 +78,7 @@ public class Player : MonoBehaviour
 		at_mode = attackMode.basic_attack;
 		original_color = gameObject.GetComponent<Renderer> ().material.color;
 		turningRed = false;
+		canMultiple = false;
 
 		var objectsn = GameObject.FindObjectsOfType (typeof(GameObject));
 		for (int i = 0; i < objectsn.Length; i++) {
@@ -148,8 +154,8 @@ public class Player : MonoBehaviour
 
 
 		if (flag == false && isInitial == true && turningRed == false) {
-			float h = Input.GetAxisRaw ("Horizontal");
-			float v = Input.GetAxisRaw ("Vertical");
+			h = Input.GetAxisRaw ("Horizontal");
+			v = Input.GetAxisRaw ("Vertical");
 			Vector2 movement_vector = new Vector2 (h, v);
 			if ((h > 0 && v > 0) || (h > 0 && v < 0) || (h < 0 && v < 0) || (h < 0 && v > 0)) {
 				
@@ -220,9 +226,9 @@ public class Player : MonoBehaviour
 		if (Input.GetKeyDown (KeyCode.Space) && turningRed == false) {
 			attack.Play ();
 			if (Time.time > targetTime) {
-				if (at_mode == attackMode.basic_attack || at_mode == attackMode.longDis_attack)
+				if (at_mode == attackMode.basic_attack || (at_mode == attackMode.longDis_attack&&canMultiple==false))
 					Instantiate (bulletPrefab, transform.position, Quaternion.Euler (bulletEulerAngles));
-				if (at_mode == attackMode.multiple_attack || at_mode == attackMode.longDis_attack) {
+				if (at_mode == attackMode.multiple_attack || (at_mode == attackMode.longDis_attack&&canMultiple==true)) {
 					//Debug.Log(transform.eulerAngles);
 					Instantiate (bulletPrefab, transform.position, Quaternion.Euler (bulletEulerAngles));
 					Instantiate (bulletPrefab, transform.position, Quaternion.Euler (bulletEulerAngles + new Vector3 (0, 0, 30)));
@@ -235,6 +241,7 @@ public class Player : MonoBehaviour
 		if (Input.GetKeyDown (KeyCode.R) && turningRed == false && at_mode == attackMode.longDis_attack) {
 			if (Time.time > targetTime) {
 				turningRed = true;
+				h = 0;v = 0;
 				Invoke ("delay_attack", 1f);
 			}
 			targetTime = Time.time + 0.4f;
@@ -251,8 +258,9 @@ public class Player : MonoBehaviour
 
 	private void delay_attack ()
 	{
-		Debug.Log ("delay");
-		Instantiate (bulletPrefab, transform.position, Quaternion.Euler (bulletEulerAngles));
+		//Debug.Log ("delay");
+		attack.Play ();
+		Instantiate (arrowBulletPrefab, transform.position, Quaternion.Euler (bulletEulerAngles));
 		//isInitial = true;
 		gameObject.GetComponent<Renderer> ().material.color = original_color;
 		turningRed = false;
@@ -266,8 +274,9 @@ public class Player : MonoBehaviour
 
 	public void setMultiple_attack ()
 	{
-		at_mode = attackMode.multiple_attack;
-	}
+		if(at_mode!=attackMode.longDis_attack)
+			at_mode = attackMode.multiple_attack;
+	}	
 
 	public void setDis_attack ()
 	{
@@ -276,7 +285,7 @@ public class Player : MonoBehaviour
 
 	public void setBasic_attack ()
 	{
-		at_mode = attackMode.longDis_attack;
+		at_mode = attackMode.basic_attack;
 	}
 
 	public IEnumerator Flash (GameObject obj)

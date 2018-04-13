@@ -19,6 +19,7 @@ public class UIManager : MonoBehaviour
 	public int scoreN;
 	public int attackN;
 	public int attackPower;
+	public int attackPower_R;
 
 	//heyi
 	public Slider HealthSlider;
@@ -67,6 +68,7 @@ public class UIManager : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
+		attackPower_R = attackPower + 3;
 		AddLevel ();
 		attackPowerNum.text = attackN.ToString ();
 		levelNum.text = levelN.ToString ();
