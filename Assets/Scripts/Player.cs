@@ -22,9 +22,11 @@ public class Player : MonoBehaviour
 	public GameObject bulletPrefab;
 	public float moveSpeed = 9;
 	public Vector3 bulletEulerAngles;
-    public enum attackMode {basic_attack,multiple_attack };
-    attackMode mode; 
+    public enum attackMode {basic_attack,multiple_attack,longDis_attack };
+    attackMode mode;
 
+    private Color original_color;
+    private bool turningRed;
 	private Animator anim;
 	// private SpriteRenderer sr;
 	public Sprite[] playerSprite;
@@ -55,9 +57,11 @@ public class Player : MonoBehaviour
 		dest = transform.position;
 		flag = false;
 		isInitial = false;
-        mode = attackMode.basic_attack;
+        mode = attackMode.longDis_attack;
+        original_color = gameObject.GetComponent<Renderer>().material.color;
+        turningRed = false;
 
-		var objectsn = GameObject.FindObjectsOfType (typeof(GameObject));
+        var objectsn = GameObject.FindObjectsOfType (typeof(GameObject));
 		for (int i = 0; i < objectsn.Length; i++) {
 			if (objectsn [i].name.Length == 7 && objectsn [i].name [0] == 'E' && objectsn [i].name [1] == 'n' && objectsn [i].name [2] == 'e' && objectsn [i].name [3] == 'm' && objectsn [i].name [4] == 'y') {
 				int tmp = (objectsn [i].name [5] - '0') * 10 + (objectsn [i].name [6] - '0');
@@ -91,7 +95,14 @@ public class Player : MonoBehaviour
 
 	public void FixedUpdate ()
 	{
-		if (curplayerLife <= 0) {
+        /*if (mode == attackMode.longDis_attack)
+        {
+            Color a = gameObject.GetComponent<Renderer>().material.color;
+            a.r += 5f;
+            gameObject.GetComponent<Renderer>().material.color = a;
+        }*/
+
+        if (curplayerLife <= 0) {
 			Time.timeScale = 0;
 			gameOver.SetActive (true);
 		}
@@ -111,7 +122,7 @@ public class Player : MonoBehaviour
 		}
 
 
-		if (flag == false && isInitial == true) {
+		if (flag == false && isInitial == true && turningRed==false) {
 			float h = Input.GetAxisRaw ("Horizontal");
 			float v = Input.GetAxisRaw ("Vertical");
 			Vector2 movement_vector = new Vector2 (h, v);
@@ -194,13 +205,39 @@ public class Player : MonoBehaviour
                     Instantiate(bulletPrefab, transform.position, Quaternion.Euler( bulletEulerAngles+new Vector3(0,0,30)));
                     Instantiate(bulletPrefab, transform.position, Quaternion.Euler( bulletEulerAngles + new Vector3(0, 0, -30)));
                 }
+                if(mode == attackMode.longDis_attack)
+                {
+                    //Instantiate(bulletPrefab, transform.position, Quaternion.Euler(bulletEulerAngles));
+                    turningRed = true;
+                    Invoke("delay_attack", 1f);
+                    
+                    //isInitial = false;
+
+                }
                 targetTime = Time.time + 0.4f;
             }
+        }
+        
+        if (mode == attackMode.longDis_attack&&turningRed==true)
+        {
+            //Debug.Log(tmp_int);tmp_int++;
+            Color tmp_color = gameObject.GetComponent<Renderer>().material.color;
+            tmp_color.r = tmp_color.r + 0.1f;
+            gameObject.GetComponent<Renderer>().material.color=tmp_color;
+            //Debug.Log(tmp_color);
+            
+        }
+    }
 
+    private void delay_attack()
+    {
+        Debug.Log("delay");
+        Instantiate(bulletPrefab, transform.position, Quaternion.Euler(bulletEulerAngles));
+        //isInitial = true;
+        gameObject.GetComponent<Renderer>().material.color = original_color;
+        turningRed = false;
 
-
-		}
-	}
+    }
 
 	public void Finish ()
 	{
