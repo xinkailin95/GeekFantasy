@@ -101,8 +101,9 @@ public class Inventory : MonoBehaviour
                     Player.GetComponent<Player>().curplayerLife = Player.GetComponent<Player>().maxplayerLife;
                 }
                 break;
-            case 2:
-                remove(indexOfCell);
+		case 2:
+			remove (indexOfCell);
+			Player.GetComponent<Player> ().canMultiple = true;
                 Player.GetComponent<Player>().setMultiple_attack();
                 //Player myplayer = new Player();
                 //myplayer.m

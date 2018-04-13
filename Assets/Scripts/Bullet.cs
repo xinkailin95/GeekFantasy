@@ -33,6 +33,7 @@ public class Bullet : MonoBehaviour
 			if (EnemyManager._instance.enemyLife [0] < 0) {
 				collision.gameObject.transform.position = new Vector3 (436, -90);
 				Player._instance.Finish ();
+				Time.timeScale = 0;
 				UIManager._instance.AddScore ();
 			}
 			break;
