@@ -1,0 +1,27 @@
+
+Meeting date:4/11/2018 6-7pm
+Meeting attendance: 
+Xinkai Lin
+Xingtong Li
+Hui Gao
+Heyi Sun
+Shuo Qiang
+
+
+
+
+Discussion:
+We discussed what we will accomplish before next release.
+
+Last week achieved:
+  Xingtong Li: changed the main character, add more enemy
+  Shuo Qiang:  fixed current enemy and added music
+  Gao Hui: added save and reload
+  Xinkai Lin: added fade in/out animation when character move in/out a room
+  Heyi Sun: added inventory
+Next week goal:
+  Xingtong Li: boss attack script
+  Shuo Qiang: fix bug that no audio played after enemy died
+  Gao Hui: add advance enemy attack
+  Xinkai Lin: add barrier to the door
+  Heyi Sun: add advance character
