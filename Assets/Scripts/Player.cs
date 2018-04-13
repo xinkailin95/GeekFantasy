@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
 	public float moveSpeed = 9;
 	public Vector3 bulletEulerAngles;
     public enum attackMode {basic_attack,multiple_attack,longDis_attack };
-    attackMode mode;
+    public static attackMode at_mode;
 
     private Color original_color;
     private bool turningRed;
@@ -57,7 +57,7 @@ public class Player : MonoBehaviour
 		dest = transform.position;
 		flag = false;
 		isInitial = false;
-        mode = attackMode.longDis_attack;
+        at_mode = attackMode.basic_attack;
         original_color = gameObject.GetComponent<Renderer>().material.color;
         turningRed = false;
 
@@ -190,26 +190,28 @@ public class Player : MonoBehaviour
 		}
 	}
 
-	private void Attack ()
-	{
-		if (Input.GetKeyDown (KeyCode.Space)&&turningRed==false) {
-			attack.Play ();
+
+    private void Attack()
+    {
+        if (Input.GetKeyDown(KeyCode.Space) && turningRed == false)
+        {
+            attack.Play();
             if (Time.time > targetTime)
-            { 
-                if(mode==attackMode.basic_attack||mode== attackMode.longDis_attack)
-                    Instantiate(bulletPrefab, transform.position, Quaternion.Euler( bulletEulerAngles));
-                if (mode == attackMode.multiple_attack || mode == attackMode.longDis_attack)
+            {
+                if (at_mode == attackMode.basic_attack || at_mode == attackMode.longDis_attack)
+                    Instantiate(bulletPrefab, transform.position, Quaternion.Euler(bulletEulerAngles));
+                if (at_mode == attackMode.multiple_attack || at_mode == attackMode.longDis_attack)
                 {
                     //Debug.Log(transform.eulerAngles);
-                    Instantiate(bulletPrefab, transform.position, Quaternion.Euler( bulletEulerAngles));
-                    Instantiate(bulletPrefab, transform.position, Quaternion.Euler( bulletEulerAngles+new Vector3(0,0,30)));
-                    Instantiate(bulletPrefab, transform.position, Quaternion.Euler( bulletEulerAngles + new Vector3(0, 0, -30)));
+                    Instantiate(bulletPrefab, transform.position, Quaternion.Euler(bulletEulerAngles));
+                    Instantiate(bulletPrefab, transform.position, Quaternion.Euler(bulletEulerAngles + new Vector3(0, 0, 30)));
+                    Instantiate(bulletPrefab, transform.position, Quaternion.Euler(bulletEulerAngles + new Vector3(0, 0, -30)));
                 }
                 targetTime = Time.time + 0.4f;
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.R) && turningRed == false && mode == attackMode.longDis_attack)
+        if (Input.GetKeyDown(KeyCode.R) && turningRed == false && at_mode == attackMode.longDis_attack)
         {
             if (Time.time > targetTime)
             {
@@ -218,14 +220,14 @@ public class Player : MonoBehaviour
             }
             targetTime = Time.time + 0.4f;
         }
-        if (mode == attackMode.longDis_attack&&turningRed==true)
+        if (at_mode == attackMode.longDis_attack && turningRed == true)
         {
             //Debug.Log(tmp_int);tmp_int++;
             Color tmp_color = gameObject.GetComponent<Renderer>().material.color;
             tmp_color.r = tmp_color.r + 0.1f;
-            gameObject.GetComponent<Renderer>().material.color=tmp_color;
+            gameObject.GetComponent<Renderer>().material.color = tmp_color;
             //Debug.Log(tmp_color);
-            
+
         }
     }
 
@@ -239,10 +241,25 @@ public class Player : MonoBehaviour
 
     }
 
-	public void Finish ()
+    public void Finish ()
 	{
 		finish.SetActive (true);
 	}
+
+    public void setMultiple_attack()
+    {
+        at_mode = attackMode.multiple_attack;
+    }
+
+    public void setDis_attack()
+    {
+        at_mode = attackMode.longDis_attack;
+    }
+
+    public void setBasic_attack()
+    {
+        at_mode = attackMode.longDis_attack;
+    }
 
     public IEnumerator Flash(GameObject obj)
     {
