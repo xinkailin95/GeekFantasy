@@ -17,16 +17,25 @@ public class Player : MonoBehaviour
 
 	public GameObject gameOver;
 	public GameObject finish;
-	public bool flag;       //if true then the figure cannot move or attack
+	public bool flag;
+	//if true then the figure cannot move or attack
 	public bool isInitial;
 	public GameObject bulletPrefab;
 	public float moveSpeed = 9;
 	public Vector3 bulletEulerAngles;
-    public enum attackMode {basic_attack,multiple_attack,longDis_attack };
-    public static attackMode at_mode;
 
-    private Color original_color;
-    private bool turningRed;
+	public enum attackMode
+	{
+		basic_attack,
+		multiple_attack,
+		longDis_attack}
+
+	;
+
+	public static attackMode at_mode;
+
+	private Color original_color;
+	private bool turningRed;
 	private Animator anim;
 	// private SpriteRenderer sr;
 	public Sprite[] playerSprite;
@@ -34,14 +43,16 @@ public class Player : MonoBehaviour
 	public int num;
 	public int Array_size = 0;
 	private Vector2 dest = Vector2.zero;
-    private float targetTime=0; //use for control the bullets' cooldown time
-    private float isimmune; //use for control the figure's immune time
+	private float targetTime = 0;
+	//use for control the bullets' cooldown time
+	private float isimmune;
+	//use for control the figure's immune time
 
 
-    // up right left down
+	// up right left down
 
 
-    private void Awake ()
+	private void Awake ()
 	{
 		anim = GetComponent<Animator> ();
 		// sr = GetComponent<SpriteRenderer> ();
@@ -57,11 +68,11 @@ public class Player : MonoBehaviour
 		dest = transform.position;
 		flag = false;
 		isInitial = false;
-        at_mode = attackMode.basic_attack;
-        original_color = gameObject.GetComponent<Renderer>().material.color;
-        turningRed = false;
+		at_mode = attackMode.basic_attack;
+		original_color = gameObject.GetComponent<Renderer> ().material.color;
+		turningRed = false;
 
-        var objectsn = GameObject.FindObjectsOfType (typeof(GameObject));
+		var objectsn = GameObject.FindObjectsOfType (typeof(GameObject));
 		for (int i = 0; i < objectsn.Length; i++) {
 			if (objectsn [i].name.Length == 7 && objectsn [i].name [0] == 'E' && objectsn [i].name [1] == 'n' && objectsn [i].name [2] == 'e' && objectsn [i].name [3] == 'm' && objectsn [i].name [4] == 'y') {
 				int tmp = (objectsn [i].name [5] - '0') * 10 + (objectsn [i].name [6] - '0');
@@ -95,22 +106,22 @@ public class Player : MonoBehaviour
 
 	public void FixedUpdate ()
 	{
-        /*if (mode == attackMode.longDis_attack)
+		/*if (mode == attackMode.longDis_attack)
         {
             Color a = gameObject.GetComponent<Renderer>().material.color;
             a.r += 5f;
             gameObject.GetComponent<Renderer>().material.color = a;
         }*/
 
-        if (curplayerLife <= 0) {
+		if (curplayerLife <= 0) {
 			Time.timeScale = 0;
 			gameOver.SetActive (true);
 		}
 
 		if (flag == true) {
 			Vector2 temp = Vector2.MoveTowards (transform.position, dest, 0.5f);
-            //this.GetComponent<Renderer>().enabled = !this.GetComponent<Renderer>().enabled;
-            if (!hitself (temp, num)) {
+			//this.GetComponent<Renderer>().enabled = !this.GetComponent<Renderer>().enabled;
+			if (!hitself (temp, num)) {
 				//temp = transform.position;
 				flag = false;
 			}
@@ -122,11 +133,16 @@ public class Player : MonoBehaviour
 		}
 
 
-		if (flag == false && isInitial == true && turningRed==false) {
+		if (flag == false && isInitial == true && turningRed == false) {
 			float h = Input.GetAxisRaw ("Horizontal");
 			float v = Input.GetAxisRaw ("Vertical");
 			Vector2 movement_vector = new Vector2 (h, v);
-			transform.Translate (Vector3.right * h * moveSpeed * Time.deltaTime, Space.World);
+			if ((h > 0 && v > 0) || (h > 0 && v < 0) || (h < 0 && v < 0) || (h < 0 && v > 0)) {
+				
+			} else {
+				transform.Translate (Vector3.right * h * moveSpeed * Time.deltaTime, Space.World);
+				transform.Translate (Vector3.up * v * moveSpeed * Time.deltaTime, Space.World);
+			}
 			if (movement_vector != Vector2.zero) {
 				anim.SetBool ("iswalking", true);
 				anim.SetFloat ("input_x", movement_vector.x);
@@ -144,8 +160,6 @@ public class Player : MonoBehaviour
 				bulletEulerAngles = new Vector3 (0, 0, -90);
 			}
 
-			transform.Translate (Vector3.up * v * moveSpeed * Time.deltaTime, Space.World);
-
 			if (v < 0) {
 				//sr.sprite = playerSprite [3];
 				bulletEulerAngles = new Vector3 (0, 0, -180);
@@ -155,11 +169,11 @@ public class Player : MonoBehaviour
 			}
 
 			for (int i = 0; i < Array_size; i++) {
-                //make sure enemyArray is not NULL
+				//make sure enemyArray is not NULL
 				if (!enemyArray [i])
 					continue;
 
-                //calculate the distance between figure and enemy
+				//calculate the distance between figure and enemy
 				float distance = Vector3.Distance (enemyArray [i].transform.position, transform.position);
 				if (i == 0)
 					volume = 3f;
@@ -167,22 +181,21 @@ public class Player : MonoBehaviour
 					volume = 2.2f;
 
 				if (distance < volume) {
-                    //disable the move and attack
+					//disable the move and attack
 					flag = true;
 
-                    //set immune and the figure will flash
-                    if (Time.time>isimmune)
-                    {
-                        gameObject.SendMessage("Flash", this.gameObject, SendMessageOptions.DontRequireReceiver);
-                        curplayerLife = curplayerLife - 1;
-                        isimmune =Time.time+1.2f;
+					//set immune and the figure will flash
+					if (Time.time > isimmune) {
+						gameObject.SendMessage ("Flash", this.gameObject, SendMessageOptions.DontRequireReceiver);
+						curplayerLife = curplayerLife - 1;
+						isimmune = Time.time + 1.2f;
 						hurt.Play ();
-                    }
+					}
 
-                    //record the the # of attcking enemy
+					//record the the # of attcking enemy
 					num = i;
 
-                    //calculate the destination of bouncing
+					//calculate the destination of bouncing
 					dest = (Vector2)transform.position + volume * ((Vector2)transform.position - (Vector2)enemyArray [num].transform.position);
 				}
 			}
@@ -191,90 +204,84 @@ public class Player : MonoBehaviour
 	}
 
 
-    private void Attack()
-    {
-        if (Input.GetKeyDown(KeyCode.Space) && turningRed == false)
-        {
-            attack.Play();
-            if (Time.time > targetTime)
-            {
-                if (at_mode == attackMode.basic_attack || at_mode == attackMode.longDis_attack)
-                    Instantiate(bulletPrefab, transform.position, Quaternion.Euler(bulletEulerAngles));
-                if (at_mode == attackMode.multiple_attack || at_mode == attackMode.longDis_attack)
-                {
-                    //Debug.Log(transform.eulerAngles);
-                    Instantiate(bulletPrefab, transform.position, Quaternion.Euler(bulletEulerAngles));
-                    Instantiate(bulletPrefab, transform.position, Quaternion.Euler(bulletEulerAngles + new Vector3(0, 0, 30)));
-                    Instantiate(bulletPrefab, transform.position, Quaternion.Euler(bulletEulerAngles + new Vector3(0, 0, -30)));
-                }
-                targetTime = Time.time + 0.4f;
-            }
-        }
+	private void Attack ()
+	{
+		if (Input.GetKeyDown (KeyCode.Space) && turningRed == false) {
+			attack.Play ();
+			if (Time.time > targetTime) {
+				if (at_mode == attackMode.basic_attack || at_mode == attackMode.longDis_attack)
+					Instantiate (bulletPrefab, transform.position, Quaternion.Euler (bulletEulerAngles));
+				if (at_mode == attackMode.multiple_attack || at_mode == attackMode.longDis_attack) {
+					//Debug.Log(transform.eulerAngles);
+					Instantiate (bulletPrefab, transform.position, Quaternion.Euler (bulletEulerAngles));
+					Instantiate (bulletPrefab, transform.position, Quaternion.Euler (bulletEulerAngles + new Vector3 (0, 0, 30)));
+					Instantiate (bulletPrefab, transform.position, Quaternion.Euler (bulletEulerAngles + new Vector3 (0, 0, -30)));
+				}
+				targetTime = Time.time + 0.4f;
+			}
+		}
 
-        if (Input.GetKeyDown(KeyCode.R) && turningRed == false && at_mode == attackMode.longDis_attack)
-        {
-            if (Time.time > targetTime)
-            {
-                turningRed = true;
-                Invoke("delay_attack", 1f);
-            }
-            targetTime = Time.time + 0.4f;
-        }
-        if (at_mode == attackMode.longDis_attack && turningRed == true)
-        {
-            //Debug.Log(tmp_int);tmp_int++;
-            Color tmp_color = gameObject.GetComponent<Renderer>().material.color;
-            tmp_color.r = tmp_color.r + 0.1f;
-            gameObject.GetComponent<Renderer>().material.color = tmp_color;
-            //Debug.Log(tmp_color);
+		if (Input.GetKeyDown (KeyCode.R) && turningRed == false && at_mode == attackMode.longDis_attack) {
+			if (Time.time > targetTime) {
+				turningRed = true;
+				Invoke ("delay_attack", 1f);
+			}
+			targetTime = Time.time + 0.4f;
+		}
+		if (at_mode == attackMode.longDis_attack && turningRed == true) {
+			//Debug.Log(tmp_int);tmp_int++;
+			Color tmp_color = gameObject.GetComponent<Renderer> ().material.color;
+			tmp_color.r = tmp_color.r + 0.1f;
+			gameObject.GetComponent<Renderer> ().material.color = tmp_color;
+			//Debug.Log(tmp_color);
 
-        }
-    }
+		}
+	}
 
-    private void delay_attack()
-    {
-        Debug.Log("delay");
-        Instantiate(bulletPrefab, transform.position, Quaternion.Euler(bulletEulerAngles));
-        //isInitial = true;
-        gameObject.GetComponent<Renderer>().material.color = original_color;
-        turningRed = false;
+	private void delay_attack ()
+	{
+		Debug.Log ("delay");
+		Instantiate (bulletPrefab, transform.position, Quaternion.Euler (bulletEulerAngles));
+		//isInitial = true;
+		gameObject.GetComponent<Renderer> ().material.color = original_color;
+		turningRed = false;
 
-    }
+	}
 
-    public void Finish ()
+	public void Finish ()
 	{
 		finish.SetActive (true);
 	}
 
-    public void setMultiple_attack()
-    {
-        at_mode = attackMode.multiple_attack;
-    }
+	public void setMultiple_attack ()
+	{
+		at_mode = attackMode.multiple_attack;
+	}
 
-    public void setDis_attack()
-    {
-        at_mode = attackMode.longDis_attack;
-    }
+	public void setDis_attack ()
+	{
+		at_mode = attackMode.longDis_attack;
+	}
 
-    public void setBasic_attack()
-    {
-        at_mode = attackMode.longDis_attack;
-    }
+	public void setBasic_attack ()
+	{
+		at_mode = attackMode.longDis_attack;
+	}
 
-    public IEnumerator Flash(GameObject obj)
-    {
-        obj.GetComponent<Renderer>().enabled = false;
-        yield return new WaitForSeconds(0.2f);
-        obj.GetComponent<Renderer>().enabled = true;
-        yield return new WaitForSeconds(0.2f);
-        obj.GetComponent<Renderer>().enabled = false;
-        yield return new WaitForSeconds(0.2f);
-        obj.GetComponent<Renderer>().enabled = true;
-        yield return new WaitForSeconds(0.2f);
-        obj.GetComponent<Renderer>().enabled = false;
-        yield return new WaitForSeconds(0.2f);
-        obj.GetComponent<Renderer>().enabled = true;
-        yield return new WaitForSeconds(0.2f);
-    }
+	public IEnumerator Flash (GameObject obj)
+	{
+		obj.GetComponent<Renderer> ().enabled = false;
+		yield return new WaitForSeconds (0.2f);
+		obj.GetComponent<Renderer> ().enabled = true;
+		yield return new WaitForSeconds (0.2f);
+		obj.GetComponent<Renderer> ().enabled = false;
+		yield return new WaitForSeconds (0.2f);
+		obj.GetComponent<Renderer> ().enabled = true;
+		yield return new WaitForSeconds (0.2f);
+		obj.GetComponent<Renderer> ().enabled = false;
+		yield return new WaitForSeconds (0.2f);
+		obj.GetComponent<Renderer> ().enabled = true;
+		yield return new WaitForSeconds (0.2f);
+	}
 
 }

@@ -7,12 +7,20 @@ public class Warp : MonoBehaviour
 
 	public Transform warpTarget;
 
-	void OnTriggerEnter2D (Collider2D other)
+	IEnumerator OnTriggerEnter2D (Collider2D other)
 	{
+		ScreenFader sf = GameObject.FindGameObjectWithTag ("Fader").GetComponent<ScreenFader> ();
 
 		// Debug.Log ("An object.");
-		if (other.gameObject.name == "Player")
+		if (other.gameObject.name == "Player") {
+			
+			yield return StartCoroutine (sf.FadeToBlack ());
+
 			other.gameObject.transform.position = warpTarget.position;
+
+			yield return StartCoroutine (sf.FadeToClear ());
+		}
+
 	}
 
 }
