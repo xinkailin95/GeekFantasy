@@ -8,7 +8,7 @@ public class Enemy : MonoBehaviour
 	public static Enemy _instance;
 	public float speed;
 	public float backUptime = 0.1f;
-	public int[,] enemyLife = new int[30, 2];
+
 	public int attackPower = 1;
 
 	public Transform hero;
@@ -23,6 +23,11 @@ public class Enemy : MonoBehaviour
 	private Vector2 destination;
 	private Animator anim;
 	bool loop;
+	public GameObject enemyBulletPre;
+	private float timeVal;
+
+
+
 	//public int enemyLife = 3;
 
 	void Awake ()
@@ -38,10 +43,7 @@ public class Enemy : MonoBehaviour
 	{
 		player = GameObject.FindGameObjectWithTag ("Player");
 		hero = player.transform;
-		for (int i = 1; i < 30; i++) {
-			enemyLife [i, 1] = 10;
-		}
-		enemyLife [0, 1] = 84;
+
 		float x = Random.Range (-10, 10);
 		float y = Random.Range (-10, 10);
 		rPosition = new Vector3 (initPosition.x + x, initPosition.y + y, initPosition.z);
@@ -84,5 +86,24 @@ public class Enemy : MonoBehaviour
 		Vector3 sub = newPosition - transform.position;
 		anim.SetFloat ("input_x", (sub.x < 0 ? -1f : 1f));
 		anim.SetFloat ("input_y", (sub.y < 0 ? -1f : 1f));
+
+		if (timeVal >= 2f) {
+
+			EnemyAttack (distance);
+			timeVal = 0;
+
+		} else {
+
+			timeVal += Time.deltaTime;
+
+		}
+	}
+
+
+	private void EnemyAttack (float a)
+	{
+		if (a < 10) {
+			Instantiate (enemyBulletPre, transform.position, Quaternion.Euler (transform.eulerAngles));
+		}
 	}
 }

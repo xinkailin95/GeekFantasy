@@ -39,6 +39,9 @@ I will experience an interesting daily life of a geek in a campus setting, and t
 &nbsp;&nbsp;&nbsp;&nbsp;1. Open the download link for Alpha Release: 
 https://drive.google.com/open?id=1utP1IsUDiT8LFu5GGB_2YcvqgZckl35c
 
+&nbsp;&nbsp;&nbsp;&nbsp;1. Open the download link for Beta Release(or on Landing Page at Wiki): 
+https://drive.google.com/drive/folders/1L_YDw00WrgDhkausWt_SE-QM9gdPZxXb 
+
 &nbsp;&nbsp;&nbsp;&nbsp;2. Downoad the file, exctract it if is a zip file.
 
 &nbsp;&nbsp;&nbsp;&nbsp;3. Click on the app to run (.exe for Window, .app for mac)
@@ -57,3 +60,5 @@ PS: For Mac user who has identified developers issues, go to System Preferences 
 Prototype: https://youtu.be/9VW4yJrVLIM
 
 Alpha Release: https://youtu.be/emJ41wblpow
+
+Beta Release: https://youtu.be/coE-VAhETHQ

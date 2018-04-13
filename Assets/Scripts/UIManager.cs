@@ -11,12 +11,15 @@ public class UIManager : MonoBehaviour
 	public Text levelNum;
 	public Text attackPowerNum;
 	public Text scoreNum;
+	public Text messageText;
+
 
 
 	public int levelN;
 	public int scoreN;
 	public int attackN;
 	public int attackPower;
+	public int attackPower_R;
 
 	//heyi
 	public Slider HealthSlider;
@@ -59,12 +62,13 @@ public class UIManager : MonoBehaviour
 	{
 		player = GameObject.Find ("Player");
 		HealthSlider = GameObject.Find ("HealthBlock").GetComponent<Slider> ();
-		
+
 	}
-	
+
 	// Update is called once per frame
 	void Update ()
 	{
+		attackPower_R = attackPower + 3;
 		AddLevel ();
 		attackPowerNum.text = attackN.ToString ();
 		levelNum.text = levelN.ToString ();
@@ -75,4 +79,13 @@ public class UIManager : MonoBehaviour
 		HealthSlider.value = player.GetComponent<Player> ().curplayerLife;
 
 	}
+	public void ShowMessage(string str)
+	{
+		messageText.text = str;
+		Invoke ("emptyStr", 0.5f);
+	}
+	public void emptyStr(){
+		messageText.text = "";
+	}
+
 }
