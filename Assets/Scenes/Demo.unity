@@ -8892,6 +8892,48 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &431668717
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4063685342998598, guid: 932a6a9b72f6e41129d9ffdfed10f54a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4063685342998598, guid: 932a6a9b72f6e41129d9ffdfed10f54a, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4063685342998598, guid: 932a6a9b72f6e41129d9ffdfed10f54a, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4063685342998598, guid: 932a6a9b72f6e41129d9ffdfed10f54a, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4063685342998598, guid: 932a6a9b72f6e41129d9ffdfed10f54a, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4063685342998598, guid: 932a6a9b72f6e41129d9ffdfed10f54a, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4063685342998598, guid: 932a6a9b72f6e41129d9ffdfed10f54a, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4063685342998598, guid: 932a6a9b72f6e41129d9ffdfed10f54a, type: 2}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 932a6a9b72f6e41129d9ffdfed10f54a, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &431840070 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1375635206560596, guid: a0a1fceb1c4c94f548311e8e75d21c8c,
@@ -19654,7 +19696,7 @@ Prefab:
         type: 2}
       propertyPath: enemyBulletPre
       value: 
-      objectReference: {fileID: 1449758492446724, guid: 3eaa9b1b4599d458680a863bf3205391,
+      objectReference: {fileID: 1132124555821396, guid: 932a6a9b72f6e41129d9ffdfed10f54a,
         type: 2}
     - target: {fileID: 114992378936897312, guid: ae832d7440d0b4745a726eaf6586cbfe,
         type: 2}
