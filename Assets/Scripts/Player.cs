@@ -192,32 +192,32 @@ public class Player : MonoBehaviour
 
 	private void Attack ()
 	{
-		if (Input.GetKeyDown (KeyCode.Space)) {
+		if (Input.GetKeyDown (KeyCode.Space)&&turningRed==false) {
 			attack.Play ();
             if (Time.time > targetTime)
             { 
-                if(mode==attackMode.basic_attack)
+                if(mode==attackMode.basic_attack||mode== attackMode.longDis_attack)
                     Instantiate(bulletPrefab, transform.position, Quaternion.Euler( bulletEulerAngles));
-                if (mode == attackMode.multiple_attack)
+                if (mode == attackMode.multiple_attack || mode == attackMode.longDis_attack)
                 {
                     //Debug.Log(transform.eulerAngles);
                     Instantiate(bulletPrefab, transform.position, Quaternion.Euler( bulletEulerAngles));
                     Instantiate(bulletPrefab, transform.position, Quaternion.Euler( bulletEulerAngles+new Vector3(0,0,30)));
                     Instantiate(bulletPrefab, transform.position, Quaternion.Euler( bulletEulerAngles + new Vector3(0, 0, -30)));
                 }
-                if(mode == attackMode.longDis_attack)
-                {
-                    //Instantiate(bulletPrefab, transform.position, Quaternion.Euler(bulletEulerAngles));
-                    turningRed = true;
-                    Invoke("delay_attack", 1f);
-                    
-                    //isInitial = false;
-
-                }
                 targetTime = Time.time + 0.4f;
             }
         }
-        
+
+        if (Input.GetKeyDown(KeyCode.R) && turningRed == false && mode == attackMode.longDis_attack)
+        {
+            if (Time.time > targetTime)
+            {
+                turningRed = true;
+                Invoke("delay_attack", 1f);
+            }
+            targetTime = Time.time + 0.4f;
+        }
         if (mode == attackMode.longDis_attack&&turningRed==true)
         {
             //Debug.Log(tmp_int);tmp_int++;
