@@ -139,10 +139,10 @@ public class GameManager : MonoBehaviour {
 	{
 		Save save = CreateSaveGO();
 		BinaryFormatter bf = new BinaryFormatter();
-		FileStream fileStream = File.Create(Application.dataPath + "/StreamingFile" + "/byBin.txt");
+		FileStream fileStream = File.Create(Application.dataPath + "/StreamingAssets" + "/byBin.txt");
 		bf.Serialize(fileStream, save);
 		fileStream.Close();
-		if (File.Exists(Application.dataPath + "/StreamingFile" + "/byBin.txt"))
+		if (File.Exists(Application.dataPath + "/StreamingAssets" + "/byBin.txt"))
 		{
 			UIManager._instance.ShowMessage("SAVED");
 
@@ -152,10 +152,10 @@ public class GameManager : MonoBehaviour {
 
 	private void LoadByBin()
 	{
-		if(File.Exists(Application.dataPath + "/StreamingFile" + "/byBin.txt"))
+		if(File.Exists(Application.dataPath + "/StreamingAssets" + "/byBin.txt"))
 		{
 			BinaryFormatter bf = new BinaryFormatter();
-			FileStream fileStream = File.Open(Application.dataPath + "/StreamingFile" + "/byBin.txt", FileMode.Open);
+			FileStream fileStream = File.Open(Application.dataPath + "/StreamingAssets" + "/byBin.txt", FileMode.Open);
 			Save save = (Save)bf.Deserialize(fileStream);
 			fileStream.Close();
 			SetGame(save);
