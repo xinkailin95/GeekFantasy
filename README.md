@@ -31,7 +31,7 @@ I am also able to get surprise from NPC to update his ability on the way to the 
 
 I will experience an interesting daily life of a geek in a campus setting, and this game fulfils the element of fantasy which can be a fun twist to our boring everyday life.	
 
-# Prototype && Alpha Release
+# Prototype && Alpha Release && Beta Release
 ## Instruction
 &nbsp;&nbsp;&nbsp;&nbsp;1. Open the download link for Prototype:
 &nbsp;&nbsp;&nbsp;&nbsp;https://drive.google.com/drive/u/0/folders/1ZiA1gOf7HBvfNZJ_owBfVGaIM8Sf90DH
@@ -55,6 +55,9 @@ https://drive.google.com/drive/folders/1L_YDw00WrgDhkausWt_SE-QM9gdPZxXb
 &nbsp;&nbsp;&nbsp;&nbsp;7. Click Back to Starting to Return to the main menu.
 
 PS: For Mac user who has identified developers issues, go to System Preferences and go to Security & Privacy, in General click open anyway to open the app.
+
+# Landing Page
+https://github.com/kai123456/GeekFantasy/wiki/Landing-Page
 
 ## Youtube Link
 Prototype: https://youtu.be/9VW4yJrVLIM
