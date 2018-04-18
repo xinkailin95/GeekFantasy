@@ -57,7 +57,7 @@ https://drive.google.com/drive/folders/1L_YDw00WrgDhkausWt_SE-QM9gdPZxXb
 PS: For Mac user who has identified developers issues, go to System Preferences and go to Security & Privacy, in General click open anyway to open the app.
 
 # Landing Page
-https://github.com/kai123456/GeekFantasy/wiki/Landing-Page
+https://xli2288.wixsite.com/geekfantasy
 
 ## Youtube Link
 Prototype: https://youtu.be/9VW4yJrVLIM
