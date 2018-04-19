@@ -17,10 +17,12 @@ public class NPC : MonoBehaviour
 	private List<GameObject> l = new List<GameObject> ();
 	public bool ifTalked;
 	private int i;
+    public GameObject hero;
 
 	// Use this for initialization
 	void Start ()
 	{
+        hero = GameObject.Find("Player");
 		ifTalked = false;
 		q.Add (NPCtalkingB1);
 		q.Add (NPCtalkingB2);
@@ -34,7 +36,7 @@ public class NPC : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		distance = Vector3.Distance (Enemy._instance.hero.position, transform.position);
+		distance = Vector3.Distance (hero.transform.position, transform.position);
 		if (ifTalked == false) {
 			if (distance < 2 && Input.GetKeyDown (KeyCode.T)) {
 				Player._instance.isInitial = false;
@@ -59,7 +61,7 @@ public class NPC : MonoBehaviour
 				i = i + 1;
 			} 
 		} else if (ifTalked == true) {
-			distance = Vector3.Distance (Enemy._instance.hero.position, transform.position);
+			distance = Vector3.Distance (hero.transform.position, transform.position);
 
 			if (distance < 2 && Input.GetKeyDown (KeyCode.T) && l.Contains (NPCtalkingB6)) {
 				NPCtalking.SetActive (true);

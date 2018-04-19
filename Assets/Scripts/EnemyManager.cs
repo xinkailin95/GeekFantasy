@@ -12,15 +12,16 @@ public class EnemyManager : MonoBehaviour {
 	// Use this for initialization
 	private void Awake(){
 		_instance = this;
+        for (int i = 1; i < enemyGOs.Length; i++)
+        {
+            enemyLife[i] = 10;
+            isDead[i] = false;
+        }
+        enemyLife[0] = 84;
 
-	}
+    }
 	void Start () {
-		for (int i = 1; i < enemyGOs.Length; i++) {
-			enemyLife [i] = 10;
-			isDead [i] = false;
-
-		}
-		enemyLife [0] = 84;
+		
 
 	}
 
