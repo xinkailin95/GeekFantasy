@@ -16,8 +16,6 @@ public class Player : MonoBehaviour
 	public int attackPower = 1;
 	public float volume;
 
-	public GameObject gameOver;
-	public GameObject finish;
 	public bool flag;
 	//if true then the figure cannot move or attack
 	public bool isInitial;
@@ -68,7 +66,6 @@ public class Player : MonoBehaviour
 	void Start ()
 	{	
 		nowPlayerLife = curplayerLife;
-		finish.SetActive (false);
 		initialPanel.SetActive (true);
 		maxplayerLife = curplayerLife;
 		enemyArray = new GameObject[30];
@@ -133,10 +130,6 @@ public class Player : MonoBehaviour
             gameObject.GetComponent<Renderer>().material.color = a;
         }*/
 
-		if (curplayerLife <= 0) {
-			Time.timeScale = 0;
-			gameOver.SetActive (true);
-		}
 
 		if (flag == true) {
 			Vector2 temp = Vector2.MoveTowards (transform.position, dest, 0.5f);
@@ -267,10 +260,7 @@ public class Player : MonoBehaviour
 
 	}
 
-	public void Finish ()
-	{
-		finish.SetActive (true);
-	}
+
 
 	public void setMultiple_attack ()
 	{

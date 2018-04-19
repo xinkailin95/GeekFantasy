@@ -32,7 +32,6 @@ public class Bullet : MonoBehaviour
 			EnemyManager._instance.enemyLife [0] = EnemyManager._instance.enemyLife [0] - UIManager._instance.attackPower;
 			if (EnemyManager._instance.enemyLife [0] < 0) {
 				collision.gameObject.transform.position = new Vector3 (436, -90);
-				Player._instance.Finish ();
 				Time.timeScale = 0;
 				UIManager._instance.AddScore ();
 			}

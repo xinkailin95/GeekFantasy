@@ -33,7 +33,6 @@ public class arroBullet : MonoBehaviour
 			EnemyManager._instance.enemyLife [0] = EnemyManager._instance.enemyLife [0] - UIManager._instance.attackPower_R;
 			if (EnemyManager._instance.enemyLife [0] < 0) {
 				collision.gameObject.transform.position = new Vector3 (436, -90);
-				Player._instance.Finish ();
 				UIManager._instance.AddScore ();
 			}
 			break;
