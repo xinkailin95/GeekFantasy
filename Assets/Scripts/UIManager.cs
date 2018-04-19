@@ -13,7 +13,8 @@ public class UIManager : MonoBehaviour
 	public Text scoreNum;
 	public Text messageText;
 
-
+	public GameObject win;
+	public GameObject gameOver;
 
 	public int levelN;
 	public int scoreN;
@@ -62,6 +63,8 @@ public class UIManager : MonoBehaviour
 	{
 		player = GameObject.Find ("Player");
 		HealthSlider = GameObject.Find ("HealthBlock").GetComponent<Slider> ();
+		gameOver.SetActive (false);
+		win.SetActive (false);
 
 	}
 
@@ -77,6 +80,13 @@ public class UIManager : MonoBehaviour
 		//heyi
 		HealthSlider.maxValue = player.GetComponent<Player> ().maxplayerLife;
 		HealthSlider.value = player.GetComponent<Player> ().curplayerLife;
+
+		if (player.GetComponent<Player> ().curplayerLife == 0) {
+			gameOver.SetActive (true);
+		}
+		if (EnemyManager._instance.enemyLife [0] < 0) {
+			win.SetActive (true);
+		}
 
 	}
 	public void ShowMessage(string str)
