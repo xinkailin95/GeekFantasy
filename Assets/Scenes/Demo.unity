@@ -1432,11 +1432,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca2f833a29d3448928d38649845c5e90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 1
   backUptime: 0.1
   attackPower: 1
   hero: {fileID: 0}
-  enemyBulletPre: {fileID: 0}
+  enemyBulletPre: {fileID: 1449758492446724, guid: 3eaa9b1b4599d458680a863bf3205391,
+    type: 2}
   healthBar: {fileID: 1323642487327952, guid: 0f258eac4f3968e4e95c482cec34ce40, type: 2}
 --- !u!1 &57587422
 GameObject:
@@ -6677,11 +6678,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca2f833a29d3448928d38649845c5e90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 1
   backUptime: 0.1
   attackPower: 1
   hero: {fileID: 0}
-  enemyBulletPre: {fileID: 0}
+  enemyBulletPre: {fileID: 1449758492446724, guid: 3eaa9b1b4599d458680a863bf3205391,
+    type: 2}
   healthBar: {fileID: 1323642487327952, guid: 0f258eac4f3968e4e95c482cec34ce40, type: 2}
 --- !u!1 &323092738
 GameObject:
@@ -10746,11 +10748,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca2f833a29d3448928d38649845c5e90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 1
   backUptime: 0.1
   attackPower: 1
   hero: {fileID: 0}
-  enemyBulletPre: {fileID: 0}
+  enemyBulletPre: {fileID: 1449758492446724, guid: 3eaa9b1b4599d458680a863bf3205391,
+    type: 2}
   healthBar: {fileID: 1323642487327952, guid: 0f258eac4f3968e4e95c482cec34ce40, type: 2}
 --- !u!1 &519365914
 GameObject:
@@ -11631,11 +11634,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca2f833a29d3448928d38649845c5e90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 1
   backUptime: 0.1
   attackPower: 1
   hero: {fileID: 0}
-  enemyBulletPre: {fileID: 0}
+  enemyBulletPre: {fileID: 1449758492446724, guid: 3eaa9b1b4599d458680a863bf3205391,
+    type: 2}
   healthBar: {fileID: 1323642487327952, guid: 0f258eac4f3968e4e95c482cec34ce40, type: 2}
 --- !u!1 &555579219 stripped
 GameObject:
@@ -13778,11 +13782,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca2f833a29d3448928d38649845c5e90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 1
   backUptime: 0.1
   attackPower: 1
   hero: {fileID: 0}
-  enemyBulletPre: {fileID: 0}
+  enemyBulletPre: {fileID: 1449758492446724, guid: 3eaa9b1b4599d458680a863bf3205391,
+    type: 2}
   healthBar: {fileID: 1323642487327952, guid: 0f258eac4f3968e4e95c482cec34ce40, type: 2}
 --- !u!1 &614029997 stripped
 GameObject:
@@ -19948,11 +19953,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca2f833a29d3448928d38649845c5e90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 1
   backUptime: 0.1
   attackPower: 1
   hero: {fileID: 0}
-  enemyBulletPre: {fileID: 0}
+  enemyBulletPre: {fileID: 1449758492446724, guid: 3eaa9b1b4599d458680a863bf3205391,
+    type: 2}
   healthBar: {fileID: 1323642487327952, guid: 0f258eac4f3968e4e95c482cec34ce40, type: 2}
 --- !u!1 &936280583
 GameObject:
@@ -20288,11 +20294,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca2f833a29d3448928d38649845c5e90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 1
   backUptime: 0.1
   attackPower: 1
   hero: {fileID: 0}
-  enemyBulletPre: {fileID: 0}
+  enemyBulletPre: {fileID: 1449758492446724, guid: 3eaa9b1b4599d458680a863bf3205391,
+    type: 2}
   healthBar: {fileID: 1323642487327952, guid: 0f258eac4f3968e4e95c482cec34ce40, type: 2}
 --- !u!1 &942046764
 GameObject:
@@ -23541,11 +23548,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca2f833a29d3448928d38649845c5e90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 1
   backUptime: 0.1
   attackPower: 1
   hero: {fileID: 0}
-  enemyBulletPre: {fileID: 0}
+  enemyBulletPre: {fileID: 1449758492446724, guid: 3eaa9b1b4599d458680a863bf3205391,
+    type: 2}
   healthBar: {fileID: 1323642487327952, guid: 0f258eac4f3968e4e95c482cec34ce40, type: 2}
 --- !u!1 &1115308745
 GameObject:
@@ -24510,11 +24518,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca2f833a29d3448928d38649845c5e90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 1
   backUptime: 0.1
   attackPower: 1
   hero: {fileID: 0}
-  enemyBulletPre: {fileID: 0}
+  enemyBulletPre: {fileID: 1449758492446724, guid: 3eaa9b1b4599d458680a863bf3205391,
+    type: 2}
   healthBar: {fileID: 1323642487327952, guid: 0f258eac4f3968e4e95c482cec34ce40, type: 2}
 --- !u!1 &1177082009
 GameObject:
@@ -29006,11 +29015,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca2f833a29d3448928d38649845c5e90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 1
   backUptime: 0.1
   attackPower: 1
   hero: {fileID: 0}
-  enemyBulletPre: {fileID: 0}
+  enemyBulletPre: {fileID: 1449758492446724, guid: 3eaa9b1b4599d458680a863bf3205391,
+    type: 2}
   healthBar: {fileID: 1323642487327952, guid: 0f258eac4f3968e4e95c482cec34ce40, type: 2}
 --- !u!1 &1390842834
 GameObject:
@@ -29739,11 +29749,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca2f833a29d3448928d38649845c5e90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 1
   backUptime: 0.1
   attackPower: 1
   hero: {fileID: 0}
-  enemyBulletPre: {fileID: 0}
+  enemyBulletPre: {fileID: 1449758492446724, guid: 3eaa9b1b4599d458680a863bf3205391,
+    type: 2}
   healthBar: {fileID: 1323642487327952, guid: 0f258eac4f3968e4e95c482cec34ce40, type: 2}
 --- !u!58 &1416850233
 CircleCollider2D:
@@ -31069,11 +31080,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca2f833a29d3448928d38649845c5e90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 1
   backUptime: 0.1
   attackPower: 1
   hero: {fileID: 0}
-  enemyBulletPre: {fileID: 0}
+  enemyBulletPre: {fileID: 1449758492446724, guid: 3eaa9b1b4599d458680a863bf3205391,
+    type: 2}
   healthBar: {fileID: 1323642487327952, guid: 0f258eac4f3968e4e95c482cec34ce40, type: 2}
 --- !u!1 &1468283438
 GameObject:
@@ -34143,11 +34155,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca2f833a29d3448928d38649845c5e90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 1
   backUptime: 0.1
   attackPower: 1
   hero: {fileID: 1781550929}
-  enemyBulletPre: {fileID: 0}
+  enemyBulletPre: {fileID: 1449758492446724, guid: 3eaa9b1b4599d458680a863bf3205391,
+    type: 2}
   healthBar: {fileID: 1323642487327952, guid: 0f258eac4f3968e4e95c482cec34ce40, type: 2}
 --- !u!1 &1629911244
 GameObject:
@@ -34696,11 +34709,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca2f833a29d3448928d38649845c5e90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 1
   backUptime: 0.1
   attackPower: 1
   hero: {fileID: 0}
-  enemyBulletPre: {fileID: 0}
+  enemyBulletPre: {fileID: 1449758492446724, guid: 3eaa9b1b4599d458680a863bf3205391,
+    type: 2}
   healthBar: {fileID: 1323642487327952, guid: 0f258eac4f3968e4e95c482cec34ce40, type: 2}
 --- !u!1 &1658773899
 GameObject:
@@ -36865,11 +36879,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca2f833a29d3448928d38649845c5e90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 1
   backUptime: 0.1
   attackPower: 1
   hero: {fileID: 0}
-  enemyBulletPre: {fileID: 0}
+  enemyBulletPre: {fileID: 1449758492446724, guid: 3eaa9b1b4599d458680a863bf3205391,
+    type: 2}
   healthBar: {fileID: 1323642487327952, guid: 0f258eac4f3968e4e95c482cec34ce40, type: 2}
 --- !u!1 &1715712396
 GameObject:
@@ -43528,11 +43543,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca2f833a29d3448928d38649845c5e90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 1
   backUptime: 0.1
   attackPower: 1
   hero: {fileID: 0}
-  enemyBulletPre: {fileID: 0}
+  enemyBulletPre: {fileID: 1449758492446724, guid: 3eaa9b1b4599d458680a863bf3205391,
+    type: 2}
   healthBar: {fileID: 1323642487327952, guid: 0f258eac4f3968e4e95c482cec34ce40, type: 2}
 --- !u!1001 &2029342810
 Prefab:
