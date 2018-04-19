@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 1425870}
   m_Layer: 0
   m_Name: campustree_88
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 3270147}
   m_Layer: 0
   m_Name: campustree_173
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -321,7 +321,7 @@ GameObject:
   - component: {fileID: 5258334}
   m_Layer: 0
   m_Name: campustree_58 (3)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -414,7 +414,7 @@ GameObject:
   - component: {fileID: 5723772}
   m_Layer: 0
   m_Name: campustree_99
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -605,7 +605,7 @@ GameObject:
   - component: {fileID: 19450224}
   m_Layer: 0
   m_Name: campustree_149 (11)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -816,7 +816,7 @@ GameObject:
   - component: {fileID: 41105064}
   m_Layer: 0
   m_Name: campustree_136 (2)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -892,7 +892,7 @@ GameObject:
   - component: {fileID: 41361929}
   m_Layer: 0
   m_Name: campustree_192
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1068,7 +1068,7 @@ GameObject:
   - component: {fileID: 45194863}
   m_Layer: 0
   m_Name: campustree_74 (10)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1171,7 +1171,7 @@ GameObject:
   - component: {fileID: 46095097}
   m_Layer: 0
   m_Name: campustree_117 (1)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1279,7 +1279,7 @@ GameObject:
   - component: {fileID: 57587424}
   m_Layer: 0
   m_Name: campustree_67 (1)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1382,7 +1382,7 @@ GameObject:
   - component: {fileID: 58766082}
   m_Layer: 0
   m_Name: campustree_58 (5)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1475,7 +1475,7 @@ GameObject:
   - component: {fileID: 59046952}
   m_Layer: 0
   m_Name: campustree_48
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1808,7 +1808,7 @@ GameObject:
   - component: {fileID: 95171582}
   m_Layer: 0
   m_Name: campustree_149 (7)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1911,7 +1911,7 @@ GameObject:
   - component: {fileID: 95378575}
   m_Layer: 0
   m_Name: campustree_20 (4)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2014,7 +2014,7 @@ GameObject:
   - component: {fileID: 97045953}
   m_Layer: 0
   m_Name: campustree_50 (3)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2117,7 +2117,7 @@ GameObject:
   - component: {fileID: 101911356}
   m_Layer: 0
   m_Name: campustree_20 (3)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2591,7 +2591,7 @@ GameObject:
   - component: {fileID: 127360899}
   m_Layer: 0
   m_Name: campustree_170 (1)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2793,7 +2793,7 @@ GameObject:
   - component: {fileID: 134013069}
   m_Layer: 0
   m_Name: campustree_74 (7)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2897,7 +2897,7 @@ GameObject:
   - component: {fileID: 134104671}
   m_Layer: 0
   m_Name: campustree_154
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3026,7 +3026,7 @@ GameObject:
   - component: {fileID: 144236636}
   m_Layer: 0
   m_Name: campustree_27
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3327,7 +3327,7 @@ GameObject:
   - component: {fileID: 164583776}
   m_Layer: 0
   m_Name: campustree_109 (1)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3681,7 +3681,7 @@ GameObject:
   - component: {fileID: 180513519}
   m_Layer: 0
   m_Name: campustree_58 (2)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3873,7 +3873,7 @@ GameObject:
   - component: {fileID: 185793915}
   m_Layer: 0
   m_Name: campustree_173 (1)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3981,7 +3981,7 @@ GameObject:
   - component: {fileID: 187992643}
   m_Layer: 0
   m_Name: campustree_126
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4089,7 +4089,7 @@ GameObject:
   - component: {fileID: 195990305}
   m_Layer: 0
   m_Name: campustree_74
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4181,7 +4181,7 @@ GameObject:
   - component: {fileID: 200791231}
   m_Layer: 0
   m_Name: campustree_94
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4274,7 +4274,7 @@ GameObject:
   - component: {fileID: 215797768}
   m_Layer: 0
   m_Name: campustree_58 (1)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4366,7 +4366,7 @@ GameObject:
   - component: {fileID: 223940502}
   m_Layer: 0
   m_Name: campustree_196
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4443,7 +4443,7 @@ GameObject:
   - component: {fileID: 226971862}
   m_Layer: 0
   m_Name: campustree_95
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5177,50 +5177,6 @@ Prefab:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114978726137036948, guid: 3f2e1768d92d4418d91d6e5bd627372e,
-        type: 2}
-      propertyPath: m_Text
-      value: 'Move Up : W
-
-
-
-        Move Down: S
-
-
-
-        Move Left: A
-
-
-
-        Move Right: D
-
-
-
-        Attack: SPACE
-
-
-
-        Special Attack(To be learned): R
-
-
-
-        Inventory: Q
-
-
-
-        Use Item: SPACE
-
-
-
-        Conversation: T
-
-
-
-        Drive car: F
-
-
-'
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3f2e1768d92d4418d91d6e5bd627372e, type: 2}
   m_IsPrefabParent: 0
@@ -5336,7 +5292,7 @@ GameObject:
   - component: {fileID: 274399283}
   m_Layer: 0
   m_Name: campustree_211 (3)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5429,7 +5385,7 @@ GameObject:
   - component: {fileID: 281907398}
   m_Layer: 0
   m_Name: campustree_170 (2)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5729,7 +5685,7 @@ GameObject:
   - component: {fileID: 285239840}
   m_Layer: 0
   m_Name: campustree_102
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6102,7 +6058,7 @@ GameObject:
   - component: {fileID: 292871487}
   m_Layer: 0
   m_Name: campustree_117 (5)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6205,7 +6161,7 @@ GameObject:
   - component: {fileID: 299819420}
   m_Layer: 0
   m_Name: campustree_74 (24)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6396,7 +6352,7 @@ GameObject:
   - component: {fileID: 323092740}
   m_Layer: 0
   m_Name: campustree_149 (9)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6601,7 +6557,7 @@ GameObject:
   - component: {fileID: 335859230}
   m_Layer: 0
   m_Name: campustree_144
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6757,7 +6713,7 @@ GameObject:
   - component: {fileID: 345993917}
   m_Layer: 0
   m_Name: campustree_74 (4)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6860,7 +6816,7 @@ GameObject:
   - component: {fileID: 346521420}
   m_Layer: 0
   m_Name: campustree_211 (4)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6953,7 +6909,7 @@ GameObject:
   - component: {fileID: 352087984}
   m_Layer: 0
   m_Name: campustree_172
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7329,7 +7285,7 @@ GameObject:
   - component: {fileID: 365807691}
   m_Layer: 0
   m_Name: campustree_202 (1)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7406,7 +7362,7 @@ GameObject:
   - component: {fileID: 367008456}
   m_Layer: 0
   m_Name: campustree_149
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7508,7 +7464,7 @@ GameObject:
   - component: {fileID: 369801394}
   m_Layer: 0
   m_Name: campustree_130
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7584,7 +7540,7 @@ GameObject:
   - component: {fileID: 371817141}
   m_Layer: 0
   m_Name: campustree_200
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7661,7 +7617,7 @@ GameObject:
   - component: {fileID: 379230339}
   m_Layer: 0
   m_Name: campustree_126 (5)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7752,7 +7708,7 @@ GameObject:
   - component: {fileID: 384434315}
   m_Layer: 0
   m_Name: campustree_147
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7968,7 +7924,7 @@ GameObject:
   - component: {fileID: 394002902}
   m_Layer: 0
   m_Name: campustree_149 (3)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8071,7 +8027,7 @@ GameObject:
   - component: {fileID: 397733065}
   m_Layer: 0
   m_Name: campustree_48 (17)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8272,7 +8228,7 @@ GameObject:
   - component: {fileID: 410315427}
   m_Layer: 0
   m_Name: campustree_125 (4)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8366,7 +8322,7 @@ GameObject:
   - component: {fileID: 429507543}
   m_Layer: 0
   m_Name: campustree_74 (17)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9330,7 +9286,7 @@ GameObject:
   - component: {fileID: 432171739}
   m_Layer: 0
   m_Name: campustree_158
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9412,7 +9368,7 @@ GameObject:
   - component: {fileID: 438336640}
   m_Layer: 0
   m_Name: campustree_74 (2)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9504,7 +9460,7 @@ GameObject:
   - component: {fileID: 441701740}
   m_Layer: 0
   m_Name: campustree_74 (5)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9612,7 +9568,7 @@ GameObject:
   - component: {fileID: 443910851}
   m_Layer: 0
   m_Name: campustree_212
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9715,7 +9671,7 @@ GameObject:
   - component: {fileID: 449559208}
   m_Layer: 0
   m_Name: campustree_180 (1)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9840,7 +9796,7 @@ GameObject:
   - component: {fileID: 459033806}
   m_Layer: 0
   m_Name: campustree_117
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10016,7 +9972,7 @@ GameObject:
   - component: {fileID: 468882241}
   m_Layer: 0
   m_Name: campustree_170
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10124,7 +10080,7 @@ GameObject:
   - component: {fileID: 479022523}
   m_Layer: 0
   m_Name: campustree_58 (8)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10216,7 +10172,7 @@ GameObject:
   - component: {fileID: 486942214}
   m_Layer: 0
   m_Name: campustree_125 (5)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10392,7 +10348,7 @@ GameObject:
   - component: {fileID: 522703913}
   m_Layer: 0
   m_Name: campustree_98
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10826,7 +10782,7 @@ GameObject:
   - component: {fileID: 551414671}
   m_Layer: 0
   m_Name: campustree_125
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10903,7 +10859,7 @@ GameObject:
   - component: {fileID: 551622924}
   m_Layer: 0
   m_Name: campustree_48 (12)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11011,7 +10967,7 @@ GameObject:
   - component: {fileID: 555624077}
   m_Layer: 0
   m_Name: campustree_0 (5)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11153,7 +11109,7 @@ GameObject:
   - component: {fileID: 557883359}
   m_Layer: 0
   m_Name: campustree_149 (13)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11256,7 +11212,7 @@ GameObject:
   - component: {fileID: 559656862}
   m_Layer: 0
   m_Name: campustree_116
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12586,7 +12542,7 @@ GameObject:
   - component: {fileID: 577160791}
   m_Layer: 0
   m_Name: campustree_126 (6)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12691,7 +12647,7 @@ GameObject:
   - component: {fileID: 585468845}
   m_Layer: 0
   m_Name: campustree_155
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12985,7 +12941,7 @@ GameObject:
   - component: {fileID: 615059332}
   m_Layer: 0
   m_Name: campustree_205
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13061,7 +13017,7 @@ GameObject:
   - component: {fileID: 618655626}
   m_Layer: 0
   m_Name: campustree_193
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13244,7 +13200,7 @@ GameObject:
   - component: {fileID: 621575297}
   m_Layer: 0
   m_Name: campustree_159
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13529,7 +13485,7 @@ GameObject:
   - component: {fileID: 626355537}
   m_Layer: 0
   m_Name: campustree_180 (2)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13730,7 +13686,7 @@ GameObject:
   - component: {fileID: 628812067}
   m_Layer: 0
   m_Name: campustree_136 (1)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13906,7 +13862,7 @@ GameObject:
   - component: {fileID: 636247378}
   m_Layer: 0
   m_Name: campustree_149 (15)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14107,7 +14063,7 @@ GameObject:
   - component: {fileID: 664816040}
   m_Layer: 0
   m_Name: campustree_169
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14283,7 +14239,7 @@ GameObject:
   - component: {fileID: 674661254}
   m_Layer: 0
   m_Name: campustree_0 (1)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14462,7 +14418,7 @@ GameObject:
   - component: {fileID: 691955580}
   m_Layer: 0
   m_Name: campustree_73
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14565,7 +14521,7 @@ GameObject:
   - component: {fileID: 698710736}
   m_Layer: 0
   m_Name: campustree_100
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14953,7 +14909,7 @@ GameObject:
   - component: {fileID: 738410500}
   m_Layer: 0
   m_Name: campustree_129
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15129,7 +15085,7 @@ GameObject:
   - component: {fileID: 751484505}
   m_Layer: 0
   m_Name: campustree_149 (17)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15374,7 +15330,7 @@ GameObject:
   - component: {fileID: 764360837}
   m_Layer: 0
   m_Name: campustree_162
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15450,7 +15406,7 @@ GameObject:
   - component: {fileID: 769979581}
   m_Layer: 0
   m_Name: campustree_136 (3)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15527,7 +15483,7 @@ GameObject:
   - component: {fileID: 776667716}
   m_Layer: 0
   m_Name: campustree_114
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15625,7 +15581,7 @@ GameObject:
   - component: {fileID: 777470213}
   m_Layer: 0
   m_Name: campustree_93
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15716,7 +15672,7 @@ GameObject:
   - component: {fileID: 791777307}
   m_Layer: 0
   m_Name: campustree_136
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15892,7 +15848,7 @@ GameObject:
   - component: {fileID: 796821361}
   m_Layer: 0
   m_Name: campustree_89
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15985,7 +15941,7 @@ GameObject:
   - component: {fileID: 804028007}
   m_Layer: 0
   m_Name: campustree_211 (1)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16078,7 +16034,7 @@ GameObject:
   - component: {fileID: 809619902}
   m_Layer: 0
   m_Name: campustree_74 (23)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16170,7 +16126,7 @@ GameObject:
   - component: {fileID: 810160466}
   m_Layer: 0
   m_Name: campustree_74 (6)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16273,7 +16229,7 @@ GameObject:
   - component: {fileID: 811664370}
   m_Layer: 0
   m_Name: campustree_74 (15)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16365,7 +16321,7 @@ GameObject:
   - component: {fileID: 816109322}
   m_Layer: 0
   m_Name: campustree_149 (12)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16572,7 +16528,7 @@ GameObject:
   - component: {fileID: 832729197}
   m_Layer: 0
   m_Name: campustree_74 (14)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16664,7 +16620,7 @@ GameObject:
   - component: {fileID: 840697523}
   m_Layer: 0
   m_Name: campustree_74 (3)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16854,7 +16810,7 @@ GameObject:
   - component: {fileID: 846484017}
   m_Layer: 0
   m_Name: campustree_102 (2)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17066,7 +17022,7 @@ GameObject:
   - component: {fileID: 850139677}
   m_Layer: 0
   m_Name: campustree_198
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17143,7 +17099,7 @@ GameObject:
   - component: {fileID: 852033383}
   m_Layer: 0
   m_Name: campustree_58 (7)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17335,7 +17291,7 @@ GameObject:
   - component: {fileID: 871124564}
   m_Layer: 0
   m_Name: campustree_48 (15)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17511,7 +17467,7 @@ GameObject:
   - component: {fileID: 879477199}
   m_Layer: 0
   m_Name: campustree_90
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17702,7 +17658,7 @@ GameObject:
   - component: {fileID: 887899489}
   m_Layer: 0
   m_Name: campustree_153 (1)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17903,7 +17859,7 @@ GameObject:
   - component: {fileID: 897121047}
   m_Layer: 0
   m_Name: campustree_129
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17980,7 +17936,7 @@ GameObject:
   - component: {fileID: 899019855}
   m_Layer: 0
   m_Name: campustree_117 (2)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18083,7 +18039,7 @@ GameObject:
   - component: {fileID: 899554608}
   m_Layer: 0
   m_Name: campustree_126 (4)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18493,7 +18449,7 @@ GameObject:
   - component: {fileID: 910395000}
   m_Layer: 0
   m_Name: campustree_74 (9)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18859,7 +18815,7 @@ GameObject:
   - component: {fileID: 920583313}
   m_Layer: 0
   m_Name: campustree_108
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18978,7 +18934,7 @@ GameObject:
   - component: {fileID: 936280585}
   m_Layer: 0
   m_Name: campustree_184
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19055,7 +19011,7 @@ GameObject:
   - component: {fileID: 937553737}
   m_Layer: 0
   m_Name: campustree_74 (16)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19147,7 +19103,7 @@ GameObject:
   - component: {fileID: 942046766}
   m_Layer: 0
   m_Name: campustree_30 (1)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20198,7 +20154,7 @@ GameObject:
   - component: {fileID: 996118520}
   m_Layer: 0
   m_Name: campustree_113
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20426,7 +20382,7 @@ GameObject:
   - component: {fileID: 1006290554}
   m_Layer: 0
   m_Name: campustree_48 (1)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20528,7 +20484,7 @@ GameObject:
   - component: {fileID: 1008082492}
   m_Layer: 0
   m_Name: campustree_142
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20772,7 +20728,7 @@ GameObject:
   - component: {fileID: 1035111482}
   m_Layer: 0
   m_Name: campustree_130
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20866,7 +20822,7 @@ GameObject:
   - component: {fileID: 1049125636}
   m_Layer: 0
   m_Name: campustree_211
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20958,7 +20914,7 @@ GameObject:
   - component: {fileID: 1061293920}
   m_Layer: 0
   m_Name: campustree_208
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21052,7 +21008,7 @@ GameObject:
   - component: {fileID: 1062926630}
   m_Layer: 0
   m_Name: campustree_109
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21253,7 +21209,7 @@ GameObject:
   - component: {fileID: 1067569244}
   m_Layer: 0
   m_Name: campustree_111
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21429,7 +21385,7 @@ GameObject:
   - component: {fileID: 1076666045}
   m_Layer: 0
   m_Name: campustree_117 (3)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21875,6 +21831,102 @@ Prefab:
       propertyPath: m_LocalPosition.x
       value: -27.2
       objectReference: {fileID: 0}
+    - target: {fileID: 114111200828236230, guid: ae832d7440d0b4745a726eaf6586cbfe,
+        type: 2}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1872746626916634, guid: 0f258eac4f3968e4e95c482cec34ce40,
+        type: 2}
+    - target: {fileID: 114803710596864650, guid: ae832d7440d0b4745a726eaf6586cbfe,
+        type: 2}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1872746626916634, guid: 0f258eac4f3968e4e95c482cec34ce40,
+        type: 2}
+    - target: {fileID: 114113310360995578, guid: ae832d7440d0b4745a726eaf6586cbfe,
+        type: 2}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1872746626916634, guid: 0f258eac4f3968e4e95c482cec34ce40,
+        type: 2}
+    - target: {fileID: 114589673531753840, guid: ae832d7440d0b4745a726eaf6586cbfe,
+        type: 2}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1872746626916634, guid: 0f258eac4f3968e4e95c482cec34ce40,
+        type: 2}
+    - target: {fileID: 114627329362638632, guid: ae832d7440d0b4745a726eaf6586cbfe,
+        type: 2}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1872746626916634, guid: 0f258eac4f3968e4e95c482cec34ce40,
+        type: 2}
+    - target: {fileID: 114992378936897312, guid: ae832d7440d0b4745a726eaf6586cbfe,
+        type: 2}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1872746626916634, guid: 0f258eac4f3968e4e95c482cec34ce40,
+        type: 2}
+    - target: {fileID: 114114862549042516, guid: ae832d7440d0b4745a726eaf6586cbfe,
+        type: 2}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1872746626916634, guid: 0f258eac4f3968e4e95c482cec34ce40,
+        type: 2}
+    - target: {fileID: 114729139380780242, guid: ae832d7440d0b4745a726eaf6586cbfe,
+        type: 2}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1872746626916634, guid: 0f258eac4f3968e4e95c482cec34ce40,
+        type: 2}
+    - target: {fileID: 114635990123749676, guid: ae832d7440d0b4745a726eaf6586cbfe,
+        type: 2}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1872746626916634, guid: 0f258eac4f3968e4e95c482cec34ce40,
+        type: 2}
+    - target: {fileID: 114729253333285674, guid: ae832d7440d0b4745a726eaf6586cbfe,
+        type: 2}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1872746626916634, guid: 0f258eac4f3968e4e95c482cec34ce40,
+        type: 2}
+    - target: {fileID: 114449997876484768, guid: ae832d7440d0b4745a726eaf6586cbfe,
+        type: 2}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1872746626916634, guid: 0f258eac4f3968e4e95c482cec34ce40,
+        type: 2}
+    - target: {fileID: 114244052104757542, guid: ae832d7440d0b4745a726eaf6586cbfe,
+        type: 2}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1872746626916634, guid: 0f258eac4f3968e4e95c482cec34ce40,
+        type: 2}
+    - target: {fileID: 114352097623973640, guid: ae832d7440d0b4745a726eaf6586cbfe,
+        type: 2}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1872746626916634, guid: 0f258eac4f3968e4e95c482cec34ce40,
+        type: 2}
+    - target: {fileID: 114234873328100578, guid: ae832d7440d0b4745a726eaf6586cbfe,
+        type: 2}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1872746626916634, guid: 0f258eac4f3968e4e95c482cec34ce40,
+        type: 2}
+    - target: {fileID: 114230299806547278, guid: ae832d7440d0b4745a726eaf6586cbfe,
+        type: 2}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1872746626916634, guid: 0f258eac4f3968e4e95c482cec34ce40,
+        type: 2}
+    - target: {fileID: 114032098112253124, guid: ae832d7440d0b4745a726eaf6586cbfe,
+        type: 2}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1872746626916634, guid: 0f258eac4f3968e4e95c482cec34ce40,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ae832d7440d0b4745a726eaf6586cbfe, type: 2}
   m_IsPrefabParent: 0
@@ -22094,7 +22146,7 @@ GameObject:
   - component: {fileID: 1102934484}
   m_Layer: 0
   m_Name: campustree_74 (11)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22197,7 +22249,7 @@ GameObject:
   - component: {fileID: 1107442523}
   m_Layer: 0
   m_Name: campustree_172
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22300,7 +22352,7 @@ GameObject:
   - component: {fileID: 1107882348}
   m_Layer: 0
   m_Name: campustree_149 (8)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22403,7 +22455,7 @@ GameObject:
   - component: {fileID: 1111607026}
   m_Layer: 0
   m_Name: campustree_148
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22506,7 +22558,7 @@ GameObject:
   - component: {fileID: 1115308747}
   m_Layer: 0
   m_Name: campustree_171 (1)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22708,7 +22760,7 @@ GameObject:
   - component: {fileID: 1134613002}
   m_Layer: 0
   m_Name: campustree_211 (2)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22874,7 +22926,7 @@ GameObject:
   - component: {fileID: 1143831102}
   m_Layer: 0
   m_Name: campustree_48 (13)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23402,7 +23454,7 @@ GameObject:
   - component: {fileID: 1179366620}
   m_Layer: 0
   m_Name: campustree_74 (1)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23712,7 +23764,7 @@ GameObject:
   - component: {fileID: 1182316780}
   m_Layer: 0
   m_Name: campustree_149 (2)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24057,7 +24109,7 @@ GameObject:
   - component: {fileID: 1200468905}
   m_Layer: 0
   m_Name: campustree_48 (3)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24334,7 +24386,7 @@ GameObject:
   - component: {fileID: 1229138582}
   m_Layer: 0
   m_Name: campustree_204
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24410,7 +24462,7 @@ GameObject:
   - component: {fileID: 1229769526}
   m_Layer: 0
   m_Name: campustree_178
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24491,7 +24543,7 @@ GameObject:
   - component: {fileID: 1230508937}
   m_Layer: 0
   m_Name: campustree_209
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24852,7 +24904,7 @@ GameObject:
   - component: {fileID: 1242080567}
   m_Layer: 0
   m_Name: campustree_166
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25002,7 +25054,7 @@ GameObject:
   - component: {fileID: 1245467352}
   m_Layer: 0
   m_Name: campustree_0 (3)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25105,7 +25157,7 @@ GameObject:
   - component: {fileID: 1254469067}
   m_Layer: 0
   m_Name: campustree_20
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25307,7 +25359,7 @@ GameObject:
   - component: {fileID: 1277604300}
   m_Layer: 0
   m_Name: campustree_126 (2)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25410,7 +25462,7 @@ GameObject:
   - component: {fileID: 1280008414}
   m_Layer: 0
   m_Name: campustree_171
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25612,7 +25664,7 @@ GameObject:
   - component: {fileID: 1313093056}
   m_Layer: 0
   m_Name: campustree_48 (5)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25714,7 +25766,7 @@ GameObject:
   - component: {fileID: 1313639233}
   m_Layer: 0
   m_Name: campustree_125 (1)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25867,7 +25919,7 @@ GameObject:
   - component: {fileID: 1317581842}
   m_Layer: 0
   m_Name: campustree_122
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26069,7 +26121,7 @@ GameObject:
   - component: {fileID: 1318779922}
   m_Layer: 0
   m_Name: campustree_117 (4)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26177,7 +26229,7 @@ GameObject:
   - component: {fileID: 1327249754}
   m_Layer: 0
   m_Name: campustree_74 (20)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26268,7 +26320,7 @@ GameObject:
   - component: {fileID: 1329884319}
   m_Layer: 0
   m_Name: campustree_125
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26345,7 +26397,7 @@ GameObject:
   - component: {fileID: 1337709417}
   m_Layer: 0
   m_Name: campustree_58
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26438,7 +26490,7 @@ GameObject:
   - component: {fileID: 1339448434}
   m_Layer: 0
   m_Name: campustree_50
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26530,7 +26582,7 @@ GameObject:
   - component: {fileID: 1343073926}
   m_Layer: 0
   m_Name: campustree_50 (1)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26738,7 +26790,7 @@ GameObject:
   - component: {fileID: 1351623019}
   m_Layer: 0
   m_Name: campustree_126 (1)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26840,7 +26892,7 @@ GameObject:
   - component: {fileID: 1367560760}
   m_Layer: 0
   m_Name: campustree_125 (3)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26917,7 +26969,7 @@ GameObject:
   - component: {fileID: 1369977524}
   m_Layer: 0
   m_Name: campustree_48 (9)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27322,7 +27374,7 @@ GameObject:
   - component: {fileID: 1384234862}
   m_Layer: 0
   m_Name: campustree_20 (2)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27524,7 +27576,7 @@ GameObject:
   - component: {fileID: 1387740414}
   m_Layer: 0
   m_Name: campustree_126 (3)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27924,7 +27976,7 @@ GameObject:
   - component: {fileID: 1402003939}
   m_Layer: 0
   m_Name: campustree_20 (6)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28026,7 +28078,7 @@ GameObject:
   - component: {fileID: 1407492365}
   m_Layer: 0
   m_Name: campustree_202
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28219,7 +28271,7 @@ GameObject:
   - component: {fileID: 1414686409}
   m_Layer: 0
   m_Name: campustree_48 (18)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28456,7 +28508,7 @@ GameObject:
   - component: {fileID: 1425858718}
   m_Layer: 0
   m_Name: campustree_48 (2)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28558,7 +28610,7 @@ GameObject:
   - component: {fileID: 1428006796}
   m_Layer: 0
   m_Name: campustree_164
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28731,10 +28783,6 @@ Prefab:
       propertyPath: m_Points.Array.data[13].y
       value: -25.800423
       objectReference: {fileID: 0}
-    - target: {fileID: 1641309186104638, guid: e6b8c3f2a33d640c5af10d163efe6cf1, type: 2}
-      propertyPath: m_TagString
-      value: Building
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e6b8c3f2a33d640c5af10d163efe6cf1, type: 2}
   m_IsPrefabParent: 0
@@ -28750,7 +28798,7 @@ GameObject:
   - component: {fileID: 1434411673}
   m_Layer: 0
   m_Name: campustree_151
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28925,7 +28973,7 @@ GameObject:
   - component: {fileID: 1435825951}
   m_Layer: 0
   m_Name: campustree_128 (2)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29267,7 +29315,7 @@ GameObject:
   - component: {fileID: 1450867029}
   m_Layer: 0
   m_Name: campustree_27 (1)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29373,7 +29421,7 @@ GameObject:
   - component: {fileID: 1468283440}
   m_Layer: 0
   m_Name: campustree_122
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29554,7 +29602,7 @@ GameObject:
   - component: {fileID: 1471196210}
   m_Layer: 0
   m_Name: campustree_0 (4)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29670,7 +29718,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1472477480}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2113823151}
@@ -29813,7 +29861,7 @@ GameObject:
   - component: {fileID: 1484579866}
   m_Layer: 0
   m_Name: campustree_91
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29938,7 +29986,7 @@ GameObject:
   - component: {fileID: 1484892830}
   m_Layer: 0
   m_Name: campustree_149 (14)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30150,7 +30198,7 @@ GameObject:
   - component: {fileID: 1494182345}
   m_Layer: 0
   m_Name: campustree_109
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30274,7 +30322,7 @@ GameObject:
   - component: {fileID: 1517923711}
   m_Layer: 0
   m_Name: campustree_163
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31249,7 +31297,7 @@ GameObject:
   - component: {fileID: 1562174157}
   m_Layer: 0
   m_Name: campustree_210
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31326,7 +31374,7 @@ GameObject:
   - component: {fileID: 1562819527}
   m_Layer: 0
   m_Name: campustree_26
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31431,7 +31479,7 @@ GameObject:
   - component: {fileID: 1570005912}
   m_Layer: 0
   m_Name: campustree_186
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31577,7 +31625,7 @@ GameObject:
   - component: {fileID: 1582725016}
   m_Layer: 0
   m_Name: campustree_50 (2)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31680,7 +31728,7 @@ GameObject:
   - component: {fileID: 1583984997}
   m_Layer: 0
   m_Name: campustree_48 (6)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31803,7 +31851,7 @@ GameObject:
   - component: {fileID: 1590772456}
   m_Layer: 0
   m_Name: campustree_149 (1)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31906,7 +31954,7 @@ GameObject:
   - component: {fileID: 1590807217}
   m_Layer: 0
   m_Name: campustree_74 (12)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32096,7 +32144,7 @@ GameObject:
   - component: {fileID: 1597094016}
   m_Layer: 0
   m_Name: campustree_128 (1)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32376,7 +32424,7 @@ GameObject:
   - component: {fileID: 1630868578}
   m_Layer: 0
   m_Name: campustree_48 (19)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32555,7 +32603,7 @@ GameObject:
   - component: {fileID: 1656848889}
   m_Layer: 0
   m_Name: campustree_107
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32958,7 +33006,7 @@ GameObject:
   - component: {fileID: 1667126649}
   m_Layer: 0
   m_Name: campustree_128
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33035,7 +33083,7 @@ GameObject:
   - component: {fileID: 1667798618}
   m_Layer: 0
   m_Name: campustree_102
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33581,7 +33629,7 @@ GameObject:
   - component: {fileID: 1681781418}
   m_Layer: 0
   m_Name: campustree_180
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33701,7 +33749,7 @@ GameObject:
   - component: {fileID: 1688981214}
   m_Layer: 0
   m_Name: campustree_153
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33803,7 +33851,7 @@ GameObject:
   - component: {fileID: 1702626952}
   m_Layer: 0
   m_Name: campustree_124
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33880,7 +33928,7 @@ GameObject:
   - component: {fileID: 1703376763}
   m_Layer: 0
   m_Name: campustree_30
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33983,7 +34031,7 @@ GameObject:
   - component: {fileID: 1706443055}
   m_Layer: 0
   m_Name: campustree_92
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34545,7 +34593,7 @@ GameObject:
   - component: {fileID: 1712826021}
   m_Layer: 0
   m_Name: campustree_74 (8)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34736,7 +34784,7 @@ GameObject:
   - component: {fileID: 1715995965}
   m_Layer: 0
   m_Name: campustree_171 (2)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34983,7 +35031,7 @@ GameObject:
   - component: {fileID: 1727175395}
   m_Layer: 0
   m_Name: campustree_74 (13)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35829,7 +35877,7 @@ GameObject:
   - component: {fileID: 1758168647}
   m_Layer: 0
   m_Name: campustree_165
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35908,7 +35956,7 @@ GameObject:
   - component: {fileID: 1759488982}
   m_Layer: 0
   m_Name: campustree_115
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36032,7 +36080,7 @@ GameObject:
   - component: {fileID: 1760279780}
   m_Layer: 0
   m_Name: campustree_146
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36114,7 +36162,7 @@ GameObject:
   - component: {fileID: 1774127446}
   m_Layer: 0
   m_Name: campustree_149 (16)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36216,7 +36264,7 @@ GameObject:
   - component: {fileID: 1775504136}
   m_Layer: 0
   m_Name: campustree_199
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36293,7 +36341,7 @@ GameObject:
   - component: {fileID: 1777091135}
   m_Layer: 0
   m_Name: campustree_26 (1)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36396,7 +36444,7 @@ GameObject:
   - component: {fileID: 1779651949}
   m_Layer: 0
   m_Name: campustree_149 (10)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36636,7 +36684,7 @@ GameObject:
   - component: {fileID: 1791517300}
   m_Layer: 0
   m_Name: campustree_132
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36732,7 +36780,7 @@ GameObject:
   - component: {fileID: 1803818539}
   m_Layer: 0
   m_Name: campustree_191
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36984,7 +37032,7 @@ GameObject:
   - component: {fileID: 1811865063}
   m_Layer: 0
   m_Name: campustree_67
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37087,7 +37135,7 @@ GameObject:
   - component: {fileID: 1825646017}
   m_Layer: 0
   m_Name: campustree_126
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37527,7 +37575,7 @@ GameObject:
   - component: {fileID: 1844782215}
   m_Layer: 0
   m_Name: campustree_152
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37604,7 +37652,7 @@ GameObject:
   - component: {fileID: 1850442026}
   m_Layer: 0
   m_Name: campustree_0 (6)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38217,7 +38265,7 @@ GameObject:
   - component: {fileID: 1907248540}
   m_Layer: 0
   m_Name: campustree_48 (11)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38320,7 +38368,7 @@ GameObject:
   - component: {fileID: 1911475512}
   m_Layer: 0
   m_Name: campustree_74 (19)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38412,7 +38460,7 @@ GameObject:
   - component: {fileID: 1916768711}
   m_Layer: 0
   m_Name: campustree_213
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38515,7 +38563,7 @@ GameObject:
   - component: {fileID: 1923776943}
   m_Layer: 0
   m_Name: campustree_20 (5)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39014,7 +39062,7 @@ GameObject:
   - component: {fileID: 1932263328}
   m_Layer: 0
   m_Name: campustree_149 (4)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39216,7 +39264,7 @@ GameObject:
   - component: {fileID: 1946221434}
   m_Layer: 0
   m_Name: campustree_20 (1)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39418,7 +39466,7 @@ GameObject:
   - component: {fileID: 1955016733}
   m_Layer: 0
   m_Name: campustree_107
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39620,7 +39668,7 @@ GameObject:
   - component: {fileID: 1959748280}
   m_Layer: 0
   m_Name: campustree_48 (14)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39723,7 +39771,7 @@ GameObject:
   - component: {fileID: 1964430926}
   m_Layer: 0
   m_Name: campustree_58 (4)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39816,7 +39864,7 @@ GameObject:
   - component: {fileID: 1966073591}
   m_Layer: 0
   m_Name: campustree_58 (6)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39909,7 +39957,7 @@ GameObject:
   - component: {fileID: 1969522225}
   m_Layer: 0
   m_Name: campustree_149 (6)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40111,7 +40159,7 @@ GameObject:
   - component: {fileID: 1982714770}
   m_Layer: 0
   m_Name: campustree_149 (5)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40312,7 +40360,7 @@ GameObject:
   - component: {fileID: 1988603789}
   m_Layer: 0
   m_Name: campustree_206
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40488,7 +40536,7 @@ GameObject:
   - component: {fileID: 2003114643}
   m_Layer: 0
   m_Name: campustree_149
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40593,7 +40641,7 @@ GameObject:
   - component: {fileID: 2003333843}
   m_Layer: 0
   m_Name: campustree_157
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40733,7 +40781,7 @@ GameObject:
   - component: {fileID: 2010203891}
   m_Layer: 0
   m_Name: campustree_151
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40843,7 +40891,7 @@ GameObject:
   - component: {fileID: 2018302074}
   m_Layer: 0
   m_Name: campustree_0 (2)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41240,7 +41288,7 @@ GameObject:
   - component: {fileID: 2029635444}
   m_Layer: 0
   m_Name: campustree_125 (2)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41317,7 +41365,7 @@ GameObject:
   - component: {fileID: 2032752838}
   m_Layer: 0
   m_Name: campustree_48 (8)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41536,7 +41584,7 @@ GameObject:
   - component: {fileID: 2050216802}
   m_Layer: 0
   m_Name: campustree_48 (16)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41639,7 +41687,7 @@ GameObject:
   - component: {fileID: 2051274756}
   m_Layer: 0
   m_Name: campustree_74 (21)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41731,7 +41779,7 @@ GameObject:
   - component: {fileID: 2057232453}
   m_Layer: 0
   m_Name: campustree_74 (22)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41823,7 +41871,7 @@ GameObject:
   - component: {fileID: 2058714016}
   m_Layer: 0
   m_Name: campustree_0
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41926,7 +41974,7 @@ GameObject:
   - component: {fileID: 2062031080}
   m_Layer: 0
   m_Name: campustree_48 (7)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42046,7 +42094,7 @@ GameObject:
   - component: {fileID: 2088740786}
   m_Layer: 0
   m_Name: campustree_74 (18)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42138,7 +42186,7 @@ GameObject:
   - component: {fileID: 2098772940}
   m_Layer: 0
   m_Name: campustree_48 (4)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42523,7 +42571,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 6
   m_TargetDisplay: 0
 --- !u!1 &2116068502
 GameObject:
@@ -42835,7 +42883,7 @@ GameObject:
   - component: {fileID: 2130398157}
   m_Layer: 0
   m_Name: campustree_48 (10)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43037,7 +43085,7 @@ GameObject:
   - component: {fileID: 2143199789}
   m_Layer: 0
   m_Name: campustree_102 (3)
-  m_TagString: Building
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

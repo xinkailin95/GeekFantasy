@@ -226,9 +226,9 @@ public class Player : MonoBehaviour
 		if (Input.GetKeyDown (KeyCode.Space) && turningRed == false) {
 			attack.Play ();
 			if (Time.time > targetTime) {
-				if (at_mode == attackMode.basic_attack || (at_mode == attackMode.longDis_attack && canMultiple == false))
+				if (at_mode == attackMode.basic_attack || (at_mode == attackMode.longDis_attack&&canMultiple==false))
 					Instantiate (bulletPrefab, transform.position, Quaternion.Euler (bulletEulerAngles));
-				if (at_mode == attackMode.multiple_attack || (at_mode == attackMode.longDis_attack && canMultiple == true)) {
+				if (at_mode == attackMode.multiple_attack || (at_mode == attackMode.longDis_attack&&canMultiple==true)) {
 					//Debug.Log(transform.eulerAngles);
 					Instantiate (bulletPrefab, transform.position, Quaternion.Euler (bulletEulerAngles));
 					Instantiate (bulletPrefab, transform.position, Quaternion.Euler (bulletEulerAngles + new Vector3 (0, 0, 30)));
@@ -241,8 +241,7 @@ public class Player : MonoBehaviour
 		if (Input.GetKeyDown (KeyCode.R) && turningRed == false && at_mode == attackMode.longDis_attack) {
 			if (Time.time > targetTime) {
 				turningRed = true;
-				h = 0;
-				v = 0;
+				h = 0;v = 0;
 				Invoke ("delay_attack", 1f);
 			}
 			targetTime = Time.time + 0.4f;
@@ -275,9 +274,9 @@ public class Player : MonoBehaviour
 
 	public void setMultiple_attack ()
 	{
-		if (at_mode != attackMode.longDis_attack)
+		if(at_mode!=attackMode.longDis_attack)
 			at_mode = attackMode.multiple_attack;
-	}
+	}	
 
 	public void setDis_attack ()
 	{
