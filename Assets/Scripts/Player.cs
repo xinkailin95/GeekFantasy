@@ -30,7 +30,13 @@ public class Player : MonoBehaviour
 	private float h;
 	private float v;
 
-	public enum attackMode
+    private ArrayList timeTracker_rightArrow;
+    private ArrayList timeTracker_leftArrow;
+    private ArrayList timeTracker_upArrow;
+    private ArrayList timeTracker_downArrow;
+
+
+    public enum attackMode
 	{
 		basic_attack,
 		multiple_attack,
@@ -80,7 +86,12 @@ public class Player : MonoBehaviour
 		turningRed = false;
 		canMultiple = false;
 
-		var objectsn = GameObject.FindObjectsOfType (typeof(GameObject));
+        timeTracker_rightArrow = new ArrayList();
+        timeTracker_leftArrow = new ArrayList();
+        timeTracker_upArrow = new ArrayList();
+        timeTracker_downArrow = new ArrayList();
+
+        var objectsn = GameObject.FindObjectsOfType (typeof(GameObject));
 		for (int i = 0; i < objectsn.Length; i++) {
 			if (objectsn [i].name.Length == 7 && objectsn [i].name [0] == 'E' && objectsn [i].name [1] == 'n' && objectsn [i].name [2] == 'e' && objectsn [i].name [3] == 'm' && objectsn [i].name [4] == 'y') {
 				int tmp = (objectsn [i].name [5] - '0') * 10 + (objectsn [i].name [6] - '0');
@@ -156,7 +167,92 @@ public class Player : MonoBehaviour
 		if (flag == false && isInitial == true && turningRed == false) {
 			h = Input.GetAxisRaw ("Horizontal");
 			v = Input.GetAxisRaw ("Vertical");
-			Vector2 movement_vector = new Vector2 (h, v);
+
+            /* ------ By Yuanjian Liao (Start) ------*/
+            //Right
+            if (Input.GetKeyDown(KeyCode.RightArrow))
+            {
+                Debug.Log("Normal Walking Mode");
+                float time = Time.time;
+                timeTracker_rightArrow.Add(time);
+                moveSpeed = 9;
+
+                if (timeTracker_rightArrow.Count > 1)
+                {
+                    float current_time = (float)timeTracker_rightArrow[timeTracker_rightArrow.Count - 1];
+                    float previous_time = (float)timeTracker_rightArrow[timeTracker_rightArrow.Count - 2];
+                    float time_diff = current_time - previous_time;
+                    if (time_diff < 0.25)
+                    {
+                        moveSpeed = 20;
+                        Debug.Log("Dash Mode");
+                    }
+                }
+
+            }
+            else if (Input.GetKeyDown(KeyCode.LeftArrow))
+            {
+                Debug.Log("Normal Walking Mode");
+                float time = Time.time;
+                timeTracker_leftArrow.Add(time);
+                moveSpeed = 9;
+
+                if (timeTracker_leftArrow.Count > 1)
+                {
+                    float current_time = (float)timeTracker_leftArrow[timeTracker_leftArrow.Count - 1];
+                    float previous_time = (float)timeTracker_leftArrow[timeTracker_leftArrow.Count - 2];
+                    float time_diff = current_time - previous_time;
+                    if (time_diff < 0.25)
+                    {
+                        moveSpeed = 20;
+                        Debug.Log("Dash Mode");
+                    }
+                }
+
+            }
+            else if (Input.GetKeyDown(KeyCode.UpArrow))
+            {
+                Debug.Log("Normal Walking Mode");
+                float time = Time.time;
+                timeTracker_upArrow.Add(time);
+                moveSpeed = 9;
+
+                if (timeTracker_upArrow.Count > 1)
+                {
+                    float current_time = (float)timeTracker_upArrow[timeTracker_upArrow.Count - 1];
+                    float previous_time = (float)timeTracker_upArrow[timeTracker_upArrow.Count - 2];
+                    float time_diff = current_time - previous_time;
+                    if (time_diff < 0.25)
+                    {
+                        moveSpeed = 20;
+                        Debug.Log("Dash Mode");
+                    }
+                }
+
+            }
+            else if (Input.GetKeyDown(KeyCode.DownArrow))
+            {
+                Debug.Log("Normal Walking Mode");
+                float time = Time.time;
+                timeTracker_downArrow.Add(time);
+                moveSpeed = 9;
+
+                if (timeTracker_downArrow.Count > 1)
+                {
+                    float current_time = (float)timeTracker_downArrow[timeTracker_downArrow.Count - 1];
+                    float previous_time = (float)timeTracker_downArrow[timeTracker_downArrow.Count - 2];
+                    float time_diff = current_time - previous_time;
+                    if (time_diff < 0.25)
+                    {
+                        moveSpeed = 20;
+                        Debug.Log("Dash Mode");
+                    }
+                }
+            }
+
+            /*-----     By Yuanjian Liao (End)     -------*/
+
+            Vector2 movement_vector = new Vector2 (h, v);
 			if ((h > 0 && v > 0) || (h > 0 && v < 0) || (h < 0 && v < 0) || (h < 0 && v > 0)) {
 				
 			} else {
