@@ -8,19 +8,23 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 public class GameManager : MonoBehaviour {
 
-	public bool isPaused = true;
+	public static bool isPaused = false;
 	public GameObject menuGo;
 	public GameObject controlPanel;
 	public GameObject[] targetGOs;
+	public AudioSource pausem;
+
 
 
 
 	private void Pause(){
+		pausem.Play ();
 		isPaused = true;
 		menuGo.SetActive (true);
 		Time.timeScale = 0;
 	}
 	private void UnPause(){
+		pausem.Pause ();
 		isPaused = false;
 		menuGo.SetActive (false);
 		Time.timeScale = 1;
@@ -29,6 +33,7 @@ public class GameManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+
 
 	}
 
