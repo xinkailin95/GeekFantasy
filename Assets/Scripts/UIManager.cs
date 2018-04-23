@@ -83,9 +83,11 @@ public class UIManager : MonoBehaviour
 
 		if (player.GetComponent<Player> ().curplayerLife == 0) {
 			gameOver.SetActive (true);
+			Player._instance.isInitial = false;
 		}
 		if (EnemyManager._instance.enemyLife [0] < 0) {
 			win.SetActive (true);
+			Player._instance.isInitial = false;
 		}
 
 	}
