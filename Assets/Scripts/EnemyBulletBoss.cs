@@ -44,7 +44,7 @@ public class EnemyBulletBoss : MonoBehaviour
 
 		switch (collision.tag) {
 		case"Player":
-			Player._instance.curplayerLife = Player._instance.curplayerLife - 1;
+			Player._instance.curplayerLife = Player._instance.curplayerLife - 2;
 			Destroy (gameObject);
 			break;
 		case"Building":

@@ -25,7 +25,7 @@ public class Enemy : MonoBehaviour
 	bool loop;
 	public GameObject enemyBulletPre;
 	private float timeVal;
-
+    public GameObject healthBar;
 
 
 	//public int enemyLife = 3;
@@ -36,7 +36,10 @@ public class Enemy : MonoBehaviour
 		initPosition = transform.position;
 		r2d = GetComponent<Rigidbody2D> ();
 		_instance = this;
-	}
+
+        Instantiate(healthBar,this.transform);
+
+    }
 
 	// Use this for initialization
 	void Start ()
@@ -59,7 +62,7 @@ public class Enemy : MonoBehaviour
 
 		//newPosition = Vector3.zero;
 		distance = Vector3.Distance (hero.position, transform.position);
-		if (distance < 15) {
+		if (distance < 15 && Player._instance.curplayerLife > 0) {
 			// move toward player
 			newPosition = Vector3.MoveTowards (transform.position, hero.position, speed * Time.deltaTime);
 			r2d.MovePosition (newPosition);
@@ -102,7 +105,7 @@ public class Enemy : MonoBehaviour
 
 	private void EnemyAttack (float a)
 	{
-		if (a < 10) {
+		if (a < 10 && Player._instance.curplayerLife > 0) {
 			Instantiate (enemyBulletPre, transform.position, Quaternion.Euler (transform.eulerAngles));
 		}
 	}
