@@ -1,0 +1,26 @@
+Meeting date:4/18/2018 6-7pm
+Meeting attendance: 
+Xinkai Lin
+Xingtong Li
+Hui Gao 
+Heyi Sun
+Shuo Qiang
+
+
+
+
+Discussion:
+We discussed what we will accomplish before next release.
+
+Last week achieved:
+  Xingtong Li: prepared the presentation for the cse101 testing
+  Shuo Qiang:  prepared the presentation for the cse101 testing
+  Gao Hui: Save and Load
+  Xinkai Lin: added fade in/out animation when character move in/out a room
+  Heyi Sun: added inventory
+Next week goal:
+  Xingtong Li: add more maps and fix the bug on the map
+  Shuo Qiang: fix end scene
+  Gao Hui: Improvement of Save and Laod. Fix the bug like after player dead, still can be attacked and can attack.
+  Xinkai Lin: add more enemy and maps
+  Heyi Sun: Add the health bar for the enemy
