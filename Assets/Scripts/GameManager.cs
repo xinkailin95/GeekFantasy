@@ -34,9 +34,9 @@ public class GameManager : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-//		if (Input.GetKeyDown (KeyCode.Escape)) {
-//			Pause ();
-//		}
+		//		if (Input.GetKeyDown (KeyCode.Escape)) {
+		//			Pause ();
+		//		}
 
 	}
 	public void Continue(){
@@ -105,7 +105,10 @@ public class GameManager : MonoBehaviour {
 		save.levelNum = UIManager._instance.levelN;
 		//save.scoreNum = UIManager._instance.scoreN;
 		save.attackNum = UIManager._instance.attackN;
-	
+
+		save.attackModle = Player._instance.atckMode; 
+
+
 		return save;
 	}
 	private void SetGame(Save save)
@@ -134,6 +137,10 @@ public class GameManager : MonoBehaviour {
 		UIManager._instance.attackN = save.attackNum;
 		//UIManager._instance.scoreN = save.scoreNum;
 		UIManager._instance.levelN = save.levelNum;
+		Player._instance.atckMode = save.attackModle;
+
+		//		Inventory._instance.mulAtck = save.atckModleMul;
+		//		Inventory._instance.longAtck = save.atckModelLong;
 	}
 	private void SaveByBin()
 	{

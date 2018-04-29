@@ -12,6 +12,8 @@ public class UIManager : MonoBehaviour
 	public Text attackPowerNum;
 	public Text scoreNum;
 	public Text messageText;
+	public Text keyNum;
+
 
 	public GameObject win;
 	public GameObject gameOver;
@@ -19,6 +21,7 @@ public class UIManager : MonoBehaviour
 	public int levelN;
 	public int scoreN;
 	public int attackN;
+	public int keyN;
 	public int attackPower;
 	public int attackPower_R;
 
@@ -66,6 +69,7 @@ public class UIManager : MonoBehaviour
 		gameOver.SetActive (false);
 		win.SetActive (false);
 
+
 	}
 
 	// Update is called once per frame
@@ -76,6 +80,7 @@ public class UIManager : MonoBehaviour
 		attackPowerNum.text = attackN.ToString ();
 		levelNum.text = levelN.ToString ();
 		scoreNum.text = scoreN.ToString ();
+		keyNum.text = keyN.ToString ();
 
 		//heyi
 		HealthSlider.maxValue = player.GetComponent<Player> ().maxplayerLife;
@@ -90,6 +95,9 @@ public class UIManager : MonoBehaviour
 			Player._instance.isInitial = false;
 		}
 
+	}
+	public void addKey(){
+		keyN = keyN + 1;
 	}
 	public void ShowMessage(string str)
 	{

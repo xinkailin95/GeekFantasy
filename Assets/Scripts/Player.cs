@@ -25,16 +25,17 @@ public class Player : MonoBehaviour
 	public Vector3 bulletEulerAngles;
 	public bool canMultiple;
 
+	public int atckMode;
+
+
+
 	private float h;
 	private float v;
 
 	public enum attackMode
 	{
-		basic_attack,
-		multiple_attack,
-		longDis_attack}
+		basic_attack, multiple_attack, longDis_attack};
 
-	;
 
 	public static attackMode at_mode;
 
@@ -90,7 +91,8 @@ public class Player : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		
+
+
 		if (Input.GetKeyDown (KeyCode.C)) {
 			initialPanel.SetActive (false);
 			isInitial = true;
@@ -99,7 +101,7 @@ public class Player : MonoBehaviour
 			Attack ();
 		}
 		if (nowPlayerLife != curplayerLife) {
-			
+
 			if (Time.time > isimmune) {
 				//gameObject.SendMessage ("Flash", this.gameObject, SendMessageOptions.DontRequireReceiver);
 				isimmune = Time.time + 1.2f;
@@ -116,8 +118,8 @@ public class Player : MonoBehaviour
 	{
 		Vector2 pos = transform.position;
 		RaycastHit2D hit = Physics2D.Linecast (dir + 1.5f * (dir - pos), pos);
-//		Debug.DrawRay (dir + dir - pos, (pos - dir) * 100, Color.blue);
-//		Debug.Log (hit.collider);
+		//		Debug.DrawRay (dir + dir - pos, (pos - dir) * 100, Color.blue);
+		//		Debug.Log (hit.collider);
 		return (hit.collider == GetComponent<CapsuleCollider2D> ()/*&& hit.collider != enemyArray[num].GetComponent<Collider2D>()*/);
 	}
 
@@ -151,7 +153,7 @@ public class Player : MonoBehaviour
 			v = Input.GetAxisRaw ("Vertical");
 			Vector2 movement_vector = new Vector2 (h, v);
 			if ((h > 0 && v > 0) || (h > 0 && v < 0) || (h < 0 && v < 0) || (h < 0 && v > 0)) {
-				
+
 			} else {
 				transform.Translate (Vector3.right * h * moveSpeed * Time.deltaTime, Space.World);
 
@@ -200,7 +202,7 @@ public class Player : MonoBehaviour
 
 					//set immune and the figure will flash
 					curplayerLife = curplayerLife - 1;
-				
+
 
 					//record the the # of attcking enemy
 					num = i;
@@ -219,9 +221,9 @@ public class Player : MonoBehaviour
 		if (Input.GetKeyDown (KeyCode.Space) && turningRed == false) {
 			attack.Play ();
 			if (Time.time > targetTime) {
-				if (at_mode == attackMode.basic_attack || (at_mode == attackMode.longDis_attack&&canMultiple==false))
+				if (atckMode == 0 || (atckMode == 3 && canMultiple==false))
 					Instantiate (bulletPrefab, transform.position, Quaternion.Euler (bulletEulerAngles));
-				if (at_mode == attackMode.multiple_attack || (at_mode == attackMode.longDis_attack&&canMultiple==true)) {
+				if (atckMode == 2 || (atckMode == 3 && canMultiple==true)) {
 					//Debug.Log(transform.eulerAngles);
 					Instantiate (bulletPrefab, transform.position, Quaternion.Euler (bulletEulerAngles));
 					Instantiate (bulletPrefab, transform.position, Quaternion.Euler (bulletEulerAngles + new Vector3 (0, 0, 30)));
@@ -231,7 +233,7 @@ public class Player : MonoBehaviour
 			}
 		}
 
-		if (Input.GetKeyDown (KeyCode.R) && turningRed == false && at_mode == attackMode.longDis_attack) {
+		if (Input.GetKeyDown (KeyCode.R) && turningRed == false && atckMode == 3) {
 			if (Time.time > targetTime) {
 				turningRed = true;
 				h = 0;v = 0;
@@ -239,7 +241,7 @@ public class Player : MonoBehaviour
 			}
 			targetTime = Time.time + 0.4f;
 		}
-		if (at_mode == attackMode.longDis_attack && turningRed == true) {
+		if (atckMode == 3 && turningRed == true) {
 			//Debug.Log(tmp_int);tmp_int++;
 			Color tmp_color = gameObject.GetComponent<Renderer> ().material.color;
 			tmp_color.r = tmp_color.r + 0.1f;
@@ -264,18 +266,23 @@ public class Player : MonoBehaviour
 
 	public void setMultiple_attack ()
 	{
-		if(at_mode!=attackMode.longDis_attack)
+		if(at_mode!=attackMode.longDis_attack )
 			at_mode = attackMode.multiple_attack;
+		atckMode = 2;
 	}	
 
 	public void setDis_attack ()
-	{
+	{	
+
 		at_mode = attackMode.longDis_attack;
+		atckMode = 3;
+
 	}
 
 	public void setBasic_attack ()
 	{
 		at_mode = attackMode.basic_attack;
+		atckMode = 0;
 	}
 
 	public IEnumerator Flash (GameObject obj)
