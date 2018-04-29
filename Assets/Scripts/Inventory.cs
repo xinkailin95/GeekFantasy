@@ -104,13 +104,14 @@ public class Inventory : MonoBehaviour
 		case 2:
 			remove (indexOfCell);
 			Player.GetComponent<Player> ().canMultiple = true;
-                Player.GetComponent<Player>().setMultiple_attack();
-                //Player myplayer = new Player();
-                //myplayer.m
+			Player.GetComponent<Player> ().setMultiple_attack ();
+
+                
                 break;
-            case 3:
-                remove(indexOfCell);
-                Player.GetComponent<Player>().setDis_attack();
+		case 3:
+			remove (indexOfCell);
+			Player.GetComponent<Player> ().setDis_attack ();
+
                 break;
             case 4:
                 break;

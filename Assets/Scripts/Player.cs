@@ -25,16 +25,17 @@ public class Player : MonoBehaviour
 	public Vector3 bulletEulerAngles;
 	public bool canMultiple;
 
+	public int atckMode;
+
+
+
 	private float h;
 	private float v;
 
 	public enum attackMode
 	{
-		basic_attack,
-		multiple_attack,
-		longDis_attack}
+		basic_attack, multiple_attack, longDis_attack};
 
-	;
 
 	public static attackMode at_mode;
 
@@ -91,6 +92,7 @@ public class Player : MonoBehaviour
 	void Update ()
 	{
 		
+
 		if (Input.GetKeyDown (KeyCode.C)) {
 			initialPanel.SetActive (false);
 			isInitial = true;
@@ -219,9 +221,9 @@ public class Player : MonoBehaviour
 		if (Input.GetKeyDown (KeyCode.Space) && turningRed == false) {
 			attack.Play ();
 			if (Time.time > targetTime) {
-				if (at_mode == attackMode.basic_attack || (at_mode == attackMode.longDis_attack&&canMultiple==false))
+				if (atckMode == 0 || (atckMode == 3 && canMultiple==false))
 					Instantiate (bulletPrefab, transform.position, Quaternion.Euler (bulletEulerAngles));
-				if (at_mode == attackMode.multiple_attack || (at_mode == attackMode.longDis_attack&&canMultiple==true)) {
+				if (atckMode == 2 || (atckMode == 3 && canMultiple==true)) {
 					//Debug.Log(transform.eulerAngles);
 					Instantiate (bulletPrefab, transform.position, Quaternion.Euler (bulletEulerAngles));
 					Instantiate (bulletPrefab, transform.position, Quaternion.Euler (bulletEulerAngles + new Vector3 (0, 0, 30)));
@@ -231,7 +233,7 @@ public class Player : MonoBehaviour
 			}
 		}
 
-		if (Input.GetKeyDown (KeyCode.R) && turningRed == false && at_mode == attackMode.longDis_attack) {
+		if (Input.GetKeyDown (KeyCode.R) && turningRed == false && atckMode == 3) {
 			if (Time.time > targetTime) {
 				turningRed = true;
 				h = 0;v = 0;
@@ -239,7 +241,7 @@ public class Player : MonoBehaviour
 			}
 			targetTime = Time.time + 0.4f;
 		}
-		if (at_mode == attackMode.longDis_attack && turningRed == true) {
+		if (atckMode == 3 && turningRed == true) {
 			//Debug.Log(tmp_int);tmp_int++;
 			Color tmp_color = gameObject.GetComponent<Renderer> ().material.color;
 			tmp_color.r = tmp_color.r + 0.1f;
@@ -264,18 +266,23 @@ public class Player : MonoBehaviour
 
 	public void setMultiple_attack ()
 	{
-		if(at_mode!=attackMode.longDis_attack)
+		if(at_mode!=attackMode.longDis_attack )
 			at_mode = attackMode.multiple_attack;
+		atckMode = 2;
 	}	
 
 	public void setDis_attack ()
-	{
+	{	
+		
 		at_mode = attackMode.longDis_attack;
+		atckMode = 3;
+
 	}
 
 	public void setBasic_attack ()
 	{
 		at_mode = attackMode.basic_attack;
+		atckMode = 0;
 	}
 
 	public IEnumerator Flash (GameObject obj)

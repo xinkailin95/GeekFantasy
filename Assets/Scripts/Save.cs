@@ -13,6 +13,7 @@ public class Save{
 	public int[] items = new int[5]; 
 	public int[] itemsNum = new int[10];
 
+	public int attackModle = 0;
 
 
 
