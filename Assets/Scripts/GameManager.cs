@@ -101,11 +101,18 @@ public class GameManager : MonoBehaviour {
 		for(int i=0; i< Inventory._instance.itemNum.Count; i++){
 			save.itemsNum [i] = Inventory._instance.itemNum [i];
 		}
+		for (int i = 0; i < EnemyManager._instance.hasKey.Length; i++) {
+			if (EnemyManager._instance.hasKey [i] == true) {
+				save.Key [i] = 0;
+			} else {
+				save.Key [i] = 1;
+			}
+		}
 		save.playerLife = Player._instance.curplayerLife;
 		save.levelNum = UIManager._instance.levelN;
 		//save.scoreNum = UIManager._instance.scoreN;
 		save.attackNum = UIManager._instance.attackN;
-
+		save.keyNum = UIManager._instance.keyN;
 		save.attackModle = Player._instance.atckMode; 
 
 
@@ -133,11 +140,20 @@ public class GameManager : MonoBehaviour {
 		for(int i=0; i< Inventory._instance.itemNum.Count; i++){
 			Inventory._instance.itemNum [i] = save.itemsNum [i];
 		}
+		for (int i = 0; i < EnemyManager._instance.hasKey.Length; i++) {
+			if (save.Key[i] == 0) {
+				EnemyManager._instance.hasKey [i] = true;
+			} else {
+				EnemyManager._instance.hasKey [i] = false;
+
+			}
+		}
 		Player._instance.curplayerLife = save.playerLife;
 		UIManager._instance.attackN = save.attackNum;
 		//UIManager._instance.scoreN = save.scoreNum;
 		UIManager._instance.levelN = save.levelNum;
 		Player._instance.atckMode = save.attackModle;
+		UIManager._instance.keyN = save.keyNum;
 
 		//		Inventory._instance.mulAtck = save.atckModleMul;
 		//		Inventory._instance.longAtck = save.atckModelLong;

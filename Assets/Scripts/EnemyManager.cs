@@ -6,7 +6,7 @@ public class EnemyManager : MonoBehaviour {
 	public GameObject[] enemyGOs;
 	public int[] enemyLife = new int[16];
 	public bool[] isDead = new bool[16];
-	private bool[] hasKey = new bool[6]; 
+	public bool[] hasKey = new bool[6]; 
 	private float distance; 
 	public GameObject keyPrefab;
 

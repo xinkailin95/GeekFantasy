@@ -44,21 +44,21 @@ public class UIManager : MonoBehaviour
 	{
 		if (scoreN < 4) {
 			levelN = 1;
-			attackPower = 1;
-			attackN = 1;
+			attackPower = 6;
+			attackN = 6;
 		} else if (scoreN >= 4 && scoreN < 10) {
 			levelN = 2;
-			attackPower = 3;
-			attackN = 3;
+			attackPower = 10;
+			attackN = 10;
 		} else if (scoreN >= 11 && scoreN < 19) {
 			levelN = 3;
-			attackPower = 5;
-			attackN = 5;
+			attackPower = 15;
+			attackN = 15;
 
 		} else if (scoreN >= 19) {
 			levelN = 4;
-			attackPower = 7;
-			attackN = 7;
+			attackPower = 20;
+			attackN = 20;
 		}
 	}
 	// Use this for initialization
