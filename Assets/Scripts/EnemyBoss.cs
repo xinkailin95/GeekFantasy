@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class Boss : MonoBehaviour
+public class EnemyBoss : MonoBehaviour
 {
-	public static Boss _instance;
+	public static EnemyBoss _instance;
 	public float speed;
 	public float backUptime = 0.1f;
 
@@ -21,18 +21,17 @@ public class Boss : MonoBehaviour
 	private Vector3 rPosition;
 	private Vector3 currentDest;
 	private Vector2 destination;
-	private Animator anim;
 	bool loop;
 	public GameObject enemyBulletPre;
 	private float timeVal;
 	public GameObject healthBar;
+	public int boss_attack_mode;
 
 
 	//public int enemyLife = 3;
 
 	void Awake ()
 	{
-		anim = GetComponent<Animator> ();
 		initPosition = transform.position;
 		r2d = GetComponent<Rigidbody2D> ();
 		_instance = this;
@@ -47,11 +46,12 @@ public class Boss : MonoBehaviour
 		player = GameObject.FindGameObjectWithTag ("Player");
 		hero = player.transform;
 
-		float x = Random.Range (-25, 25);
-		float y = Random.Range (-25, 25);
+		float x = Random.Range (-10, 10);
+		float y = Random.Range (-10, 10);
 		rPosition = new Vector3 (initPosition.x + x, initPosition.y + y, initPosition.z);
 		currentDest = rPosition;
 		loop = true;
+		boss_attack_mode = 1;
 
 	}
 
@@ -86,13 +86,9 @@ public class Boss : MonoBehaviour
 			}
 		}
 
-		Vector3 sub = newPosition - transform.position;
-		anim.SetFloat ("input_x", (sub.x < 0 ? -1f : 1f));
-		anim.SetFloat ("input_y", (sub.y < 0 ? -1f : 1f));
-
-		if (timeVal >= 2f) {
-
-			EnemyAttack (distance);
+		if (timeVal >= 1.5f) {
+			boss_attack_mode = 1 - boss_attack_mode;
+			EnemyAttack (distance - 5f);
 			timeVal = 0;
 
 		} else {
@@ -106,10 +102,14 @@ public class Boss : MonoBehaviour
 	private void EnemyAttack (float a)
 	{
 		if (a < 10 && Player._instance.curplayerLife > 0) {
-			Instantiate (enemyBulletPre, transform.position, Quaternion.Euler (transform.eulerAngles + new Vector3 (0, 0, 30)));
-			Instantiate (enemyBulletPre, transform.position, Quaternion.Euler (transform.eulerAngles + new Vector3 (0, 0, 60)));
-			Instantiate (enemyBulletPre, transform.position, Quaternion.Euler (transform.eulerAngles));
-			Instantiate (enemyBulletPre, transform.position, Quaternion.Euler (transform.eulerAngles));
+			Instantiate (enemyBulletPre, transform.position, Quaternion.Euler (transform.eulerAngles + new Vector3 (0, 0, 22.5f * boss_attack_mode)));
+			Instantiate (enemyBulletPre, transform.position, Quaternion.Euler (transform.eulerAngles + new Vector3 (0, 0, -90 + 22.5f * boss_attack_mode)));
+			Instantiate (enemyBulletPre, transform.position, Quaternion.Euler (transform.eulerAngles + new Vector3 (0, 0, 180 + 22.5f * boss_attack_mode)));
+			Instantiate (enemyBulletPre, transform.position, Quaternion.Euler (transform.eulerAngles + new Vector3 (0, 0, 90 + 22.5f * boss_attack_mode)));
+			Instantiate (enemyBulletPre, transform.position, Quaternion.Euler (transform.eulerAngles + new Vector3 (0, 0, 45 + 22.5f * boss_attack_mode)));
+			Instantiate (enemyBulletPre, transform.position, Quaternion.Euler (transform.eulerAngles + new Vector3 (0, 0, -45 + 22.5f * boss_attack_mode)));
+			Instantiate (enemyBulletPre, transform.position, Quaternion.Euler (transform.eulerAngles + new Vector3 (0, 0, 135 + 22.5f * boss_attack_mode)));
+			Instantiate (enemyBulletPre, transform.position, Quaternion.Euler (transform.eulerAngles + new Vector3 (0, 0, -135 + 22.5f * boss_attack_mode)));
 		}
 	}
 }

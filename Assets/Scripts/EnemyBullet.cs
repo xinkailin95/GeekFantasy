@@ -35,7 +35,7 @@ public class EnemyBullet : MonoBehaviour
 		newPosition = Vector3.MoveTowards (transform.position, hero.position, moveSpeed);
 		r2dE.MovePosition (newPosition);
 		//transform.Translate (transform.up * moveSpeed * Time.deltaTime, Space.World);
-		Destroy (gameObject, 4f);
+		Destroy (gameObject, 6f);
 	}
 
 	private void OnTriggerEnter2D (Collider2D collision)

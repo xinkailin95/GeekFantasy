@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class Player_test : MonoBehaviour
 {
 
-	public static Player _instance;
+	public static Player_test _instance;
 	public GameObject initialPanel;
 	public AudioSource attack;
 	public AudioSource hurt;
@@ -27,6 +27,16 @@ public class Player : MonoBehaviour
 
 	public int atckMode;
 
+	public float[] firstPress;
+	public float rrpress;
+	public float ffpress;
+
+	public float ttime;
+	public float ff;
+	public float rr;
+	public int direction;
+	public bool raiseFlag;
+	public bool just_raise_flag;
 
 
 	private float h;
@@ -73,7 +83,7 @@ public class Player : MonoBehaviour
 		nowPlayerLife = curplayerLife;
 		initialPanel.SetActive (true);
 		maxplayerLife = curplayerLife;
-		enemyArray = new GameObject[40];
+		enemyArray = new GameObject[30];
 		dest = transform.position;
 		flag = false;
 		isInitial = false;
@@ -81,6 +91,14 @@ public class Player : MonoBehaviour
 		original_color = gameObject.GetComponent<Renderer> ().material.color;
 		turningRed = false;
 		canMultiple = false;
+        
+
+		//firstPress = new float[4];
+		ffpress = 0;
+		rrpress = 0;
+		direction = 0;
+		raiseFlag = false;
+
 
 		var objectsn = GameObject.FindObjectsOfType (typeof(GameObject));
 		for (int i = 0; i < objectsn.Length; i++) {
@@ -111,8 +129,9 @@ public class Player : MonoBehaviour
 				isimmune = Time.time + 1.2f;
 				hurt.Play ();
 				gameObject.SendMessage ("Flash", this.gameObject, SendMessageOptions.DontRequireReceiver);
-			} else
+			} else {
 				curplayerLife = nowPlayerLife;
+			}
 
 
 		}
@@ -156,12 +175,25 @@ public class Player : MonoBehaviour
 		if (flag == false && isInitial == true && turningRed == false) {
 			h = Input.GetAxisRaw ("Horizontal");
 			v = Input.GetAxisRaw ("Vertical");
+
+			just_raise_flag = false;
+			if (!raiseFlag)
+				isRaise ();
+			if (raiseFlag) {
+				isDoublePress ();
+				//raiseFlag = false;
+			}
+			//if(!raiseFlag)
+			isPress ();
+			if (moveSpeed == 20 && raiseFlag == true)
+				reSpeed ();
+
 			Vector2 movement_vector = new Vector2 (h, v);
 			if ((h > 0 && v > 0) || (h > 0 && v < 0) || (h < 0 && v < 0) || (h < 0 && v > 0)) {
 
 			} else {
-				transform.Translate (Vector3.right * h * moveSpeed * Time.deltaTime, Space.World);
 
+				transform.Translate (Vector3.right * h * moveSpeed * Time.deltaTime, Space.World);
 			}
 			transform.Translate (Vector3.up * v * moveSpeed * Time.deltaTime, Space.World);
 			if (movement_vector != Vector2.zero) {
@@ -306,5 +338,95 @@ public class Player : MonoBehaviour
 		obj.GetComponent<Renderer> ().enabled = true;
 		yield return new WaitForSeconds (0.2f);
 	}
+
+	public void isPress ()
+	{
+
+		if (Input.GetKeyDown (KeyCode.A) || Input.GetKeyDown (KeyCode.LeftArrow)) {
+			direction = 1;
+			ffpress = Time.time;
+		}
+		if (Input.GetKeyDown (KeyCode.D) || Input.GetKeyDown (KeyCode.RightArrow)) {
+			direction = 2;
+			ffpress = Time.time;
+		}
+		if (Input.GetKeyDown (KeyCode.W) || Input.GetKeyDown (KeyCode.UpArrow)) {
+			direction = 3;
+			ffpress = Time.time;
+		}
+		if (Input.GetKeyDown (KeyCode.S) || Input.GetKeyDown (KeyCode.DownArrow)) {
+			direction = 4;
+			ffpress = Time.time;
+		}
+        
+
+	}
+
+	public void isRaise ()
+	{
+		if (Input.GetKeyUp (KeyCode.A) || Input.GetKeyUp (KeyCode.S) || Input.GetKeyUp (KeyCode.D) ||
+		    Input.GetKeyUp (KeyCode.F) || Input.GetKeyUp (KeyCode.LeftArrow) || Input.GetKeyUp (KeyCode.UpArrow) ||
+		    Input.GetKeyUp (KeyCode.DownArrow) || Input.GetKeyUp (KeyCode.RightArrow)) {
+			rrpress = Time.time;
+			raiseFlag = true;
+			just_raise_flag = true;
+		} else
+			raiseFlag = false;
+	}
+
+	public void isDoublePress ()
+	{
+		ttime = Time.time;
+		rr = rrpress;
+		ff = ffpress;
+		Debug.Log ("~~~~~~~~`");
+
+
+
+		if ((Input.GetKeyDown (KeyCode.A) || Input.GetKeyDown (KeyCode.LeftArrow)) && direction == 1) {
+			if (rrpress - ffpress < 0.1f && ttime - rrpress < 0.1f) {
+				moveSpeed = 20;
+				direction = 0;
+			}
+		}
+		if ((Input.GetKeyDown (KeyCode.D) || Input.GetKeyDown (KeyCode.RightArrow)) && direction == 2) {
+			if (rrpress - ffpress < 0.1f && Time.time - rrpress < 0.1f) {
+				moveSpeed = 20;
+				direction = 0;
+			}
+		}
+		if ((Input.GetKeyDown (KeyCode.W) || Input.GetKeyDown (KeyCode.UpArrow)) && direction == 3) {
+			if (rrpress - ffpress < 0.1f && Time.time - rrpress < 0.1f) {
+				moveSpeed = 20;
+				direction = 0;
+			}
+		}
+		if ((Input.GetKeyDown (KeyCode.S) || Input.GetKeyDown (KeyCode.DownArrow)) && direction == 4) {
+			if (rrpress - ffpress < 0.1f && Time.time - rrpress < 0.1f) {
+				moveSpeed = 20;
+				direction = 0;
+			}
+		}
+
+		if (!just_raise_flag)
+            //raiseFlag = false;
+            Invoke ("false_raiseflag", 0.5f);
+
+	}
+
+	public void reSpeed ()
+	{
+		if (Input.GetKeyUp (KeyCode.A) || Input.GetKeyUp (KeyCode.S) || Input.GetKeyUp (KeyCode.D) ||
+		    Input.GetKeyUp (KeyCode.F) || Input.GetKeyUp (KeyCode.LeftArrow) || Input.GetKeyUp (KeyCode.UpArrow) ||
+		    Input.GetKeyUp (KeyCode.DownArrow) || Input.GetKeyUp (KeyCode.RightArrow)) {
+			moveSpeed = 6;
+		}
+	}
+
+	public void false_raiseflag ()
+	{
+		raiseFlag = false;
+	}
+
 
 }
