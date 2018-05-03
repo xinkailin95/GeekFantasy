@@ -24,6 +24,8 @@ TagManager:
   - Enemy16
   - Enemy17
   - Enemy18
+  - Fader
+  - Enemy19
   layers:
   - Default
   - TransparentFX

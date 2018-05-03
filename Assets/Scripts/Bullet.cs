@@ -100,6 +100,18 @@ public class Bullet : MonoBehaviour
 			EnemyManager._instance.enemyLife [16] = EnemyManager._instance.enemyLife [16] - UIManager._instance.attackPower;
 			Destroy (gameObject);
 			break;
+		case"Enemy17":
+			EnemyManager._instance.enemyLife [17] = EnemyManager._instance.enemyLife [17] - UIManager._instance.attackPower;
+			Destroy (gameObject);
+			break;
+		case"Enemy18":
+			EnemyManager._instance.enemyLife [18] = EnemyManager._instance.enemyLife [18] - UIManager._instance.attackPower;
+			Destroy (gameObject);
+			break;
+		case"Enemy19":
+			EnemyManager._instance.enemyLife [19] = EnemyManager._instance.enemyLife [19] - UIManager._instance.attackPower;
+			Destroy (gameObject);
+			break;
 		case"Building":
 			Destroy (gameObject);
 			break;
