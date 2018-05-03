@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class Boss : MonoBehaviour
+public class EnemyUnity : MonoBehaviour
 {
-	public static Boss _instance;
+	public static EnemyUnity _instance;
 	public float speed;
 	public float backUptime = 0.1f;
 
@@ -23,9 +23,12 @@ public class Boss : MonoBehaviour
 	private Vector2 destination;
 	private Animator anim;
 	bool loop;
-	public GameObject enemyBulletPre;
+	public GameObject enemyBulletRed;
+	public GameObject enemyBulletBlue;
+	public GameObject enemyBulletPurple;
 	private float timeVal;
 	public GameObject healthBar;
+	public int attack_mode_unity;
 
 
 	//public int enemyLife = 3;
@@ -46,9 +49,11 @@ public class Boss : MonoBehaviour
 	{
 		player = GameObject.FindGameObjectWithTag ("Player");
 		hero = player.transform;
+		attack_mode_unity = 1;
 
-		float x = Random.Range (-25, 25);
-		float y = Random.Range (-25, 25);
+
+		float x = Random.Range (-10, 10);
+		float y = Random.Range (-10, 10);
 		rPosition = new Vector3 (initPosition.x + x, initPosition.y + y, initPosition.z);
 		currentDest = rPosition;
 		loop = true;
@@ -91,7 +96,7 @@ public class Boss : MonoBehaviour
 		anim.SetFloat ("input_y", (sub.y < 0 ? -1f : 1f));
 
 		if (timeVal >= 2f) {
-
+			attack_mode_unity = (attack_mode_unity + 1) % 3;
 			EnemyAttack (distance);
 			timeVal = 0;
 
@@ -106,10 +111,10 @@ public class Boss : MonoBehaviour
 	private void EnemyAttack (float a)
 	{
 		if (a < 10 && Player._instance.curplayerLife > 0) {
-			Instantiate (enemyBulletPre, transform.position, Quaternion.Euler (transform.eulerAngles + new Vector3 (0, 0, 30)));
-			Instantiate (enemyBulletPre, transform.position, Quaternion.Euler (transform.eulerAngles + new Vector3 (0, 0, 60)));
-			Instantiate (enemyBulletPre, transform.position, Quaternion.Euler (transform.eulerAngles));
-			Instantiate (enemyBulletPre, transform.position, Quaternion.Euler (transform.eulerAngles));
+			Instantiate (enemyBulletRed, transform.position, Quaternion.Euler (transform.eulerAngles + new Vector3 (0, 0, 45 + 45 * attack_mode_unity)));
+			Instantiate (enemyBulletBlue, transform.position, Quaternion.Euler (transform.eulerAngles + new Vector3 (0, 0, -90 + 45 * attack_mode_unity)));
+			Instantiate (enemyBulletPurple, transform.position, Quaternion.Euler (transform.eulerAngles + new Vector3 (0, 0, 135 + 45 * attack_mode_unity)));
+
 		}
 	}
 }

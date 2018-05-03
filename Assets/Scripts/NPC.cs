@@ -48,7 +48,7 @@ public class NPC : MonoBehaviour
 
 				}
 						
-				Debug.Log (i.ToString ());
+
 				if (i == 3) {
 					UIManager._instance.scoreN = UIManager._instance.scoreN + 3;
 					NPCtalking.SetActive (false);
