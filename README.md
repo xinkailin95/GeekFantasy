@@ -51,11 +51,11 @@ https://drive.google.com/open?id=1O7GefxxJmmhBjBI7BhNSawPy1TB5eJaW
 PS: For Mac user who has identified developers issues, go to System Preferences and go to Security & Privacy, in General click open anyway to open the app.
 
 ## Other Reselase: 
-Prototype: https://drive.google.com/drive/u/0/folders/1ZiA1gOf7HBvfNZJ_owBfVGaIM8Sf90DH
+Beta Release: https://drive.google.com/drive/folders/1L_YDw00WrgDhkausWt_SE-QM9gdPZxXb 
 
 Alpha Release: https://drive.google.com/open?id=1utP1IsUDiT8LFu5GGB_2YcvqgZckl35c
 
-Beta Release: https://drive.google.com/drive/folders/1L_YDw00WrgDhkausWt_SE-QM9gdPZxXb 
+Prototype: https://drive.google.com/drive/u/0/folders/1ZiA1gOf7HBvfNZJ_owBfVGaIM8Sf90DH
 
 # Landing Page
 https://xli2288.wixsite.com/geekfantasy
