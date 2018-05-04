@@ -31,16 +31,10 @@ I am also able to get surprise from NPC to update his ability on the way to the 
 
 I will experience an interesting daily life of a geek in a campus setting, and this game fulfils the element of fantasy which can be a fun twist to our boring everyday life.	
 
-# Prototype && Alpha Release && Beta Release
+# Official Release
 ## Instruction
-&nbsp;&nbsp;&nbsp;&nbsp;1. Open the download link for Prototype:
-&nbsp;&nbsp;&nbsp;&nbsp;https://drive.google.com/drive/u/0/folders/1ZiA1gOf7HBvfNZJ_owBfVGaIM8Sf90DH
-
-&nbsp;&nbsp;&nbsp;&nbsp;1. Open the download link for Alpha Release: 
-https://drive.google.com/open?id=1utP1IsUDiT8LFu5GGB_2YcvqgZckl35c
-
-&nbsp;&nbsp;&nbsp;&nbsp;1. Open the download link for Beta Release(or on Landing Page at Wiki): 
-https://drive.google.com/drive/folders/1L_YDw00WrgDhkausWt_SE-QM9gdPZxXb 
+&nbsp;&nbsp;&nbsp;&nbsp;1. Open the download link:
+&nbsp;&nbsp;&nbsp;&nbsp;https://drive.google.com/open?id=1O7GefxxJmmhBjBI7BhNSawPy1TB5eJaW
 
 &nbsp;&nbsp;&nbsp;&nbsp;2. Downoad the file, exctract it if is a zip file.
 
@@ -56,6 +50,11 @@ https://drive.google.com/drive/folders/1L_YDw00WrgDhkausWt_SE-QM9gdPZxXb
 
 PS: For Mac user who has identified developers issues, go to System Preferences and go to Security & Privacy, in General click open anyway to open the app.
 
+## Other Reselase: 
+Prototype: https://drive.google.com/drive/u/0/folders/1ZiA1gOf7HBvfNZJ_owBfVGaIM8Sf90DH
+Alpha Release: https://drive.google.com/open?id=1utP1IsUDiT8LFu5GGB_2YcvqgZckl35c
+Beta Release: https://drive.google.com/drive/folders/1L_YDw00WrgDhkausWt_SE-QM9gdPZxXb 
+
 # Landing Page
 https://xli2288.wixsite.com/geekfantasy
 
@@ -65,3 +64,5 @@ Prototype: https://youtu.be/9VW4yJrVLIM
 Alpha Release: https://youtu.be/emJ41wblpow
 
 Beta Release: https://youtu.be/coE-VAhETHQ
+
+Official Release: 
