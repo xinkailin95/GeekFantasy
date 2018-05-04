@@ -34207,6 +34207,31 @@ GameObject:
   m_PrefabParentObject: {fileID: 1641309186104638, guid: e6b8c3f2a33d640c5af10d163efe6cf1,
     type: 2}
   m_PrefabInternal: {fileID: 1431644790}
+--- !u!61 &1377770560
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1377770559}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 48.02911, y: 6.759201}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 192.14001, y: 51.46}
+    newSize: {x: 96.07, y: 25.73}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.4502335, y: 1.933075}
+  m_EdgeRadius: 0
 --- !u!50 &1377770604
 Rigidbody2D:
   serializedVersion: 4
@@ -48164,7 +48189,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -36, y: -12.5}
+  m_AnchoredPosition: {x: -5, y: 5}
   m_SizeDelta: {x: 17, y: 269.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1931031580
