@@ -21,9 +21,20 @@ public class Player : MonoBehaviour
 	public bool isInitial;
 	public GameObject bulletPrefab;
 	public GameObject arrowBulletPrefab;
-	public float moveSpeed = 9;
+	public float moveSpeed;
 	public Vector3 bulletEulerAngles;
 	public bool canMultiple;
+
+	private bool firstPress;
+	private bool firstRelease;
+	private bool secondPress;
+
+	private float fpTime;
+	private float frTime;
+	private float spTime;
+	private int direction;
+	public float timeSpan;
+
 
 	public int atckMode;
 
@@ -42,7 +53,6 @@ public class Player : MonoBehaviour
 
 
 	public static attackMode at_mode;
-
 	private Color original_color;
 	private bool turningRed;
 	private Animator anim;
@@ -81,6 +91,16 @@ public class Player : MonoBehaviour
 		original_color = gameObject.GetComponent<Renderer> ().material.color;
 		turningRed = false;
 		canMultiple = false;
+
+		firstPress = false;
+		secondPress = false;
+		firstRelease = false;
+		fpTime = 0;
+		frTime = 0;
+		spTime = 0;
+		direction = 0;
+		timeSpan = 0.2f;
+		moveSpeed = 5f;
 
 		var objectsn = GameObject.FindObjectsOfType (typeof(GameObject));
 		for (int i = 0; i < objectsn.Length; i++) {
@@ -157,6 +177,23 @@ public class Player : MonoBehaviour
 			h = Input.GetAxisRaw ("Horizontal");
 			v = Input.GetAxisRaw ("Vertical");
 			Vector2 movement_vector = new Vector2 (h, v);
+
+
+			//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+			if (firstPress == false)
+				detectFirstPress ();
+			if (firstPress == true && firstRelease == false && secondPress == false)
+				detectFirstRelease ();
+			if (firstPress == true && firstRelease == true && secondPress == false)
+				detectSecondPress ();
+			if (firstPress == true && firstRelease == true && secondPress == true)
+				detectSecondRelease ();
+
+
+
+
+
+
 			if ((h > 0 && v > 0) || (h > 0 && v < 0) || (h < 0 && v < 0) || (h < 0 && v > 0)) {
 
 			} else {
@@ -289,6 +326,171 @@ public class Player : MonoBehaviour
 	{
 		at_mode = attackMode.basic_attack;
 		atckMode = 0;
+	}
+
+	public void detectFirstPress ()
+	{
+		if (Input.GetKeyDown (KeyCode.A) || Input.GetKeyDown (KeyCode.LeftArrow)) {
+			direction = 1;
+			fpTime = Time.time;
+			firstPress = true;
+		}
+		if (Input.GetKeyDown (KeyCode.D) || Input.GetKeyDown (KeyCode.RightArrow)) {
+			direction = 2;
+			fpTime = Time.time;
+			firstPress = true;
+		}
+		if (Input.GetKeyDown (KeyCode.W) || Input.GetKeyDown (KeyCode.UpArrow)) {
+			direction = 3;
+			fpTime = Time.time;
+			firstPress = true;
+		}
+		if (Input.GetKeyDown (KeyCode.S) || Input.GetKeyDown (KeyCode.DownArrow)) {
+			direction = 4;
+			fpTime = Time.time;
+			firstPress = true;
+		}
+
+	}
+
+	public void detectFirstRelease ()
+	{
+		Debug.Log ("~~~~~~~~~~~~~~~");
+		if ((Input.GetKeyUp (KeyCode.A) || Input.GetKeyUp (KeyCode.LeftArrow)) && direction == 1) {
+			frTime = Time.time;
+			firstRelease = true;
+		}
+		if ((Input.GetKeyUp (KeyCode.D) || Input.GetKeyUp (KeyCode.RightArrow)) && direction == 2) {
+			frTime = Time.time;
+			firstRelease = true;
+		}
+		if ((Input.GetKeyUp (KeyCode.W) || Input.GetKeyUp (KeyCode.UpArrow)) && direction == 3) {
+			frTime = Time.time;
+			firstRelease = true;
+		}
+		if ((Input.GetKeyUp (KeyCode.S) || Input.GetKeyUp (KeyCode.DownArrow)) && direction == 4) {
+			frTime = Time.time;
+			firstRelease = true;
+		}
+	}
+
+	public void detectSecondPress ()
+	{
+		if ((Input.GetKeyDown (KeyCode.A) || Input.GetKeyDown (KeyCode.LeftArrow))) {
+			if (direction == 1) {
+				if (Time.time - frTime < timeSpan && frTime - fpTime < timeSpan) {
+					moveSpeed = 10;
+					secondPress = true;
+				} else {
+					//firstPress = false;
+					//firstRelease = false;
+					fpTime = Time.time;
+					frTime = Time.time;
+					setDirection ();
+				}
+			} else {
+				setDirection ();
+				firstPress = false;
+				firstRelease = false;
+			}
+
+		} else if ((Input.GetKeyDown (KeyCode.D) || Input.GetKeyDown (KeyCode.RightArrow))) {
+			if (direction == 2) {
+				if (Time.time - frTime < timeSpan && frTime - fpTime < timeSpan) {
+					moveSpeed = 10;
+					secondPress = true;
+				} else {
+					//firstPress = false;
+					//firstRelease = false;
+					setDirection ();
+					fpTime = Time.time;
+					frTime = Time.time;
+				}
+			} else {
+				setDirection ();
+				firstPress = false;
+				firstRelease = false;
+			}
+		} else if ((Input.GetKeyDown (KeyCode.W) || Input.GetKeyDown (KeyCode.UpArrow))) {
+			if (direction == 3) {
+				if (Time.time - frTime < timeSpan && frTime - fpTime < timeSpan) {
+					moveSpeed = 10;
+					secondPress = true;
+				} else {
+					//firstPress = false;
+					//firstRelease = false;
+					setDirection ();
+					fpTime = Time.time;
+					frTime = Time.time;
+				}
+			} else {
+				setDirection ();
+				firstPress = false;
+				firstRelease = false;
+			}
+		} else if ((Input.GetKeyDown (KeyCode.S) || Input.GetKeyDown (KeyCode.DownArrow))) {
+			if (direction == 4) {
+				if (Time.time - frTime < timeSpan && frTime - fpTime < timeSpan) {
+					moveSpeed = 10;
+					secondPress = true;
+				} else {
+					//firstPress = false;
+					//firstRelease = false;
+					setDirection ();
+					fpTime = Time.time;
+					frTime = Time.time;
+				}
+			} else {
+				setDirection ();
+				firstPress = false;
+				firstRelease = false;
+			}
+		}
+
+	}
+
+	public void detectSecondRelease ()
+	{
+		if ((Input.GetKeyUp (KeyCode.A) || Input.GetKeyUp (KeyCode.LeftArrow))) {
+			firstPress = false;
+			firstRelease = false;
+			secondPress = false;
+			moveSpeed = 5;
+		} else if ((Input.GetKeyUp (KeyCode.D) || Input.GetKeyUp (KeyCode.RightArrow))) {
+			firstPress = false;
+			firstRelease = false;
+			secondPress = false;
+			moveSpeed = 5;
+		} else if ((Input.GetKeyUp (KeyCode.W) || Input.GetKeyUp (KeyCode.UpArrow))) {
+			firstPress = false;
+			firstRelease = false;
+			secondPress = false;
+			moveSpeed = 5;
+		} else if ((Input.GetKeyUp (KeyCode.S) || Input.GetKeyUp (KeyCode.DownArrow))) {
+			firstPress = false;
+			firstRelease = false;
+			secondPress = false;
+			moveSpeed = 5;
+		}
+	}
+
+
+
+
+	public void setDirection ()
+	{
+		if (Input.GetKeyDown (KeyCode.A) || Input.GetKeyDown (KeyCode.LeftArrow)) {
+			direction = 1;
+		}
+		if (Input.GetKeyDown (KeyCode.D) || Input.GetKeyDown (KeyCode.RightArrow)) {
+			direction = 2;
+		}
+		if (Input.GetKeyDown (KeyCode.W) || Input.GetKeyDown (KeyCode.UpArrow)) {
+			direction = 3;
+		}
+		if (Input.GetKeyDown (KeyCode.S) || Input.GetKeyDown (KeyCode.DownArrow)) {
+			direction = 4;
+		}
 	}
 
 	public IEnumerator Flash (GameObject obj)

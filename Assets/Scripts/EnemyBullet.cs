@@ -26,7 +26,7 @@ public class EnemyBullet : MonoBehaviour
 
 		player = GameObject.FindGameObjectWithTag ("Player");
 		hero = player.transform;
-		moveSpeed = 0.07f;
+		moveSpeed = 0.10f;
 	}
 
 	// Update is called once per frame
@@ -35,7 +35,7 @@ public class EnemyBullet : MonoBehaviour
 		newPosition = Vector3.MoveTowards (transform.position, hero.position, moveSpeed);
 		r2dE.MovePosition (newPosition);
 		//transform.Translate (transform.up * moveSpeed * Time.deltaTime, Space.World);
-		Destroy (gameObject, 6f);
+		Destroy (gameObject, 2f);
 	}
 
 	private void OnTriggerEnter2D (Collider2D collision)

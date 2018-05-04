@@ -42,23 +42,27 @@ public class UIManager : MonoBehaviour
 
 	private void AddLevel ()
 	{
-		if (scoreN < 4) {
+		if (scoreN < 8) {
 			levelN = 1;
-			attackPower = 6;
-			attackN = 6;
-		} else if (scoreN >= 4 && scoreN < 10) {
+			attackPower = 1;
+			attackN = 1;
+		} else if (scoreN >= 8 && scoreN < 18) {
 			levelN = 2;
-			attackPower = 10;
-			attackN = 10;
-		} else if (scoreN >= 11 && scoreN < 19) {
+			attackPower = 2;
+			attackN = 2;
+		} else if (scoreN >= 18 && scoreN < 30) {
 			levelN = 3;
-			attackPower = 15;
-			attackN = 15;
+			attackPower = 3;
+			attackN = 3;
 
-		} else if (scoreN >= 19) {
+		} else if (scoreN >= 30 && scoreN < 48) {
 			levelN = 4;
-			attackPower = 20;
-			attackN = 20;
+			attackPower = 4;
+			attackN = 4;
+		} else if (scoreN >= 48) {
+			levelN = 5;
+			attackPower = 5;
+			attackN = 5;
 		}
 	}
 	// Use this for initialization
@@ -96,15 +100,20 @@ public class UIManager : MonoBehaviour
 		}
 
 	}
-	public void addKey(){
+
+	public void addKey ()
+	{
 		keyN = keyN + 1;
 	}
-	public void ShowMessage(string str)
+
+	public void ShowMessage (string str)
 	{
 		messageText.text = str;
 		Invoke ("emptyStr", 0.5f);
 	}
-	public void emptyStr(){
+
+	public void emptyStr ()
+	{
 		messageText.text = "";
 	}
 
