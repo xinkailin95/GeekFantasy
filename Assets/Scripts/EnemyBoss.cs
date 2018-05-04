@@ -46,8 +46,8 @@ public class EnemyBoss : MonoBehaviour
 		player = GameObject.FindGameObjectWithTag ("Player");
 		hero = player.transform;
 
-		float x = Random.Range (-10, 10);
-		float y = Random.Range (-10, 10);
+		float x = Random.Range (-20, 20);
+		float y = Random.Range (-20, 20);
 		rPosition = new Vector3 (initPosition.x + x, initPosition.y + y, initPosition.z);
 		currentDest = rPosition;
 		loop = true;
