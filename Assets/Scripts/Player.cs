@@ -234,7 +234,7 @@ public class Player : MonoBehaviour
 				//calculate the distance between figure and enemy
 				float distance = Vector3.Distance (enemyArray [i].transform.position, transform.position);
 				if (i == 0)
-					volume = 3f;
+					volume = 4f;
 				else
 					volume = 2.2f;
 
@@ -356,7 +356,7 @@ public class Player : MonoBehaviour
 
 	public void detectFirstRelease ()
 	{
-		Debug.Log ("~~~~~~~~~~~~~~~");
+		//Debug.Log ("~~~~~~~~~~~~~~~");
 		if ((Input.GetKeyUp (KeyCode.A) || Input.GetKeyUp (KeyCode.LeftArrow)) && direction == 1) {
 			frTime = Time.time;
 			firstRelease = true;
@@ -391,7 +391,7 @@ public class Player : MonoBehaviour
 					//setDirection();
 				}
 			} else {
-				setDirection ();
+				//setDirection();
 				firstPress = false;
 				firstRelease = false;
 			}
@@ -410,7 +410,7 @@ public class Player : MonoBehaviour
 					frTime = Time.time;
 				}
 			} else {
-				setDirection ();
+				//setDirection();
 				firstPress = false;
 				firstRelease = false;
 			}
@@ -428,7 +428,7 @@ public class Player : MonoBehaviour
 					frTime = Time.time;
 				}
 			} else {
-				setDirection ();
+				//setDirection();
 				firstPress = false;
 				firstRelease = false;
 			}
@@ -446,7 +446,7 @@ public class Player : MonoBehaviour
 					frTime = Time.time;
 				}
 			} else {
-				setDirection ();
+				//setDirection();
 				firstPress = false;
 				firstRelease = false;
 			}
