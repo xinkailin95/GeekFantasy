@@ -22,7 +22,7 @@ public class Enemy : MonoBehaviour
 	private Vector3 rPosition;
 	private Vector3 currentDest;
 	private Vector2 destination;
-	private Animator anim;
+	//	private Animator anim;
 	bool loop;
 	public GameObject enemyBulletPre;
 	private float timeVal;
@@ -33,7 +33,7 @@ public class Enemy : MonoBehaviour
 
 	void Awake ()
 	{
-		anim = GetComponent<Animator> ();
+		//anim = GetComponent<Animator> ();
 		initPosition = transform.position;
 		r2d = GetComponent<Rigidbody2D> ();
 		_instance = this;
