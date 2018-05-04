@@ -91,9 +91,9 @@ public class EnemyUnity : MonoBehaviour
 			}
 		}
 
-		Vector3 sub = newPosition - transform.position;
-		anim.SetFloat ("input_x", (sub.x < 0 ? -1f : 1f));
-		anim.SetFloat ("input_y", (sub.y < 0 ? -1f : 1f));
+//		Vector3 sub = newPosition - transform.position;
+//		anim.SetFloat ("input_x", (sub.x < 0 ? -1f : 1f));
+//		anim.SetFloat ("input_y", (sub.y < 0 ? -1f : 1f));
 
 		if (timeVal >= 2f) {
 			attack_mode_unity = (attack_mode_unity + 1) % 3;
