@@ -234,7 +234,7 @@ public class Player : MonoBehaviour
 				//calculate the distance between figure and enemy
 				float distance = Vector3.Distance (enemyArray [i].transform.position, transform.position);
 				if (i == 0)
-					volume = 3f;
+					volume = 4f;
 				else
 					volume = 2.2f;
 
