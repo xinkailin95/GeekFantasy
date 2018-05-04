@@ -55,6 +55,7 @@ public class CarDrive : MonoBehaviour
                 Player.GetComponent<CapsuleCollider2D>().enabled = false;
                 Player.GetComponent<Player>().isInitial = false;
                 get_on_just_now = true;
+				Invoke ("Flip", 0.5f);
             }
         }
         if (this.isDriven == true)
@@ -113,6 +114,11 @@ public class CarDrive : MonoBehaviour
                 Player.GetComponent<Player>().isInitial = true;
             }
         }
-        get_on_just_now = false;
+        //get_on_just_now = false;
     }
+
+	public void Flip(){
+		get_on_just_now = false;
+	}
+
 }

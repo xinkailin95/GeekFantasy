@@ -12,8 +12,9 @@ public class Save{
 	public int playerLife;
 	public int[] items = new int[5]; 
 	public int[] itemsNum = new int[10];
-
-
+	public int[] Key = new int[6];
+	public int attackModle = 0;
+	public int keyNum = 0;
 
 
 	//public int scoreNum = 0;

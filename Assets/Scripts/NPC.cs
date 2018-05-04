@@ -18,6 +18,9 @@ public class NPC : MonoBehaviour
 	public bool ifTalked;
 	private int i;
 
+	private GameObject player;
+	public Transform hero;
+
 	// Use this for initialization
 	void Start ()
 	{
@@ -29,12 +32,15 @@ public class NPC : MonoBehaviour
 		l.Add (NPCtalkingB5);
 		l.Add (NPCtalkingB6);
 		i = 0;
+
+		player = GameObject.FindGameObjectWithTag ("Player");
+		hero = player.transform;
 	}
 	
 	// Update is called once per frame
 	void Update ()
 	{
-		distance = Vector3.Distance (Enemy._instance.hero.position, transform.position);
+		distance = Vector3.Distance (hero.position, transform.position);
 		if (ifTalked == false) {
 			if (distance < 2 && Input.GetKeyDown (KeyCode.T)) {
 				Player._instance.isInitial = false;
@@ -48,7 +54,7 @@ public class NPC : MonoBehaviour
 
 				}
 						
-				Debug.Log (i.ToString ());
+
 				if (i == 3) {
 					UIManager._instance.scoreN = UIManager._instance.scoreN + 3;
 					NPCtalking.SetActive (false);
@@ -59,7 +65,7 @@ public class NPC : MonoBehaviour
 				i = i + 1;
 			} 
 		} else if (ifTalked == true) {
-			distance = Vector3.Distance (Enemy._instance.hero.position, transform.position);
+			distance = Vector3.Distance (hero.position, transform.position);
 
 			if (distance < 2 && Input.GetKeyDown (KeyCode.T) && l.Contains (NPCtalkingB6)) {
 				NPCtalking.SetActive (true);

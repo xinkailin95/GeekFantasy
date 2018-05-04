@@ -35,6 +35,7 @@ public class Bullet : MonoBehaviour
 				Time.timeScale = 0;
 				UIManager._instance.AddScore ();
 			}
+			Destroy (gameObject);
 			break;
 		case"Enemy1":
 			EnemyManager._instance.enemyLife [1] = EnemyManager._instance.enemyLife [1] - UIManager._instance.attackPower;
@@ -98,6 +99,98 @@ public class Bullet : MonoBehaviour
 			break;
 		case"Enemy16":
 			EnemyManager._instance.enemyLife [16] = EnemyManager._instance.enemyLife [16] - UIManager._instance.attackPower;
+			Destroy (gameObject);
+			break;
+		case"Enemy17":
+			EnemyManager._instance.enemyLife [17] = EnemyManager._instance.enemyLife [17] - UIManager._instance.attackPower;
+			Destroy (gameObject);
+			break;
+		case"Enemy18":
+			EnemyManager._instance.enemyLife [18] = EnemyManager._instance.enemyLife [18] - UIManager._instance.attackPower;
+			Destroy (gameObject);
+			break;
+		case"Enemy19":
+			EnemyManager._instance.enemyLife [19] = EnemyManager._instance.enemyLife [19] - UIManager._instance.attackPower;
+			Destroy (gameObject);
+			break;
+		case"Enemy20":
+			EnemyManager._instance.enemyLife [20] = EnemyManager._instance.enemyLife [20] - UIManager._instance.attackPower;
+			Destroy (gameObject);
+			break;
+		case"Enemy21":
+			EnemyManager._instance.enemyLife [21] = EnemyManager._instance.enemyLife [21] - UIManager._instance.attackPower;
+			Destroy (gameObject);
+			break;
+		case"Enemy22":
+			EnemyManager._instance.enemyLife [22] = EnemyManager._instance.enemyLife [22] - UIManager._instance.attackPower;
+			Destroy (gameObject);
+			break;
+		case"Enemy23":
+			EnemyManager._instance.enemyLife [23] = EnemyManager._instance.enemyLife [23] - UIManager._instance.attackPower;
+			Destroy (gameObject);
+			break;
+		case"Enemy24":
+			EnemyManager._instance.enemyLife [24] = EnemyManager._instance.enemyLife [24] - UIManager._instance.attackPower;
+			Destroy (gameObject);
+			break;
+		case"Enemy25":
+			EnemyManager._instance.enemyLife [25] = EnemyManager._instance.enemyLife [25] - UIManager._instance.attackPower;
+			Destroy (gameObject);
+			break;
+		case"Enemy26":
+			EnemyManager._instance.enemyLife [26] = EnemyManager._instance.enemyLife [26] - UIManager._instance.attackPower;
+			Destroy (gameObject);
+			break;
+		case"Enemy27":
+			EnemyManager._instance.enemyLife [27] = EnemyManager._instance.enemyLife [27] - UIManager._instance.attackPower;
+			Destroy (gameObject);
+			break;
+		case"Enemy28":
+			EnemyManager._instance.enemyLife [28] = EnemyManager._instance.enemyLife [28] - UIManager._instance.attackPower;
+			Destroy (gameObject);
+			break;
+		case"Enemy29":
+			EnemyManager._instance.enemyLife [29] = EnemyManager._instance.enemyLife [29] - UIManager._instance.attackPower;
+			Destroy (gameObject);
+			break;
+		case"Enemy30":
+			EnemyManager._instance.enemyLife [30] = EnemyManager._instance.enemyLife [30] - UIManager._instance.attackPower;
+			Destroy (gameObject);
+			break;
+		case"Enemy31":
+			EnemyManager._instance.enemyLife [31] = EnemyManager._instance.enemyLife [31] - UIManager._instance.attackPower;
+			Destroy (gameObject);
+			break;
+		case"Enemy32":
+			EnemyManager._instance.enemyLife [32] = EnemyManager._instance.enemyLife [32] - UIManager._instance.attackPower;
+			Destroy (gameObject);
+			break;
+		case"Enemy33":
+			EnemyManager._instance.enemyLife [33] = EnemyManager._instance.enemyLife [33] - UIManager._instance.attackPower;
+			Destroy (gameObject);
+			break;
+		case"Enemy34":
+			EnemyManager._instance.enemyLife [34] = EnemyManager._instance.enemyLife [34] - UIManager._instance.attackPower;
+			Destroy (gameObject);
+			break;
+		case"Enemy35":
+			EnemyManager._instance.enemyLife [35] = EnemyManager._instance.enemyLife [35] - UIManager._instance.attackPower;
+			Destroy (gameObject);
+			break;
+		case"Enemy36":
+			EnemyManager._instance.enemyLife [36] = EnemyManager._instance.enemyLife [36] - UIManager._instance.attackPower;
+			Destroy (gameObject);
+			break;
+		case"Enemy37":
+			EnemyManager._instance.enemyLife [37] = EnemyManager._instance.enemyLife [37] - UIManager._instance.attackPower;
+			Destroy (gameObject);
+			break;
+		case"Enemy38":
+			EnemyManager._instance.enemyLife [38] = EnemyManager._instance.enemyLife [38] - UIManager._instance.attackPower;
+			Destroy (gameObject);
+			break;
+		case"Enemy39":
+			EnemyManager._instance.enemyLife [39] = EnemyManager._instance.enemyLife [39] - UIManager._instance.attackPower;
 			Destroy (gameObject);
 			break;
 		case"Building":

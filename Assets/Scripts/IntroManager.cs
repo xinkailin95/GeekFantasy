@@ -44,5 +44,6 @@ public class IntroManager : MonoBehaviour {
 	}
 	public void Starting(){
 		SceneManager.LoadScene (1);
+		Time.timeScale = 1;
 	}
 }

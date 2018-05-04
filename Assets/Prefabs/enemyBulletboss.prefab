@@ -20,9 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4063685342998598}
   - component: {fileID: 212113854193096062}
-  - component: {fileID: 114544215076736662}
   - component: {fileID: 58002090705310246}
   - component: {fileID: 50714697963501924}
+  - component: {fileID: 114698326741956876}
+  - component: {fileID: 95351622320848898}
   m_Layer: 0
   m_Name: enemyBulletboss
   m_TagString: Untagged
@@ -78,7 +79,24 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.625
---- !u!114 &114544215076736662
+--- !u!95 &95351622320848898
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1132124555821396}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4e9da19b2609548b9aec48a10270d943, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114698326741956876
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -86,10 +104,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1132124555821396}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0da6891b8a6f44798bd06a1015851be6, type: 3}
+  m_Script: {fileID: 11500000, guid: cc152594cff5844ef90ccac229d13afc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0.3
+  moveSpeed: 5
 --- !u!212 &212113854193096062
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -123,8 +141,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 2b5fae937be6841ea80450c85870db7f, type: 3}
+  m_SortingOrder: 4
+  m_Sprite: {fileID: 21300000, guid: bf7ab8ae642034b518a8141c1bb85e5e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

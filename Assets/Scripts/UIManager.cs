@@ -12,6 +12,8 @@ public class UIManager : MonoBehaviour
 	public Text attackPowerNum;
 	public Text scoreNum;
 	public Text messageText;
+	public Text keyNum;
+
 
 	public GameObject win;
 	public GameObject gameOver;
@@ -19,6 +21,7 @@ public class UIManager : MonoBehaviour
 	public int levelN;
 	public int scoreN;
 	public int attackN;
+	public int keyN;
 	public int attackPower;
 	public int attackPower_R;
 
@@ -39,23 +42,27 @@ public class UIManager : MonoBehaviour
 
 	private void AddLevel ()
 	{
-		if (scoreN < 4) {
+		if (scoreN < 8) {
 			levelN = 1;
 			attackPower = 1;
 			attackN = 1;
-		} else if (scoreN >= 4 && scoreN < 10) {
+		} else if (scoreN >= 8 && scoreN < 18) {
 			levelN = 2;
+			attackPower = 2;
+			attackN = 2;
+		} else if (scoreN >= 18 && scoreN < 30) {
+			levelN = 3;
 			attackPower = 3;
 			attackN = 3;
-		} else if (scoreN >= 11 && scoreN < 19) {
-			levelN = 3;
+
+		} else if (scoreN >= 30 && scoreN < 48) {
+			levelN = 4;
+			attackPower = 4;
+			attackN = 4;
+		} else if (scoreN >= 48) {
+			levelN = 5;
 			attackPower = 5;
 			attackN = 5;
-
-		} else if (scoreN >= 19) {
-			levelN = 4;
-			attackPower = 7;
-			attackN = 7;
 		}
 	}
 	// Use this for initialization
@@ -65,6 +72,7 @@ public class UIManager : MonoBehaviour
 		HealthSlider = GameObject.Find ("HealthBlock").GetComponent<Slider> ();
 		gameOver.SetActive (false);
 		win.SetActive (false);
+
 
 	}
 
@@ -76,6 +84,7 @@ public class UIManager : MonoBehaviour
 		attackPowerNum.text = attackN.ToString ();
 		levelNum.text = levelN.ToString ();
 		scoreNum.text = scoreN.ToString ();
+		keyNum.text = keyN.ToString ();
 
 		//heyi
 		HealthSlider.maxValue = player.GetComponent<Player> ().maxplayerLife;
@@ -91,12 +100,20 @@ public class UIManager : MonoBehaviour
 		}
 
 	}
-	public void ShowMessage(string str)
+
+	public void addKey ()
+	{
+		keyN = keyN + 1;
+	}
+
+	public void ShowMessage (string str)
 	{
 		messageText.text = str;
 		Invoke ("emptyStr", 0.5f);
 	}
-	public void emptyStr(){
+
+	public void emptyStr ()
+	{
 		messageText.text = "";
 	}
 

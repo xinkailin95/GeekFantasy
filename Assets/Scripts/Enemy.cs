@@ -11,9 +11,10 @@ public class Enemy : MonoBehaviour
 
 	public int attackPower = 1;
 
-	public Transform hero;
+
 	private Vector3 initPosition;
 	private GameObject player;
+	public Transform hero;
 	private float distance;
 	private Vector3 prevPosition;
 	private Vector3 newPosition;
@@ -21,25 +22,25 @@ public class Enemy : MonoBehaviour
 	private Vector3 rPosition;
 	private Vector3 currentDest;
 	private Vector2 destination;
-	private Animator anim;
+	//	private Animator anim;
 	bool loop;
 	public GameObject enemyBulletPre;
 	private float timeVal;
-    public GameObject healthBar;
+	public GameObject healthBar;
 
 
 	//public int enemyLife = 3;
 
 	void Awake ()
 	{
-		anim = GetComponent<Animator> ();
+		//anim = GetComponent<Animator> ();
 		initPosition = transform.position;
 		r2d = GetComponent<Rigidbody2D> ();
 		_instance = this;
 
-        Instantiate(healthBar,this.transform);
+		Instantiate (healthBar, this.transform);
 
-    }
+	}
 
 	// Use this for initialization
 	void Start ()
@@ -86,9 +87,9 @@ public class Enemy : MonoBehaviour
 			}
 		}
 
-		Vector3 sub = newPosition - transform.position;
-		anim.SetFloat ("input_x", (sub.x < 0 ? -1f : 1f));
-		anim.SetFloat ("input_y", (sub.y < 0 ? -1f : 1f));
+//		Vector3 sub = newPosition - transform.position;
+//		anim.SetFloat ("input_x", (sub.x < 0 ? -1f : 1f));
+//		anim.SetFloat ("input_y", (sub.y < 0 ? -1f : 1f));
 
 		if (timeVal >= 2f) {
 

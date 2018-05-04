@@ -6,21 +6,21 @@ public class arroBullet : MonoBehaviour
 {
 
 	public float moveSpeed = 10;
-    public float rate;
+	public float rate;
 
 	// Use this for initialization
 
 	void Start ()
 	{
-        rate = transform.localScale.y;
+		rate = transform.localScale.y;
 	}
 
 	// Update is called once per frame
 	void FixedUpdate ()
 	{
-        rate = rate + 0.1f;
-        transform.localScale=new Vector3(0.08678f, rate, 1);
-		transform.Translate (transform.up * moveSpeed * Time.deltaTime*7.5f, Space.World);
+		rate = rate + 0.1f;
+		transform.localScale = new Vector3 (0.08678f, rate, 1);
+		transform.Translate (transform.up * moveSpeed * Time.deltaTime * 7.5f, Space.World);
 		Destroy (gameObject, 0.14f);
 
 	}
@@ -100,6 +100,83 @@ public class arroBullet : MonoBehaviour
 			EnemyManager._instance.enemyLife [16] = EnemyManager._instance.enemyLife [16] - UIManager._instance.attackPower_R;
 
 			break;
+		case"Enemy17":
+			EnemyManager._instance.enemyLife [17] = EnemyManager._instance.enemyLife [17] - UIManager._instance.attackPower_R;
+
+			break;
+		case"Enemy18":
+			EnemyManager._instance.enemyLife [18] = EnemyManager._instance.enemyLife [18] - UIManager._instance.attackPower_R;
+
+			break;
+		case"Enemy19":
+			EnemyManager._instance.enemyLife [19] = EnemyManager._instance.enemyLife [19] - UIManager._instance.attackPower_R;
+
+			break;
+		case"Enemy20":
+			EnemyManager._instance.enemyLife [20] = EnemyManager._instance.enemyLife [20] - UIManager._instance.attackPower_R;
+
+			break;
+		case"Enemy21":
+			EnemyManager._instance.enemyLife [21] = EnemyManager._instance.enemyLife [21] - UIManager._instance.attackPower_R;
+
+			break;
+		case"Enemy22":
+			EnemyManager._instance.enemyLife [22] = EnemyManager._instance.enemyLife [22] - UIManager._instance.attackPower_R;
+
+			break;
+		case"Enemy23":
+			EnemyManager._instance.enemyLife [23] = EnemyManager._instance.enemyLife [23] - UIManager._instance.attackPower_R;
+
+			break;
+		case"Enemy24":
+			EnemyManager._instance.enemyLife [24] = EnemyManager._instance.enemyLife [24] - UIManager._instance.attackPower_R;
+
+			break;
+		case"Enemy25":
+			EnemyManager._instance.enemyLife [25] = EnemyManager._instance.enemyLife [25] - UIManager._instance.attackPower_R;
+
+			break;
+		case"Enemy26":
+			EnemyManager._instance.enemyLife [26] = EnemyManager._instance.enemyLife [26] - UIManager._instance.attackPower_R;
+
+			break;
+		case"Enemy27":
+			EnemyManager._instance.enemyLife [27] = EnemyManager._instance.enemyLife [27] - UIManager._instance.attackPower_R;
+
+			break;
+		case"Enemy28":
+			EnemyManager._instance.enemyLife [28] = EnemyManager._instance.enemyLife [28] - UIManager._instance.attackPower_R;
+
+			break;
+		case"Enemy29":
+			EnemyManager._instance.enemyLife [29] = EnemyManager._instance.enemyLife [29] - UIManager._instance.attackPower_R;
+
+			break;
+		case"Enemy30":
+			EnemyManager._instance.enemyLife [30] = EnemyManager._instance.enemyLife [30] - UIManager._instance.attackPower_R;
+
+			break;
+		case"Enemy31":
+			EnemyManager._instance.enemyLife [31] = EnemyManager._instance.enemyLife [31] - UIManager._instance.attackPower_R;
+
+			break;
+		case"Enemy32":
+			EnemyManager._instance.enemyLife [32] = EnemyManager._instance.enemyLife [32] - UIManager._instance.attackPower_R;
+
+			break;
+		case"Enemy33":
+			EnemyManager._instance.enemyLife [33] = EnemyManager._instance.enemyLife [33] - UIManager._instance.attackPower_R;
+
+			break;
+		case"Enemy34":
+			EnemyManager._instance.enemyLife [34] = EnemyManager._instance.enemyLife [34] - UIManager._instance.attackPower_R;
+
+			break;
+		case"Enemy35":
+			EnemyManager._instance.enemyLife [35] = EnemyManager._instance.enemyLife [35] - UIManager._instance.attackPower_R;
+
+			break;
+
 		//case"Building":
 		//	Destroy (gameObject);
 		//	break;

@@ -31,16 +31,10 @@ I am also able to get surprise from NPC to update his ability on the way to the 
 
 I will experience an interesting daily life of a geek in a campus setting, and this game fulfils the element of fantasy which can be a fun twist to our boring everyday life.	
 
-# Prototype && Alpha Release && Beta Release
+# Official Release
 ## Instruction
-&nbsp;&nbsp;&nbsp;&nbsp;1. Open the download link for Prototype:
-&nbsp;&nbsp;&nbsp;&nbsp;https://drive.google.com/drive/u/0/folders/1ZiA1gOf7HBvfNZJ_owBfVGaIM8Sf90DH
-
-&nbsp;&nbsp;&nbsp;&nbsp;1. Open the download link for Alpha Release: 
-https://drive.google.com/open?id=1utP1IsUDiT8LFu5GGB_2YcvqgZckl35c
-
-&nbsp;&nbsp;&nbsp;&nbsp;1. Open the download link for Beta Release(or on Landing Page at Wiki): 
-https://drive.google.com/drive/folders/1L_YDw00WrgDhkausWt_SE-QM9gdPZxXb 
+&nbsp;&nbsp;&nbsp;&nbsp;1. Open the download link:
+https://drive.google.com/open?id=1O7GefxxJmmhBjBI7BhNSawPy1TB5eJaW
 
 &nbsp;&nbsp;&nbsp;&nbsp;2. Downoad the file, exctract it if is a zip file.
 
@@ -48,20 +42,31 @@ https://drive.google.com/drive/folders/1L_YDw00WrgDhkausWt_SE-QM9gdPZxXb
 
 &nbsp;&nbsp;&nbsp;&nbsp;4. Choose an resolution, Fullscreen or Window and click play!
 
-&nbsp;&nbsp;&nbsp;&nbsp;5. Click starting to start the game, click Introduction to see the background of the game
+&nbsp;&nbsp;&nbsp;&nbsp;5. Click start to start the game, click Introduction to see the background of the game
 
-&nbsp;&nbsp;&nbsp;&nbsp;6. Click Help button to see control instruction.
+&nbsp;&nbsp;&nbsp;&nbsp;6. Click control button on the right top corner to see instructions.
 
-&nbsp;&nbsp;&nbsp;&nbsp;7. Click Back to Starting to Return to the main menu.
+&nbsp;&nbsp;&nbsp;&nbsp;7. Click menu button on the right top corner to start a new game, continues, save, load, or quit.
 
 PS: For Mac user who has identified developers issues, go to System Preferences and go to Security & Privacy, in General click open anyway to open the app.
+
+## Other Reselase: 
+Beta Release: https://drive.google.com/drive/folders/1L_YDw00WrgDhkausWt_SE-QM9gdPZxXb 
+
+Alpha Release: https://drive.google.com/open?id=1utP1IsUDiT8LFu5GGB_2YcvqgZckl35c
+
+Prototype: https://drive.google.com/drive/u/0/folders/1ZiA1gOf7HBvfNZJ_owBfVGaIM8Sf90DH
 
 # Landing Page
 https://xli2288.wixsite.com/geekfantasy
 
 ## Youtube Link
-Prototype: https://youtu.be/9VW4yJrVLIM
+Official Release: https://youtu.be/gc5-dmRk4MQ
+
+Beta Release: https://youtu.be/coE-VAhETHQ
 
 Alpha Release: https://youtu.be/emJ41wblpow
 
-Beta Release: https://youtu.be/coE-VAhETHQ
+Prototype: https://youtu.be/9VW4yJrVLIM
+
+
