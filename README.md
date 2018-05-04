@@ -61,7 +61,7 @@ Prototype: https://drive.google.com/drive/u/0/folders/1ZiA1gOf7HBvfNZJ_owBfVGaIM
 https://xli2288.wixsite.com/geekfantasy
 
 ## Youtube Link
-Official Release: 
+Official Release: https://youtu.be/gc5-dmRk4MQ
 
 Beta Release: https://youtu.be/coE-VAhETHQ
 
