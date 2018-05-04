@@ -102,7 +102,7 @@ public class GameManager : MonoBehaviour
 	private Save CreateSaveGO ()
 	{
 		Save save = new Save ();
-		for (int i = 0; i < 16; i++) {
+		for (int i = 0; i < EnemyManager._instance.enemyGOs.Length; i++) {
 			save.enemyLife1.Add (EnemyManager._instance.enemyLife [i]);
 
 		}
@@ -123,6 +123,7 @@ public class GameManager : MonoBehaviour
 		for (int i = 0; i < Inventory._instance.itemNum.Count; i++) {
 			save.itemsNum [i] = Inventory._instance.itemNum [i];
 		}
+
 		for (int i = 0; i < EnemyManager._instance.hasKey.Length; i++) {
 			if (EnemyManager._instance.hasKey [i] == true) {
 				save.Key [i] = 0;
@@ -130,6 +131,10 @@ public class GameManager : MonoBehaviour
 				save.Key [i] = 1;
 			}
 		}
+
+		save.x = Player._instance.transform.position.x;
+		save.y = Player._instance.transform.position.y;
+
 		save.playerLife = Player._instance.curplayerLife;
 		save.levelNum = UIManager._instance.levelN;
 		//save.scoreNum = UIManager._instance.scoreN;
@@ -143,7 +148,7 @@ public class GameManager : MonoBehaviour
 
 	private void SetGame (Save save)
 	{
-		for (int i = 0; i < 16; i++) {
+		for (int i = 0; i < EnemyManager._instance.enemyGOs.Length; i++) {
 
 			EnemyManager._instance.enemyLife [i] = save.enemyLife1 [i];
 		}
@@ -171,6 +176,8 @@ public class GameManager : MonoBehaviour
 
 			}
 		}
+		Player._instance.transform.position = new Vector3 (save.x, save.y);
+
 		Player._instance.curplayerLife = save.playerLife;
 		UIManager._instance.attackN = save.attackNum;
 		//UIManager._instance.scoreN = save.scoreNum;
