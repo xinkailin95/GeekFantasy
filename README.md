@@ -42,11 +42,11 @@ https://drive.google.com/open?id=1O7GefxxJmmhBjBI7BhNSawPy1TB5eJaW
 
 &nbsp;&nbsp;&nbsp;&nbsp;4. Choose an resolution, Fullscreen or Window and click play!
 
-&nbsp;&nbsp;&nbsp;&nbsp;5. Click starting to start the game, click Introduction to see the background of the game
+&nbsp;&nbsp;&nbsp;&nbsp;5. Click start to start the game, click Introduction to see the background of the game
 
-&nbsp;&nbsp;&nbsp;&nbsp;6. Click Help button to see control instruction.
+&nbsp;&nbsp;&nbsp;&nbsp;6. Click control button on the right top corner to see instructions.
 
-&nbsp;&nbsp;&nbsp;&nbsp;7. Click Back to Starting to Return to the main menu.
+&nbsp;&nbsp;&nbsp;&nbsp;7. Click menu button on the right top corner to start a new game, continues, save, load, or quit.
 
 PS: For Mac user who has identified developers issues, go to System Preferences and go to Security & Privacy, in General click open anyway to open the app.
 
