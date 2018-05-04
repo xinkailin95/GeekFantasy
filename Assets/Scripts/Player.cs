@@ -356,7 +356,7 @@ public class Player : MonoBehaviour
 
 	public void detectFirstRelease ()
 	{
-		Debug.Log ("~~~~~~~~~~~~~~~");
+		//Debug.Log ("~~~~~~~~~~~~~~~");
 		if ((Input.GetKeyUp (KeyCode.A) || Input.GetKeyUp (KeyCode.LeftArrow)) && direction == 1) {
 			frTime = Time.time;
 			firstRelease = true;
@@ -391,7 +391,7 @@ public class Player : MonoBehaviour
 					//setDirection();
 				}
 			} else {
-				setDirection ();
+				//setDirection();
 				firstPress = false;
 				firstRelease = false;
 			}
@@ -410,7 +410,7 @@ public class Player : MonoBehaviour
 					frTime = Time.time;
 				}
 			} else {
-				setDirection ();
+				//setDirection();
 				firstPress = false;
 				firstRelease = false;
 			}
@@ -428,7 +428,7 @@ public class Player : MonoBehaviour
 					frTime = Time.time;
 				}
 			} else {
-				setDirection ();
+				//setDirection();
 				firstPress = false;
 				firstRelease = false;
 			}
@@ -446,7 +446,7 @@ public class Player : MonoBehaviour
 					frTime = Time.time;
 				}
 			} else {
-				setDirection ();
+				//setDirection();
 				firstPress = false;
 				firstRelease = false;
 			}
