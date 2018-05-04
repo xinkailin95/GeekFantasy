@@ -34,7 +34,7 @@ I will experience an interesting daily life of a geek in a campus setting, and t
 # Official Release
 ## Instruction
 &nbsp;&nbsp;&nbsp;&nbsp;1. Open the download link:
-&nbsp;&nbsp;&nbsp;&nbsp;https://drive.google.com/open?id=1O7GefxxJmmhBjBI7BhNSawPy1TB5eJaW
+https://drive.google.com/open?id=1O7GefxxJmmhBjBI7BhNSawPy1TB5eJaW
 
 &nbsp;&nbsp;&nbsp;&nbsp;2. Downoad the file, exctract it if is a zip file.
 
@@ -52,17 +52,21 @@ PS: For Mac user who has identified developers issues, go to System Preferences 
 
 ## Other Reselase: 
 Prototype: https://drive.google.com/drive/u/0/folders/1ZiA1gOf7HBvfNZJ_owBfVGaIM8Sf90DH
+
 Alpha Release: https://drive.google.com/open?id=1utP1IsUDiT8LFu5GGB_2YcvqgZckl35c
+
 Beta Release: https://drive.google.com/drive/folders/1L_YDw00WrgDhkausWt_SE-QM9gdPZxXb 
 
 # Landing Page
 https://xli2288.wixsite.com/geekfantasy
 
 ## Youtube Link
-Prototype: https://youtu.be/9VW4yJrVLIM
-
-Alpha Release: https://youtu.be/emJ41wblpow
+Official Release: 
 
 Beta Release: https://youtu.be/coE-VAhETHQ
 
-Official Release: 
+Alpha Release: https://youtu.be/emJ41wblpow
+
+Prototype: https://youtu.be/9VW4yJrVLIM
+
+
